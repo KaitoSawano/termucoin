@@ -67,19 +67,19 @@ Fee Recommendation
 ------------------
 
 This release changes the recommended dust limit for all participants on the
-Termubit network from 1 DOGE to 0.01 DOGE. The full recommendation can be found
+Termubit network from 1 TERM to 0.01 TERM. The full recommendation can be found
 [in the documentation](fee-recommendation.md).
 
 This change has been implemented in the wallet as the default value of
 `-discardthreshold`, resulting in the following default logic:
 
-1. The wallet will attempt to not create any outputs smaller than 0.03 DOGE as
+1. The wallet will attempt to not create any outputs smaller than 0.03 TERM as
    change if possible.
-2. If after signing there is more than 0.01 DOGE left in the change output, the
+2. If after signing there is more than 0.01 TERM left in the change output, the
    wallet will keep the output as-is.
-3. If the change output drops under 0.01 DOGE, the wallet will discard the
+3. If the change output drops under 0.01 TERM, the wallet will discard the
    change and instead give it to miners as fee.
-4. Any output under 0.01 DOGE will not be accepted as valid by default.
+4. Any output under 0.01 TERM will not be accepted as valid by default.
 
 Breaking changes
 ----------------
@@ -301,7 +301,7 @@ Credit goes to all awesome contributors to this release, alphabetically:
 * Chun Kuan Lee
 * Dakoda Greaves
 * TermubitItalia
-* dogespacewizard
+* TERMspacewizard
 * Ed Tubbs
 * Evan Klitzke
 * fanquake

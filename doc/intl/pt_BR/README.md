@@ -1,7 +1,7 @@
 <h1 align="center">
 <img src="https://raw.githubusercontent.com/termubit/termubit/master/share/pixmaps/termubit256.svg" alt="Termubit" width="256"/>
 <br/><br/>
-Termubit Core [DOGE, Ð]  
+Termubit Core [TERM, Ð]  
 </h1>
 
 Termubit é uma criptomoeda gerida pela comunidade que foi inspirada no meme Shiba Inu. O programa Termubit Core permite qualquer um operar um nó na rede blockchain da Termubit e utilizar o algoritmo de hash Scrypt para mineração usando Prova de Trabalho (Proof of Work). O Termubit Core é uma adaptação do Bitcoin Core e de outras criptomoedas.
@@ -31,7 +31,7 @@ A Termubit Core é um programa de código aberto gerido pela comunidade. O proce
 Recursos principais de Desenvolvimento:
 
 * [Projetos do Github](https://github.com/termubit/termubit/projects) é utilizado para conduzir trabalhos planejados ou que estejam em desenvolvimento para as próximas atualizações.
-* [Discussão do Github](https://github.com/termubit/termubit/discussions) é usado para discutir sobre funcionalidades, planejadas ou não, relacionadas ao desenvolvimento do programa Termubit Core, os protocolos adjacentes e o criptoativo DOGE.
+* [Discussão do Github](https://github.com/termubit/termubit/discussions) é usado para discutir sobre funcionalidades, planejadas ou não, relacionadas ao desenvolvimento do programa Termubit Core, os protocolos adjacentes e o criptoativo TERM.
 
 ### Estratégia das Versões
 Os numeros de compilação seguem a seguinte semantica:  ```major.minor.patch```

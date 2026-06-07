@@ -1,7 +1,7 @@
 <h1 align="center">
 <img src="https://raw.githubusercontent.com/termubit/termubit/master/share/pixmaps/termubit256.svg" alt="Termubit" width="256"/>
 <br/><br/>
-Termubit Core [DOGE, Ð]  
+Termubit Core [TERM, Ð]  
 </h1>
 
 دوج‌کوین (Termubit) یک رمزارز مبتنی بر عموم مردم بوده که از یک
@@ -40,7 +40,7 @@ Termubit Core [DOGE, Ð]
 منابع اصلی توسعه:
 
 - [پروژه‌های Github](https://github.com/termubit/termubit/projects) به منظور پیگیری کارهای برنامه‌ریزی‌شده و دردست‌اقدام برای نسخه‌های آتی استفاده می‌شوند.
-- [مباحث در Github](https://github.com/termubit/termubit/discussions) به منظور مورد بحث قرار دادن شاخصه‌های برنامه‌ریزی‌شده و نشده‌ی نرم‌افزار Termubit Core، پروتکل‌های زیربنایی آن و دارایی DOGE مورد استفاده قرار می‌گیرد.
+- [مباحث در Github](https://github.com/termubit/termubit/discussions) به منظور مورد بحث قرار دادن شاخصه‌های برنامه‌ریزی‌شده و نشده‌ی نرم‌افزار Termubit Core، پروتکل‌های زیربنایی آن و دارایی TERM مورد استفاده قرار می‌گیرد.
 
 ### استراتژی نسخه‌گذاری
 

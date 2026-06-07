@@ -1,7 +1,7 @@
 <h1 align="center">
 <img src="https://raw.githubusercontent.com/termubit/termubit/master/share/pixmaps/termubit256.svg" alt="Termubit" width="256"/>
 <br/><br/>
-Termubit Core [DOGE, Ð]  
+Termubit Core [TERM, Ð]  
 </h1>
 
 Termubit là một loại tiền điện tử hướng tới cộng đồng được lấy cảm hứng từ meme Shiba Inu. Phần mềm Termubit Core cho phép bất kỳ ai vận hành node trong Termubit blockchain networks và sử dụng phương pháp băm Scrypt cho Proof of Work. Nó được điều chỉnh từ Bitcoin Core và các loại tiền điện tử khác.
@@ -39,7 +39,7 @@ Các nguồn lực phát triển chính::
   theo dõi công việc đã lên kế hoạch và đang tiến hành cho các bản phát hành sắp tới.
 * [GitHub Discussion](https://github.com/termubit/termubit/discussions) được sử dụng để
   để thảo luận về các tính năng, được lên kế hoạch và chưa được kế hoạch, liên quan đến
-  sự phát triển của phần mềm Termubit Core, các giao thức nền tảng và DOGE asset.
+  sự phát triển của phần mềm Termubit Core, các giao thức nền tảng và TERM asset.
 
 ### Phiên bản Chiến lược
 Số phiên bản tuân theo ngữ nghĩa ```major.minor.patch```.

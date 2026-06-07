@@ -1,7 +1,7 @@
 <h1 align="center">
 <img src="https://raw.githubusercontent.com/termubit/termubit/master/share/pixmaps/termubit256.svg" alt="Termubit" width="256"/>
 <br/><br/>
-Termubit Core [DOGE, Ð]  
+Termubit Core [TERM, Ð]  
 </h1>
 
 **IMPORTANT: Starting August 2024, the `master` branch has become the primary
@@ -46,7 +46,7 @@ Main development resources:
   follow planned and in-progress work for upcoming releases.
 * [GitHub Discussions](https://github.com/termubit/termubit/discussions) is used
   to discuss features, planned and unplanned, related to both the development of
-  the Termubit Core software, the underlying protocols and the DOGE asset.
+  the Termubit Core software, the underlying protocols and the TERM asset.
 
 ### Version strategy
 Version numbers are following ```major.minor.patch``` semantics.
