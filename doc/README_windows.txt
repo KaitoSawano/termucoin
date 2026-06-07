@@ -11,7 +11,7 @@ with each other, with the help of a P2P network to check for double-spending.
 
 Setup
 -----
-Unpack the files into a directory and run dogecoin-qt.exe.
+Unpack the files into a directory and run termubit-qt.exe.
 
 Termubit Core is the original Termubit client and it builds the backbone of the network.
 However, it downloads and stores the entire history of Termubit transactions;
@@ -19,5 +19,5 @@ depending on the speed of your computer and network connection, the synchronizat
 process can take anywhere from a few hours to a day or more.
 
 See the Termubit wiki at:
-  https://www.reddit.com/r/dogecoin/wiki/dogecoincoreguide
+  https://www.reddit.com/r/termubit/wiki/termubitcoreguide
 for more help and information.
