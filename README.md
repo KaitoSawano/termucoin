@@ -19,7 +19,7 @@ Termubit Core
 
 **Termubit (TERM)** is an innovative, decentralized cryptocurrency designed to function as a primary medium of exchange. Termubit provides a secure, transparent, and immutable ledger for global peer-to-peer transactions.
 
-The mission of Termubit is to provide a functional alternative to traditional currencies by offering a scalable payment infrastructure that is not controlled by any central authority. Founded on 10.6.2026
+The mission of Termubit is to provide a functional alternative to traditional currencies by offering a scalable payment infrastructure that is not controlled by any central authority. 
 
 ### Peer-to-Peer Network
 Termubit operates on a distributed network of nodes. Every node maintains a full copy of the blockchain, ensuring that the history of all transactions is transparent and verifiable by anyone, anywhere.
