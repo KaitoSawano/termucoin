@@ -68,9 +68,9 @@ can then be controlled by group membership.
 3b) Mac OS X
 
 Binary:              `/usr/local/bin/dogecoind`  
-Configuration file:  `~/Library/Application Support/Dogecoin/dogecoin.conf`  
-Data directory:      `~/Library/Application Support/Dogecoin`
-Lock file:           `~/Library/Application Support/Dogecoin/.lock`
+Configuration file:  `~/Library/Application Support/Termubit/dogecoin.conf`  
+Data directory:      `~/Library/Application Support/Termubit`
+Lock file:           `~/Library/Application Support/Termubit/.lock`
 
 4. Installing Service Configuration
 -----------------------------------

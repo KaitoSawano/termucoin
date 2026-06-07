@@ -5,7 +5,7 @@ Shared Libraries
 
 ## dogecoinconsensus
 
-The purpose of this library is to make the verification functionality that is critical to Dogecoin's consensus available to other applications, e.g. to language bindings.
+The purpose of this library is to make the verification functionality that is critical to Termubit's consensus available to other applications, e.g. to language bindings.
 
 ### API
 
@@ -45,4 +45,4 @@ The interface is defined in the C header `dogecoinconsensus.h` located in  `src/
 - `dogecoinconsensus_ERR_AMOUNT_REQUIRED` - Returned by `dogecoinconsensus_verify_script` when `VERIFY_WITNESS` is set; use `dogecoinconsensus_verify_script_with_amount` for witness validation.
 
 ### Example Implementation
-- No known Dogecoin-specific third-party binding examples are currently listed here.
+- No known Termubit-specific third-party binding examples are currently listed here.

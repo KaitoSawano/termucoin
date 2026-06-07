@@ -1,9 +1,9 @@
 [Desktop Entry]
-Name=Dogecoin Core
-Comment=Connect to the Dogecoin P2P Network
-Comment[de]=Verbinde mit dem Dogecoin peer-to-peer Netzwerk
-Comment[fr]=Dogecoin, monnaie virtuelle cryptographique pair à pair
-Comment[tr]=Dogecoin, eşten eşe kriptografik sanal para birimi
+Name=Termubit Core
+Comment=Connect to the Termubit P2P Network
+Comment[de]=Verbinde mit dem Termubit peer-to-peer Netzwerk
+Comment[fr]=Termubit, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Termubit, eşten eşe kriptografik sanal para birimi
 Exec=dogecoin-qt %u
 Terminal=false
 Type=Application

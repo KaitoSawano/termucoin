@@ -277,7 +277,7 @@ jobs:
           path: ~/.ccache
           key: ${{ matrix.name }}-${{ env.cache-name }}-${{ hashFiles('**/configure.ac', '.github/workflows/ci.yml') }}
 
-      - name: Build Dogecoin
+      - name: Build Termubit
         run: |
           depends/${{ matrix.host }}/native/bin/ccache --max-size=$CCACHE_SIZE
           ./autogen.sh
@@ -312,5 +312,5 @@ jobs:
           name: dogecoin-${{ github.sha }}-${{ matrix.name }}
           path: |
             depends/${{ matrix.host }}/bin/dogecoin*
-            dist/Dogecoin-Qt.app
+            dist/Termubit-Qt.app
             ${{ matrix.name }}-bench.csv

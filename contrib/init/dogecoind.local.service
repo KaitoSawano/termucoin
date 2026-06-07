@@ -7,7 +7,7 @@
 #/var/local/dogecoin/
 
 [Unit]
-Description=Dogecoin's distributed currency daemon
+Description=Termubit's distributed currency daemon
 After=network.target
 
 [Service]

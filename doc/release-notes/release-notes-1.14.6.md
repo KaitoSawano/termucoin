@@ -1,9 +1,9 @@
-Dogecoin Core version 1.14.6 is now available from:
+Termubit Core version 1.14.6 is now available from:
 
   <https://github.com/dogecoin/dogecoin/releases/tag/v1.14.6/>
 
 This is a new minor version release, including important security updates and
-changes to network efficiency. All Dogecoin Core users - miners, services,
+changes to network efficiency. All Termubit Core users - miners, services,
 relay operators and wallet users - are strongly recommended to upgrade.
 
 Please report bugs using the issue tracker at github:
@@ -21,10 +21,10 @@ Releases are also announced on reddit:
 Compatibility
 ==============
 
-Dogecoin Core is extensively tested on Ubuntu Server LTS, Intel-based macOS
+Termubit Core is extensively tested on Ubuntu Server LTS, Intel-based macOS
 and Windows 10.
 
-Dogecoin Core should also work on most other Unix-like systems but is not
+Termubit Core should also work on most other Unix-like systems but is not
 frequently tested on them.
 
 Notable changes
@@ -67,7 +67,7 @@ Fee Recommendation
 ------------------
 
 This release changes the recommended dust limit for all participants on the
-Dogecoin network from 1 DOGE to 0.01 DOGE. The full recommendation can be found
+Termubit network from 1 DOGE to 0.01 DOGE. The full recommendation can be found
 [in the documentation](fee-recommendation.md).
 
 This change has been implemented in the wallet as the default value of
@@ -237,7 +237,7 @@ Significant updates have been provided to the following languages:
 * Tamil
 
 Policies and tooling have been updated to enable translators better in their
-efforts to make Dogecoin more accessible to people that do not speak English.
+efforts to make Termubit more accessible to people that do not speak English.
 
 RPC API Changes
 ---------------
@@ -281,7 +281,7 @@ Minor Changes
   stuck transactions based on peer-to-peer traffic, but this does not work
   since 1.14.2, and can be misleading (showing false positives and negatives.)
 * Improved and updated the [bip list](bips.md) documentation that explains the
-  protocol features implemented by Dogecoin Core.
+  protocol features implemented by Termubit Core.
 * Greatly improved the `gitian-build` script to ease doing deterministic builds
   for everyone, and the [documentation](gitian-building.md) of that process.
 
@@ -300,7 +300,7 @@ Credit goes to all awesome contributors to this release, alphabetically:
 * Chuanyi
 * Chun Kuan Lee
 * Dakoda Greaves
-* DogecoinItalia
+* TermubitItalia
 * dogespacewizard
 * Ed Tubbs
 * Evan Klitzke

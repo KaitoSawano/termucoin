@@ -1,6 +1,6 @@
-# Dogecoin Snap Packaging
+# Termubit Snap Packaging
 
-Commands for building and uploading a Dogecoin Core Snap to the Snap Store. Anyone on amd64 (x86_64), arm64 (aarch64), or i386 (i686) should be able to build it themselves with these instructions. This would pull the official Dogecoin binaries from the releases page, verify them, and install them on a user's machine.
+Commands for building and uploading a Termubit Core Snap to the Snap Store. Anyone on amd64 (x86_64), arm64 (aarch64), or i386 (i686) should be able to build it themselves with these instructions. This would pull the official Termubit binaries from the releases page, verify them, and install them on a user's machine.
 
 ## Building Locally
 ```
