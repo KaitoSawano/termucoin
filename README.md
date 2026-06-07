@@ -23,16 +23,16 @@ The JSON-RPC API provided by Dogecoin Core is self-documenting and can be browse
 
 ### Such ports
 
-Dogecoin Core by default uses port `22556` for peer-to-peer communication that
+Dogecoin Core by default uses port `8599` for peer-to-peer communication that
 is needed to synchronize the "mainnet" blockchain and stay informed of new
 transactions and blocks. Additionally, a JSONRPC port can be opened, which
-defaults to port `22555` for mainnet nodes. It is strongly recommended to not
+defaults to port `8598` for mainnet nodes. It is strongly recommended to not
 expose RPC ports to the public internet.
 
 | Function | mainnet | testnet | regtest |
 | :------- | ------: | ------: | ------: |
-| P2P      |   22556 |   44556 |   18444 |
-| RPC      |   22555 |   44555 |   18332 |
+| P2P      |   8599 |   12253 |   8433 |
+| RPC      |   8598 |   12252 |   8432 |
 
 ## Ongoing development - Moon plan 🌒
 

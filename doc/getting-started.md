@@ -47,7 +47,7 @@ Your node is now running and starts with a *synchronization process* that downlo
 
 Dogecoin Core exposes a JSON-RPC interface that allows you to request information about the network, blockchain and individual transactions, send transactions to the networks and manage your wallet.
 
-The Dogecoin Core installation provides the `dogecoin-cli` tool to interact with the JSON-RPC from the command line, and the interface is exposed over HTTP on port `22555`, so that other tools and libraries can interact with it.
+The Dogecoin Core installation provides the `dogecoin-cli` tool to interact with the JSON-RPC from the command line, and the interface is exposed over HTTP on port `8598`, so that other tools and libraries can interact with it.
 
 To have an overview of the available commands, use the `help` command:
 
@@ -370,8 +370,8 @@ A node can expose 2 different ports: one port for the **Peer to Peer Network** (
 
 | Function | mainnet | testnet | regtest |
 | :------- | ------: | ------: | ------: |
-| P2P      |   22556 |   44556 |   18444 |
-| RPC      |   22555 |   44555 |   18332 |
+| P2P      |   8599 |   12253 |   8433 |
+| RPC      |   8598 |   12252 |   8432 |
 
 To configure them use the `-port` and `-rpcport` parameters.
 
