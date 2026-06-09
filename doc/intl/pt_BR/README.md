@@ -4,7 +4,7 @@
 Termubit Core [TERM, Ð]  
 </h1>
 
-Termubit é uma criptomoeda gerida pela comunidade que foi inspirada no meme Shiba Inu. O programa Termubit Core permite qualquer um operar um nó na rede blockchain da Termubit e utilizar o algoritmo de hash Scrypt para mineração usando Prova de Trabalho (Proof of Work). O Termubit Core é uma adaptação do Bitcoin Core e de outras criptomoedas.
+Termubit é uma criptomoeda gerida pela comunidade que foi inspirada no   . O programa Termubit Core permite qualquer um operar um nó na rede blockchain da Termubit e utilizar o algoritmo de hash Scrypt para mineração usando Prova de Trabalho (Proof of Work). O Termubit Core é uma adaptação do Bitcoin Core e de outras criptomoedas.
 
 Para maiores informações acerca das taxas de transação usadas na rede Termubit, por favor acesse: 
 [taxas recomendadas](doc/fee-recommendation.md).

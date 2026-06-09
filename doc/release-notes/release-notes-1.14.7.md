@@ -267,7 +267,7 @@ Credit goes to all awesome contributors to this release, alphabetically:
 * ilsubyega
 * Jalin Wang
 * jimjimmiejames
-* John-Inubook
+* John-book
 * junderw
 * kalvdans
 * mangekyousharingan
