@@ -112,7 +112,7 @@ public:
         consensus.nMinimumChainWork = uint256S("0x0000000000000000000000000000000000000000000000000000000000200020");
 
         // By default assume that the signatures in ancestors of this block are valid.
-        consensus.defaultAssumeValid = uint256S("0x00000aa8a8fb0957193bd1b59becf05207a4519b40888b2c2ae9dcb252e68ed5");
+        consensus.defaultAssumeValid = uint256S("0x00000937cdbf9936fb1338bdb7ae61798c6d761d1d436606adef9a8bce33b6b4");
 
         // AuxPoW parameters
         consensus.nAuxpowChainId = 0x0024; // 36
