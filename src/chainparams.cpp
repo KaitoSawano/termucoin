@@ -52,7 +52,7 @@ static CBlock CreateGenesisBlock(const char* pszTimestamp, const CScript& genesi
 static CBlock CreateGenesisBlock(uint32_t nTime, uint32_t nNonce, uint32_t nBits, int32_t nVersion, const CAmount& genesisReward)
 {
     const char* pszTimestamp = "Times 10/Jun/2026 Aldianokto, Chaos in the Treasury, Order in the Code";
-    const CScript genesisOutputScript = CScript() << ParseHex("045667753d877ebe6de683b9fd351d41c7321cbaae6543cda813ece6ba03e340a625346147aad29a4f88deefdf9d209a8f2f9dad092e812e15d256fb3cd17a2d5c") << OP_CHECKSIG;
+    const CScript genesisOutputScript = CScript() << ParseHex("03658ff8c9a580db8817c1a6c3f6e55428cdf3688e7a01a91044bd1d7f3771d519") << OP_CHECKSIG;
     return CreateGenesisBlock(pszTimestamp, genesisOutputScript, nTime, nNonce, nBits, nVersion, genesisReward);
 }
 
@@ -154,7 +154,7 @@ public:
         consensus.hashGenesisBlock = genesis.GetHash();
         digishieldConsensus.hashGenesisBlock = consensus.hashGenesisBlock;
         auxpowConsensus.hashGenesisBlock = consensus.hashGenesisBlock;
-        assert(consensus.hashGenesisBlock == uint256S("0x00000aa8a8fb0957193bd1b59becf05207a4519b40888b2c2ae9dcb252e68ed5"));
+        assert(consensus.hashGenesisBlock == uint256S("0x"));
         assert(genesis.hashMerkleRoot == uint256S("0x873be58f7caf71c8b1f08dcac7746e9d79c484703e0bc3a3fc1712400a3d5771"));
 
         // Note that of those with the service bits flag, most only support a subset of possible options
