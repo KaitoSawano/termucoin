@@ -365,7 +365,7 @@ public:
         consensus.nMinimumChainWork = uint256S("0x00");
 
         // By default assume that the signatures in ancestors of this block are valid.
-        consensus.defaultAssumeValid = uint256S("0x0750aecdcab99b35db17d6aa230e191749faa1d822dbd714217d2d1140e653a7");
+        consensus.defaultAssumeValid = uint256S("0x0ffe17919e5ab4772105adda654115dd849df167413fd46c79ec38a76d32b1bf");
 
         // AuxPow parameters
         consensus.nAuxpowChainId = 0x0024; // 98 - Josh Wise!
@@ -397,7 +397,7 @@ public:
         nDefaultPort = 8433;
         nPruneAfterHeight = 1000;
 
-        genesis = CreateGenesisBlock(1296688602, 5, 0x207fffff, 1, 50 * COIN);
+        genesis = CreateGenesisBlock(1773223200, 29, 0x207fffff, 1, 50 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
         digishieldConsensus.hashGenesisBlock = consensus.hashGenesisBlock;
         auxpowConsensus.hashGenesisBlock = consensus.hashGenesisBlock;
