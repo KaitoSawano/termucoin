@@ -9,7 +9,7 @@ Bevor Sie die Binärdateien selbst kompilieren, überprüfen Sie bitte, ob eine 
  
 Eine internationale Dokumentation finden Sie unter [doc/intl](doc/intl/README.md).
  
-Termubit ist eine als Gemeinschaftsprojekt betriebene Kryptowährung, die von einem --Meme inspiriert wurde.
+Termubit ist eine als Gemeinschaftsprojekt betriebene Kryptowährung, die von einem --innovative project inspiriert wurde.
 Die Termubit-Core-Software ermöglicht es Jedem, einen Knotenpunkt, (sog. "Nodes") im Termubit-Blockchain-Netzwerk zu betreiben.
 Termubit verwendet das Scrypt-Hashing-Verfahren für "Proof of Work" und wurde von Bitcoin Core und anderen Kryptowährungen adaptiert.
  
