@@ -1,6 +1,6 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2016 The Bitcoin Core developers
-// Copyright (c) 2026 The Termubit Core developers
+// Copyright (c) 2026 The Termucoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -106,8 +106,8 @@ using namespace std;
 // Application startup time (used for uptime calculation)
 const int64_t nStartupTime = GetTime();
 
-const char * const BITCOIN_CONF_FILENAME = "termubit.conf";
-const char * const BITCOIN_PID_FILENAME = "termubitd.pid";
+const char * const BITCOIN_CONF_FILENAME = "termucoin.conf";
+const char * const BITCOIN_PID_FILENAME = "termucoind.pid";
 
 CCriticalSection cs_args;
 map<string, string> mapArgs;
@@ -465,7 +465,7 @@ static std::string FormatException(const std::exception* pex, const char* pszThr
     char pszModule[MAX_PATH] = "";
     GetModuleFileNameA(NULL, pszModule, sizeof(pszModule));
 #else
-    const char* pszModule = "termubit";
+    const char* pszModule = "termucoin";
 #endif
     if (pex)
         return strprintf(
@@ -490,7 +490,7 @@ fs::path GetDefaultDataDir()
     // Unix: ~/.bitcoin
 #ifdef WIN32
     // Windows
-    return GetSpecialFolderPath(CSIDL_APPDATA) / "Termubit";
+    return GetSpecialFolderPath(CSIDL_APPDATA) / "Termucoin";
 #else
     fs::path pathRet;
     char* pszHome = getenv("HOME");
@@ -500,10 +500,10 @@ fs::path GetDefaultDataDir()
         pathRet = fs::path(pszHome);
 #ifdef MAC_OSX
     // Mac
-    return pathRet / "Library/Application Support/Termubit";
+    return pathRet / "Library/Application Support/Termucoin";
 #else
     // Unix
-    return pathRet / ".termubit";
+    return pathRet / ".termucoin";
 #endif
 #endif
 }

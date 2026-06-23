@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Copyright (c) 2016 The Bitcoin Core developers
-# Copyright (c) 2021 The Termubit Core developers
+# Copyright (c) 2021 The Termucoin Core developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -36,7 +36,7 @@ test=false
 # Other Basic variables
 SIGNER=
 VERSION=
-url=https://github.com/termubit/termubit
+url=https://github.com/termucoin/termucoin
 proc=2
 mem=2000
 scriptName=$(basename -- "$0")
@@ -46,7 +46,7 @@ outputDir=$(pwd)/gitian-output
 read -r -d '' usage <<-EOF
 Usage: $scriptName [options] version
 
-Standalone script to perform the gitian build of Termubit Core. Perform
+Standalone script to perform the gitian build of Termucoin Core. Perform
 deterministic build for multiples Operating System, using Docker, LXC or
 KVM for virtualization. Sign binaries using PGP.
 
@@ -69,7 +69,7 @@ Options:
 -j proc             Number of processes to use. Default $proc
 -m n                Memory to allocate in MiB. Default $mem
 -c|--commit         Indicate that the version argument is for a commit or branch
--u|--url repo       Specify the URL of the repository. Default is https://github.com/termubit/termubit
+-u|--url repo       Specify the URL of the repository. Default is https://github.com/termucoin/termucoin
 --test              CI TEST. Uses Docker
 -h|--help           Print this help message
 EOF
@@ -200,7 +200,7 @@ function download_file () {
 }
 
 function move_build_files() {
-    find build/out -type f -exec mv '{}' $outputDir/termubit-binaries/${VERSION}/ \;
+    find build/out -type f -exec mv '{}' $outputDir/termucoin-binaries/${VERSION}/ \;
 }
 
 function download_descriptor() {
@@ -257,8 +257,8 @@ fi
 ### Setup ###
 
 if [[ $setup == true ]]; then
-    git clone https://github.com/termubit/gitian.sigs.git
-    git clone https://github.com/termubit/termubit-detached-sigs.git
+    git clone https://github.com/termucoin/gitian.sigs.git
+    git clone https://github.com/termucoin/termucoin-detached-sigs.git
     git clone https://github.com/devrandom/gitian-builder.git
 
     pushd ./gitian-builder
@@ -310,21 +310,21 @@ popd
 
 if [[ $build == true ]]; then
     # Make output folder
-    mkdir -p $outputDir/termubit-binaries/"$VERSION"
+    mkdir -p $outputDir/termucoin-binaries/"$VERSION"
 
     pushd ./gitian-builder || exit 1
 
-    # Clean termubit git directory because of old caching
-    if [ -d inputs/termubit/ ]; then
-        echo "Cleaning Termubit directory..."
-        rm -rf inputs/termubit/
+    # Clean termucoin git directory because of old caching
+    if [ -d inputs/termucoin/ ]; then
+        echo "Cleaning Termucoin directory..."
+        rm -rf inputs/termucoin/
     fi
 
     for descriptor in "${DESCRIPTORS[@]}"; do
         echo ""
         echo "Compiling ${VERSION} ${descriptor}"
         echo ""
-        ./bin/gbuild -j "$proc" -m "$mem" --commit termubit="$COMMIT" --url termubit="$url" ../gitian-descriptors/gitian-"$descriptor".yml  || exit 1
+        ./bin/gbuild -j "$proc" -m "$mem" --commit termucoin="$COMMIT" --url termucoin="$url" ../gitian-descriptors/gitian-"$descriptor".yml  || exit 1
 
         if [ -n "$SIGNER" ]; then
             ./bin/gsign --signer "$SIGNER" --release "$VERSION"-"$descriptor" \

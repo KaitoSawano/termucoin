@@ -1,6 +1,6 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2016 The Bitcoin Core developers
-// Copyright (c) 2026 The Termubit Core developers
+// Copyright (c) 2026 The Termucoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -9,7 +9,7 @@
 
 #include "amount.h"
 #include "auxpow.h"
-#include "termubit-fees.h"
+#include "termucoin-fees.h"
 #include "streams.h"
 #include "tinyformat.h"
 #include "ui_interface.h"
@@ -69,7 +69,7 @@ static const CAmount DEFAULT_DISCARD_THRESHOLD = COIN / 100;
 
 //! minimum recommended increment for BIP 125 replacement txs
 /*
- * Termubit: Scaled to 1/10th of the recommended transaction fee to make RBF
+ * Termucoin: Scaled to 1/10th of the recommended transaction fee to make RBF
  * cheaper than CPFP. This reduces onchain pollution by encouraging transactions
  * to be replaced in the mempool, rather than be respent by another transaction
  * which then both would have to be mined, taking up block space and increasing
@@ -78,7 +78,7 @@ static const CAmount DEFAULT_DISCARD_THRESHOLD = COIN / 100;
  */
 static const CAmount WALLET_INCREMENTAL_RELAY_FEE = RECOMMENDED_MIN_TX_FEE / 10;
 /*
- * Termubit: Creating change outputs at exactly the dustlimit is counter-
+ * Termucoin: Creating change outputs at exactly the dustlimit is counter-
  * productive because it leaves no space to bump the fee up, so we make the
  * minimum change higher than the discard threshold.
  *
@@ -813,13 +813,13 @@ public:
      */
     static CAmount GetMinimumFee(const CMutableTransaction& tx, unsigned int nTxBytes, unsigned int nConfirmTarget, const CTxMemPool& pool, CAmount targetFee);
     /**
-     * Termubit: Get a fee targeting a specific transaction speed.
+     * Termucoin: Get a fee targeting a specific transaction speed.
      */
-    CAmount GetTermubitPriorityFee(const CMutableTransaction& tx, unsigned int nTxBytes, FeeRatePreset nSpeed);
+    CAmount GetTermucoinPriorityFee(const CMutableTransaction& tx, unsigned int nTxBytes, FeeRatePreset nSpeed);
     /**
-     * Termubit: Get a fee targeting a specific transaction speed.
+     * Termucoin: Get a fee targeting a specific transaction speed.
      */
-    static CAmount GetTermubitPriorityFee(const CMutableTransaction& tx, unsigned int nTxBytes, FeeRatePreset nSpeed, CAmount targetFee);
+    static CAmount GetTermucoinPriorityFee(const CMutableTransaction& tx, unsigned int nTxBytes, FeeRatePreset nSpeed, CAmount targetFee);
     /**
      * Return the minimum required fee taking into account the
      * floating relay fee and user set minimum transaction fee
@@ -827,7 +827,7 @@ public:
     static CAmount GetRequiredFee(const CMutableTransaction& tx, unsigned int nTxBytes);
     /**
      * Return the minimum required fee taking into account the
-     * floating relay fee and user set minimum transaction fee, but not the Termubit dust fee.
+     * floating relay fee and user set minimum transaction fee, but not the Termucoin dust fee.
      */
     static CAmount GetRequiredFee(unsigned int nTxBytes);
 

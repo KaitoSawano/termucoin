@@ -13,7 +13,7 @@ Construct a linear, no-fork, best version of the blockchain.
 
 ### [Qos](/contrib/qos) ###
 
-A Linux bash script that will set up traffic control (tc) to limit the outgoing bandwidth for connections to the Termubit network. This means one can have an always-on termubitd instance running, and another local termubitd/termubit-qt instance which connects to this node and receives blocks from it.
+A Linux bash script that will set up traffic control (tc) to limit the outgoing bandwidth for connections to the Termucoin network. This means one can have an always-on termucoind instance running, and another local termucoind/termucoin-qt instance which connects to this node and receives blocks from it.
 
 ### [Seeds](/contrib/seeds) ###
 Utility to generate the pnSeed[] array that is compiled into the client.
@@ -22,32 +22,32 @@ Build Tools and Keys
 ---------------------
 
 ### [Debian](/contrib/debian) ###
-Contains files used to package termubitd/termubit-qt
-for Debian-based Linux systems. If you compile termubitd/termubit-qt yourself, there are some useful files here.
+Contains files used to package termucoind/termucoin-qt
+for Debian-based Linux systems. If you compile termucoind/termucoin-qt yourself, there are some useful files here.
 
 ### [Gitian-descriptors](/contrib/gitian-descriptors) ###
 Notes on getting Gitian builds up and running using KVM.
 
 ### [Gitian-keys](/contrib/gitian-keys)
-PGP keys used for signing Termubit Core [Gitian release](/doc/release-process.md) results.
+PGP keys used for signing Termucoin Core [Gitian release](/doc/release-process.md) results.
 
 ### [MacDeploy](/contrib/macdeploy) ###
 Scripts and notes for Mac builds.
 
 ### [RPM](/contrib/rpm) ###
-RPM spec file for building termubit-core on RPM based distributions
+RPM spec file for building termucoin-core on RPM based distributions
 
 ### [Gitian-build](/contrib/gitian-build.sh) ###
 Script for running full Gitian builds.
 
 ### [Snap](/contrib/snap) ###
-snapcraft.yaml file for building and distributing termubit-core with Snapcraft.
+snapcraft.yaml file for building and distributing termucoin-core with Snapcraft.
 
 Test and Verify Tools
 ---------------------
 
 ### [TestGen](/contrib/testgen) ###
-Utilities to generate test vectors for the data-driven Termubit tests.
+Utilities to generate test vectors for the data-driven Termucoin tests.
 
 ### [Verify Binaries](/contrib/verifybinaries) ###
-This script attempts to download and verify the signature file SHA256SUMS.asc from termubit.com.
+This script attempts to download and verify the signature file SHA256SUMS.asc from termucoin.com.

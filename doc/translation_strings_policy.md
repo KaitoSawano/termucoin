@@ -1,7 +1,7 @@
 Translation Strings Policy
 ===========================
 
-This document provides guidelines for internationalization of the Termubit Core software.
+This document provides guidelines for internationalization of the Termucoin Core software.
 
 How to translate?
 ------------------

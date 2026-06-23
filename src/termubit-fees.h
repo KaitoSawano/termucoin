@@ -1,9 +1,9 @@
-// Copyright (c) 2026 The Termubit Core developers
+// Copyright (c) 2026 The Termucoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_TERMUBIT_FEES_H
-#define BITCOIN_TERMUBIT_FEES_H
+#ifndef BITCOIN_TERMUCOIN_FEES_H
+#define BITCOIN_TERMUCOIN_FEES_H
 
 #include "amount.h"
 #include "chain.h"
@@ -22,10 +22,10 @@ enum FeeRatePreset
 };
 
 /** Estimate fee rate needed to get into the next nBlocks */
-CFeeRate GetTermubitFeeRate(int priority);
-const std::string GetTermubitPriorityLabel(int priority);
+CFeeRate GetTermucoinFeeRate(int priority);
+const std::string GetTermucoinPriorityLabel(int priority);
 #endif // ENABLE_WALLET
-CAmount GetTermubitMinRelayFee(const CTransaction& tx, unsigned int nBytes, bool fAllowFree);
-CAmount GetTermubitDustFee(const std::vector<CTxOut> &vout, const CAmount dustLimit);
+CAmount GetTermucoinMinRelayFee(const CTransaction& tx, unsigned int nBytes, bool fAllowFree);
+CAmount GetTermucoinDustFee(const std::vector<CTxOut> &vout, const CAmount dustLimit);
 
-#endif // BITCOIN_TERMUBIT_FEES_H
+#endif // BITCOIN_TERMUCOIN_FEES_H

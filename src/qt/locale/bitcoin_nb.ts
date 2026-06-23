@@ -95,12 +95,12 @@
         <translation type="vanished">Mottaksadresser</translation>
     </message>
     <message>
-        <source>These are your Termubit addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Dette er dine Termubit-adresser for sending av betalinger. Sjekk alltid beløpet og mottakeradressen før sending av mynter.</translation>
+        <source>These are your Termucoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Dette er dine Termucoin-adresser for sending av betalinger. Sjekk alltid beløpet og mottakeradressen før sending av mynter.</translation>
     </message>
     <message>
-        <source>These are your Termubit addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Dette er dine Termubit-adresser for å sende betalinger med. Det er anbefalt å bruke en ny mottaksadresse for hver transaksjon.</translation>
+        <source>These are your Termucoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Dette er dine Termucoin-adresser for å sende betalinger med. Det er anbefalt å bruke en ny mottaksadresse for hver transaksjon.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -209,7 +209,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR TERMUBITS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR TERMUCOINS&lt;/b&gt;!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -221,7 +221,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your termubits from being stolen by malware infecting your computer.</source>
+        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your termucoins from being stolen by malware infecting your computer.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -363,8 +363,8 @@
         <translation>Reindekserer blokker på harddisk...</translation>
     </message>
     <message>
-        <source>Send coins to a Termubit address</source>
-        <translation>Send til en Termubit-adresse</translation>
+        <source>Send coins to a Termucoin address</source>
+        <translation>Send til en Termucoin-adresse</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -387,8 +387,8 @@
         <translation>&amp;Verifiser melding...</translation>
     </message>
     <message>
-        <source>Termubit</source>
-        <translation>Termubit</translation>
+        <source>Termucoin</source>
+        <translation>Termucoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -415,12 +415,12 @@
         <translation>Krypter de private nøklene som tilhører lommeboken din</translation>
     </message>
     <message>
-        <source>Sign messages with your Termubit addresses to prove you own them</source>
-        <translation>Signer en melding med Termubit-adressene dine for å bevise at du eier dem</translation>
+        <source>Sign messages with your Termucoin addresses to prove you own them</source>
+        <translation>Signer en melding med Termucoin-adressene dine for å bevise at du eier dem</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Termubit addresses</source>
-        <translation>Bekreft meldinger for å være sikker på at de ble signert av en angitt Termubit-adresse</translation>
+        <source>Verify messages to ensure they were signed with specified Termucoin addresses</source>
+        <translation>Bekreft meldinger for å være sikker på at de ble signert av en angitt Termucoin-adresse</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -439,8 +439,8 @@
         <translation>Verktøylinje for faner</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and termubit: URIs)</source>
-        <translation>Forespør betalinger (genererer QR-koder og termubit: URIer)</translation>
+        <source>Request payments (generates QR codes and termucoin: URIs)</source>
+        <translation>Forespør betalinger (genererer QR-koder og termucoin: URIer)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -451,18 +451,18 @@
         <translation>Vis listen over bruke mottaksadresser og merkelapper</translation>
     </message>
     <message>
-        <source>Open a termubit: URI or payment request</source>
-        <translation>Åpne en Termubit: URI eller betalingsetterspørring</translation>
+        <source>Open a termucoin: URI or payment request</source>
+        <translation>Åpne en Termucoin: URI eller betalingsetterspørring</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
         <translation>&amp;Kommandolinjevalg</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Termubit network</source>
+        <source>%n active connection(s) to Termucoin network</source>
         <translation>
-            <numerusform>%n aktiv forbindelse til Termubit-nettverket</numerusform>
-            <numerusform>%n aktive forbindelser til Termubit-nettverket</numerusform>
+            <numerusform>%n aktiv forbindelse til Termucoin-nettverket</numerusform>
+            <numerusform>%n aktive forbindelser til Termucoin-nettverket</numerusform>
         </translation>
     </message>
     <message numerus="yes">
@@ -575,11 +575,11 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Import a Termubit private key</source>
+        <source>Import a Termucoin private key</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible Termubit command-line options</source>
+        <source>Show the %1 help message to get a list with possible Termucoin command-line options</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -623,7 +623,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>A fatal error occurred. Termubit can no longer continue safely and will quit.</source>
+        <source>A fatal error occurred. Termucoin can no longer continue safely and will quit.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -817,7 +817,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>The entered address &quot;%1&quot; is not a valid Termubit address.</source>
+        <source>The entered address &quot;%1&quot; is not a valid Termucoin address.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1019,7 +1019,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>%1 will download and store a copy of the Termubit block chain. At least %2GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <source>%1 will download and store a copy of the Termucoin block chain. At least %2GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1042,11 +1042,11 @@
         <translation>Skjul</translation>
     </message>
     <message>
-        <source>Recent transactions may not yet be visible, and therefore your wallet&apos;s balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the termubit network, as detailed below.</source>
+        <source>Recent transactions may not yet be visible, and therefore your wallet&apos;s balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the termucoin network, as detailed below.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Attempting to spend termubits that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <source>Attempting to spend termucoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1188,16 +1188,16 @@
         <translation>&amp;Bruk ubekreftet veksel</translation>
     </message>
     <message>
-        <source>Automatically open the Termubit client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Åpne automatisk Termubit klientporten på ruteren. Dette virker kun om din ruter støtter UPnP og dette er påslått.</translation>
+        <source>Automatically open the Termucoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Åpne automatisk Termucoin klientporten på ruteren. Dette virker kun om din ruter støtter UPnP og dette er påslått.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation>Sett opp port ved hjelp av &amp;UPnP</translation>
     </message>
     <message>
-        <source>Connect to the Termubit network through a SOCKS5 proxy.</source>
-        <translation>Koble til Termubit-nettverket gjennom en SOCKS5 proxy.</translation>
+        <source>Connect to the Termucoin network through a SOCKS5 proxy.</source>
+        <translation>Koble til Termucoin-nettverket gjennom en SOCKS5 proxy.</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
@@ -1236,8 +1236,8 @@
         <translation>Tor</translation>
     </message>
     <message>
-        <source>Connect to the Termubit network through a separate SOCKS5 proxy for Tor hidden services.</source>
-        <translation>Koble til Termubit-nettverket gjennom en separat SOCKS5 mellomtjener for Tor skjulte tjenester.</translation>
+        <source>Connect to the Termucoin network through a separate SOCKS5 proxy for Tor hidden services.</source>
+        <translation>Koble til Termucoin-nettverket gjennom en separat SOCKS5 mellomtjener for Tor skjulte tjenester.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services:</source>
@@ -1277,7 +1277,7 @@
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
-        <translation>Velg standard delt enhet for visning i grensesnittet og for sending av termubits.</translation>
+        <translation>Velg standard delt enhet for visning i grensesnittet og for sending av termucoins.</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1359,8 +1359,8 @@
         <translation>Skjema</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Termubit network after a connection is established, but this process has not completed yet.</source>
-        <translation>Informasjonen som vises kan være foreldet. Din lommebok synkroniseres automatisk med Termubit-nettverket etter at tilkobling er opprettet, men denne prosessen er ikke ferdig enda.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Termucoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Informasjonen som vises kan være foreldet. Din lommebok synkroniseres automatisk med Termucoin-nettverket etter at tilkobling er opprettet, men denne prosessen er ikke ferdig enda.</translation>
     </message>
     <message>
         <source>Watch-only:</source>
@@ -1467,11 +1467,11 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>To see ongoing development and contribute, check out the Termubit Core repository on GitHub</source>
+        <source>To see ongoing development and contribute, check out the Termucoin Core repository on GitHub</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Services that claim to double your termubits are always ponzi schemes</source>
+        <source>Services that claim to double your termucoins are always ponzi schemes</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -1599,7 +1599,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Send Coins</source>
-        <translation type="unfinished">Send Termubits</translation>
+        <translation type="unfinished">Send Termucoins</translation>
     </message>
     <message>
         <source>The recipient address is not valid, please recheck.</source>
@@ -1657,7 +1657,7 @@ p, li { white-space: pre-wrap; }
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Cannot start termubit: click-to-pay handler</source>
+        <source>Cannot start termucoin: click-to-pay handler</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1673,7 +1673,7 @@ p, li { white-space: pre-wrap; }
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid Termubit address or malformed URI parameters.</source>
+        <source>URI cannot be parsed! This can be caused by an invalid Termucoin address or malformed URI parameters.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1818,8 +1818,8 @@ Use this functionality with extreme caution.</source>
         <translation>Beløp</translation>
     </message>
     <message>
-        <source>Enter a Termubit address (e.g. %1)</source>
-        <translation>Oppgi en Termubit-adresse (f.eks. %1)</translation>
+        <source>Enter a Termucoin address (e.g. %1)</source>
+        <translation>Oppgi en Termucoin-adresse (f.eks. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -2304,8 +2304,8 @@ Use this functionality with extreme caution.</source>
         <translation>Gj&amp;enbruk en eksisterende mottaksadresse (ikke anbefalt)</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Termubit network.</source>
-        <translation>En valgfri melding å tilknytte betalingsetterspørringen, som vil bli vist når forespørselen er åpnet. Meldingen vil ikke bli sendt med betalingen over Termubit-nettverket.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Termucoin network.</source>
+        <translation>En valgfri melding å tilknytte betalingsetterspørringen, som vil bli vist når forespørselen er åpnet. Meldingen vil ikke bli sendt med betalingen over Termucoin-nettverket.</translation>
     </message>
     <message>
         <source>An optional label to associate with the new receiving address.</source>
@@ -2458,7 +2458,7 @@ Use this functionality with extreme caution.</source>
     <name>SendCoinsDialog</name>
     <message>
         <source>Send Coins</source>
-        <translation>Send Termubits</translation>
+        <translation>Send Termucoins</translation>
     </message>
     <message>
         <source>Coin Control Features</source>
@@ -2537,8 +2537,8 @@ Use this functionality with extreme caution.</source>
         <translation>minstebeløp</translation>
     </message>
     <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for termubit transactions than the network can process.</source>
-        <translation>Betaling av bare minimumsavgiften går helt fint så lenge det er mindre transaksjonsvolum enn plass i blokkene. Men vær klar over at dette kan ende opp i en transaksjon som aldri blir bekreftet når det er mer etterspørsel etter Termubit-transaksjoner enn nettverket kan behandle.</translation>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for termucoin transactions than the network can process.</source>
+        <translation>Betaling av bare minimumsavgiften går helt fint så lenge det er mindre transaksjonsvolum enn plass i blokkene. Men vær klar over at dette kan ende opp i en transaksjon som aldri blir bekreftet når det er mer etterspørsel etter Termucoin-transaksjoner enn nettverket kan behandle.</translation>
     </message>
     <message>
         <source>(read the tooltip)</source>
@@ -2717,7 +2717,7 @@ Use this functionality with extreme caution.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Warning: Invalid Termubit address</source>
+        <source>Warning: Invalid Termucoin address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2756,8 +2756,8 @@ Use this functionality with extreme caution.</source>
         <translation>Dette er en normal betaling.</translation>
     </message>
     <message>
-        <source>The Termubit address to send the payment to</source>
-        <translation>Termubit-adressen betalingen skal sendes til</translation>
+        <source>The Termucoin address to send the payment to</source>
+        <translation>Termucoin-adressen betalingen skal sendes til</translation>
     </message>
     <message>
         <source>Alt+A</source>
@@ -2776,8 +2776,8 @@ Use this functionality with extreme caution.</source>
         <translation>Fjern denne oppføringen</translation>
     </message>
     <message>
-        <source>The fee will be deducted from the amount being sent. The recipient will receive less termubits than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
-        <translation>Gebyret vil bli trukket fra beløpet som blir sendt. Mottakeren vil motta mindre termubits enn det du skriver inn i beløpsfeltet. Hvis det er valgt flere mottakere, deles gebyret likt.</translation>
+        <source>The fee will be deducted from the amount being sent. The recipient will receive less termucoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <translation>Gebyret vil bli trukket fra beløpet som blir sendt. Mottakeren vil motta mindre termucoins enn det du skriver inn i beløpsfeltet. Hvis det er valgt flere mottakere, deles gebyret likt.</translation>
     </message>
     <message>
         <source>S&amp;ubtract fee from amount</source>
@@ -2800,8 +2800,8 @@ Use this functionality with extreme caution.</source>
         <translation>Skriv inn en merkelapp for denne adressen for å legge den til listen av brukte adresser</translation>
     </message>
     <message>
-        <source>A message that was attached to the termubit: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Termubit network.</source>
-        <translation>En melding som var tilknyttet termubiten: URI vil bli lagret med transaksjonen for din oversikt. Denne meldingen vil ikke bli sendt over Termubit-nettverket.</translation>
+        <source>A message that was attached to the termucoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Termucoin network.</source>
+        <translation>En melding som var tilknyttet termucoinen: URI vil bli lagret med transaksjonen for din oversikt. Denne meldingen vil ikke bli sendt over Termucoin-nettverket.</translation>
     </message>
     <message>
         <source>Pay To:</source>
@@ -2845,12 +2845,12 @@ Use this functionality with extreme caution.</source>
         <translation>&amp;Signer Melding</translation>
     </message>
     <message>
-        <source>You can sign messages/agreements with your addresses to prove you can receive termubits sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
-        <translation>Du kan signere meldinger/avtaler med adresser for å bevise at du kan motta termubits sendt til dem. Vær forsiktig med å signere noe vagt eller tilfeldig, siden phishing-angrep kan prøve å lure deg til å signere din identitet over til dem. Bare signer fullt detaljerte utsagn som du er enig i.</translation>
+        <source>You can sign messages/agreements with your addresses to prove you can receive termucoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <translation>Du kan signere meldinger/avtaler med adresser for å bevise at du kan motta termucoins sendt til dem. Vær forsiktig med å signere noe vagt eller tilfeldig, siden phishing-angrep kan prøve å lure deg til å signere din identitet over til dem. Bare signer fullt detaljerte utsagn som du er enig i.</translation>
     </message>
     <message>
-        <source>The Termubit address to sign the message with</source>
-        <translation>Termubit-adressen meldingen skal signeres med</translation>
+        <source>The Termucoin address to sign the message with</source>
+        <translation>Termucoin-adressen meldingen skal signeres med</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2881,8 +2881,8 @@ Use this functionality with extreme caution.</source>
         <translation>Kopier valgt signatur til utklippstavle</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Termubit address</source>
-        <translation>Signer meldingen for å bevise at du eier denne Termubit-adressen</translation>
+        <source>Sign the message to prove you own this Termucoin address</source>
+        <translation>Signer meldingen for å bevise at du eier denne Termucoin-adressen</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -2905,12 +2905,12 @@ Use this functionality with extreme caution.</source>
         <translation>Skriv inn mottakerens adresse, melding (forsikre deg om at du kopier linjeskift, mellomrom, faner osv. nøyaktig) og underskrift nedenfor for å bekrefte meldingen. Vær forsiktig så du ikke leser mer ut av signaturen enn hva som er i den signerte meldingen i seg selv, for å unngå å bli lurt av et man-in-the-middle-angrep. Merk at dette bare beviser at den som signerer kan motta med adressen, dette beviser ikke hvem som har sendt transaksjoner!</translation>
     </message>
     <message>
-        <source>The Termubit address the message was signed with</source>
-        <translation>Termubit-adressen meldingen ble signert med</translation>
+        <source>The Termucoin address the message was signed with</source>
+        <translation>Termucoin-adressen meldingen ble signert med</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Termubit address</source>
-        <translation>Verifiser meldingen for å være sikker på at den ble signert av den angitte Termubit-adressen</translation>
+        <source>Verify the message to ensure it was signed with the specified Termucoin address</source>
+        <translation>Verifiser meldingen for å være sikker på at den ble signert av den angitte Termucoin-adressen</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -3489,7 +3489,7 @@ Use this functionality with extreme caution.</source>
     <name>WalletModel</name>
     <message>
         <source>Send Coins</source>
-        <translation type="unfinished">Send Termubits</translation>
+        <translation type="unfinished">Send Termucoins</translation>
     </message>
 </context>
 <context>
@@ -3586,8 +3586,8 @@ Use this functionality with extreme caution.</source>
         <translation>Kunne ikke starte HTTP server. Se debug logg for detaljer.</translation>
     </message>
     <message>
-        <source>Termubit Core</source>
-        <translation>Termubit Core</translation>
+        <source>Termucoin Core</source>
+        <translation>Termucoin Core</translation>
     </message>
     <message>
         <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>
@@ -4178,7 +4178,7 @@ Use this functionality with extreme caution.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Bitcoin Core and Termubit Core</source>
+        <source>Bitcoin Core and Termucoin Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

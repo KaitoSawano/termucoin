@@ -2,17 +2,17 @@
 #
 # The relevant paths are:
 #
-#/usr/local/bin/termubitd
-#/usr/local/etc/termubit/
-#/var/local/termubit/
+#/usr/local/bin/termucoind
+#/usr/local/etc/termucoin/
+#/var/local/termucoin/
 
 [Unit]
-Description=Termubit's distributed currency daemon
+Description=Termucoin's distributed currency daemon
 After=network.target
 
 [Service]
 Type=simple
-ExecStart=/usr/local/bin/termubitd -conf=/usr/local/etc/termubit/termubit.conf -datadir=/var/local/termubit
+ExecStart=/usr/local/bin/termucoind -conf=/usr/local/etc/termucoin/termucoin.conf -datadir=/var/local/termucoin
 
 KillSignal=SIGINT
 Restart=always
@@ -22,8 +22,8 @@ TimeoutStartSec=5
 StartLimitIntervalSec=120
 StartLimitBurst=5
 
-User=termubit
-Group=termubit
+User=termucoin
+Group=termucoin
 
 ### Restrict resource consumption
 MemoryAccounting=yes
@@ -40,8 +40,8 @@ TemporaryFileSystem=/:ro
 BindReadOnlyPaths=/etc/ /lib/ /lib64/
 
 # Add daemon paths
-BindReadOnlyPaths=/usr/local/bin/termubitd /usr/local/etc/termubit/
-BindPaths=/var/local/termubit/
+BindReadOnlyPaths=/usr/local/bin/termucoind /usr/local/etc/termucoin/
+BindPaths=/var/local/termucoin/
 
 ### Restrict access to system.
 

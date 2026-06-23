@@ -99,11 +99,11 @@
         <translation>受け取りアドレス</translation>
     </message>
     <message>
-        <source>These are your Termubit addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>これらは支払いを送信するためのあなたの Termubit アドレスです。コインを送信する前に、常に額と受信アドレスを確認してください。</translation>
+        <source>These are your Termucoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>これらは支払いを送信するためのあなたの Termucoin アドレスです。コインを送信する前に、常に額と受信アドレスを確認してください。</translation>
     </message>
     <message>
-        <source>These are your Termubit addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <source>These are your Termucoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation>これらは支払いを受け取るためのドージコインアドレスです。トランザクションごとに新しい受け取り用アドレスを作成することが推奨されます。</translation>
     </message>
     <message>
@@ -205,8 +205,8 @@
         <translation>ウォレットの暗号化を確認する</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR TERMUBITS&lt;/b&gt;!</source>
-        <translation>警告: もしもあなたのウォレットを暗号化してパスフレーズを失ってしまったなら、&lt;b&gt;あなたの Termubit はすべて失われます&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR TERMUCOINS&lt;/b&gt;!</source>
+        <translation>警告: もしもあなたのウォレットを暗号化してパスフレーズを失ってしまったなら、&lt;b&gt;あなたの Termucoin はすべて失われます&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -217,7 +217,7 @@
         <translation>ウォレットは暗号化されました</translation>
     </message>
     <message>
-        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your termubits from being stolen by malware infecting your computer.</source>
+        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your termucoins from being stolen by malware infecting your computer.</source>
         <translation>暗号化処理を完了させるため %1 をいますぐ終了します。ウォレットの暗号化では、コンピュータに感染したマルウェアなどによるビットコインの盗難から完全に守ることはできないことにご注意ください。</translation>
     </message>
     <message>
@@ -367,8 +367,8 @@
         <translation>ディスク上のブロックのインデックスを再作成中...</translation>
     </message>
     <message>
-        <source>Send coins to a Termubit address</source>
-        <translation>Termubit アドレスにコインを送る</translation>
+        <source>Send coins to a Termucoin address</source>
+        <translation>Termucoin アドレスにコインを送る</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -391,8 +391,8 @@
         <translation>メッセージの検証... (&amp;V)</translation>
     </message>
     <message>
-        <source>Termubit</source>
-        <translation>Termubit</translation>
+        <source>Termucoin</source>
+        <translation>Termucoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -419,12 +419,12 @@
         <translation>あなたのウォレットの秘密鍵を暗号化します</translation>
     </message>
     <message>
-        <source>Sign messages with your Termubit addresses to prove you own them</source>
-        <translation>あなたが所有していることを証明するために、あなたの Termubit アドレスでメッセージに署名してください</translation>
+        <source>Sign messages with your Termucoin addresses to prove you own them</source>
+        <translation>あなたが所有していることを証明するために、あなたの Termucoin アドレスでメッセージに署名してください</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Termubit addresses</source>
-        <translation>指定された Termubit アドレスで署名されたことを確認するためにメッセージを検証します</translation>
+        <source>Verify messages to ensure they were signed with specified Termucoin addresses</source>
+        <translation>指定された Termucoin アドレスで署名されたことを確認するためにメッセージを検証します</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -443,8 +443,8 @@
         <translation>タブツールバー</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and termubit: URIs)</source>
-        <translation>支払いを要求する (QRコードとtermubit:ではじまるURIを生成する)</translation>
+        <source>Request payments (generates QR codes and termucoin: URIs)</source>
+        <translation>支払いを要求する (QRコードとtermucoin:ではじまるURIを生成する)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -455,17 +455,17 @@
         <translation>支払いを受け取るアドレスとラベルのリストを表示する</translation>
     </message>
     <message>
-        <source>Open a termubit: URI or payment request</source>
-        <translation>termubit: URIまたは支払いリクエストを開く</translation>
+        <source>Open a termucoin: URI or payment request</source>
+        <translation>termucoin: URIまたは支払いリクエストを開く</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
         <translation>コマンドラインオプション (&amp;C)</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Termubit network</source>
+        <source>%n active connection(s) to Termucoin network</source>
         <translation>
-            <numerusform>%n の Termubit ネットワークへのアクティブな接続</numerusform>
+            <numerusform>%n の Termucoin ネットワークへのアクティブな接続</numerusform>
         </translation>
     </message>
     <message>
@@ -511,8 +511,8 @@
         <translation>バージョンは最新です</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible Termubit command-line options</source>
-        <translation>有効な Termubit のコマンドライン オプションを見るために %1 のヘルプメッセージを表示します。</translation>
+        <source>Show the %1 help message to get a list with possible Termucoin command-line options</source>
+        <translation>有効な Termucoin のコマンドライン オプションを見るために %1 のヘルプメッセージを表示します。</translation>
     </message>
     <message>
         <source>%1 client</source>
@@ -581,8 +581,8 @@
         <translation>ウォレットは&lt;b&gt;暗号化されて、ロックされています&lt;/b&gt;</translation>
     </message>
     <message>
-        <source>A fatal error occurred. Termubit can no longer continue safely and will quit.</source>
-        <translation>致命的なエラーが発生しました。Termubit は安全に継続することができず終了するでしょう。</translation>
+        <source>A fatal error occurred. Termucoin can no longer continue safely and will quit.</source>
+        <translation>致命的なエラーが発生しました。Termucoin は安全に継続することができず終了するでしょう。</translation>
     </message>
     <message>
         <source>&amp;Print paper wallets</source>
@@ -605,7 +605,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Import a Termubit private key</source>
+        <source>Import a Termucoin private key</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -807,8 +807,8 @@
         <translation>送信アドレスを編集</translation>
     </message>
     <message>
-        <source>The entered address &quot;%1&quot; is not a valid Termubit address.</source>
-        <translation>入力されたアドレス &quot;%1&quot; は無効な Termubit アドレスです。</translation>
+        <source>The entered address &quot;%1&quot; is not a valid Termucoin address.</source>
+        <translation>入力されたアドレス &quot;%1&quot; は無効な Termucoin アドレスです。</translation>
     </message>
     <message>
         <source>The entered address &quot;%1&quot; is already in the address book.</source>
@@ -979,7 +979,7 @@
         <translation>これはプログラム最初の起動です。%1 がデータを保存する場所を選択して下さい。</translation>
     </message>
     <message>
-        <source>%1 will download and store a copy of the Termubit block chain. At least %2GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <source>%1 will download and store a copy of the Termucoin block chain. At least %2GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
         <translation>%1 は、ビットコインのブロックチェーンのコピーを、ダウンロードして保存します。少なくとも %2 ギガバイトのデータが、このディレクトリに保存されます。そしてそれは時間と共に増加します。またウォレットもこのディレクトリに保存されます。</translation>
     </message>
     <message>
@@ -1022,11 +1022,11 @@
         <translation>フォーム</translation>
     </message>
     <message>
-        <source>Recent transactions may not yet be visible, and therefore your wallet&apos;s balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the termubit network, as detailed below.</source>
+        <source>Recent transactions may not yet be visible, and therefore your wallet&apos;s balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the termucoin network, as detailed below.</source>
         <translation>確認できない最近のトランザクションがあるかもしれません。これによりウォレットの残高は不正確なものである可能性があります。この情報はウォレットが一度ビットコインネットワークへの同期が完了すると正確なものとなります。詳細は下記を参照してください。</translation>
     </message>
     <message>
-        <source>Attempting to spend termubits that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <source>Attempting to spend termucoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
         <translation>まだ表示されていないトランザクションが影響するビットコインを使用しようとすると、ネットワークから認証がなされないでしょう。</translation>
     </message>
     <message>
@@ -1184,16 +1184,16 @@
         <translation>未検証のおつりを使用する (&amp;S)</translation>
     </message>
     <message>
-        <source>Automatically open the Termubit client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>自動的にルーター上の Termubit クライアントのポートを開きます。あなたのルーターが UPnP に対応していて、それが有効になっている場合に作動します。</translation>
+        <source>Automatically open the Termucoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>自動的にルーター上の Termucoin クライアントのポートを開きます。あなたのルーターが UPnP に対応していて、それが有効になっている場合に作動します。</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation>UPnP を使ってポートを割り当てる (&amp;U)</translation>
     </message>
     <message>
-        <source>Connect to the Termubit network through a SOCKS5 proxy.</source>
-        <translation>SOCKS5 プロキシ経由でTermubitネットワークに接続する</translation>
+        <source>Connect to the Termucoin network through a SOCKS5 proxy.</source>
+        <translation>SOCKS5 プロキシ経由でTermucoinネットワークに接続する</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
@@ -1232,8 +1232,8 @@
         <translation>Tor</translation>
     </message>
     <message>
-        <source>Connect to the Termubit network through a separate SOCKS5 proxy for Tor hidden services.</source>
-        <translation>Tor秘匿サービスを利用するため、独立なSOCKS5プロキシ経由でTermubitネットワークに接続する</translation>
+        <source>Connect to the Termucoin network through a separate SOCKS5 proxy for Tor hidden services.</source>
+        <translation>Tor秘匿サービスを利用するため、独立なSOCKS5プロキシ経由でTermucoinネットワークに接続する</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services:</source>
@@ -1347,8 +1347,8 @@
         <translation>フォーム</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Termubit network after a connection is established, but this process has not completed yet.</source>
-        <translation>表示された情報は古いかもしれません。接続が確立されると、あなたのウォレットは Termubit ネットワークと自動的に同期しますが、このプロセスはまだ完了していません。</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Termucoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>表示された情報は古いかもしれません。接続が確立されると、あなたのウォレットは Termucoin ネットワークと自動的に同期しますが、このプロセスはまだ完了していません。</translation>
     </message>
     <message>
         <source>Watch-only:</source>
@@ -1435,7 +1435,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Services that claim to double your termubits are always ponzi schemes</source>
+        <source>Services that claim to double your termucoins are always ponzi schemes</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1459,7 +1459,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>To see ongoing development and contribute, check out the Termubit Core repository on GitHub</source>
+        <source>To see ongoing development and contribute, check out the Termucoin Core repository on GitHub</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -1645,8 +1645,8 @@ p, li { white-space: pre-wrap; }
         <translation>支払いのリクエストのエラーです</translation>
     </message>
     <message>
-        <source>Cannot start termubit: click-to-pay handler</source>
-        <translation>Termubit を起動できません: click-to-pay handler</translation>
+        <source>Cannot start termucoin: click-to-pay handler</source>
+        <translation>Termucoin を起動できません: click-to-pay handler</translation>
     </message>
     <message>
         <source>URI handling</source>
@@ -1661,8 +1661,8 @@ p, li { white-space: pre-wrap; }
         <translation>支払いのアドレス「%1」は無効です</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid Termubit address or malformed URI parameters.</source>
-        <translation>URI を解析できません! これは無効な Termubit アドレスあるいや不正な形式の URI パラメーターによって引き起こされる場合があります。</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid Termucoin address or malformed URI parameters.</source>
+        <translation>URI を解析できません! これは無効な Termucoin アドレスあるいや不正な形式の URI パラメーターによって引き起こされる場合があります。</translation>
     </message>
     <message>
         <source>Payment request file handling</source>
@@ -1806,8 +1806,8 @@ Use this functionality with extreme caution.</source>
         <translation>総額</translation>
     </message>
     <message>
-        <source>Enter a Termubit address (e.g. %1)</source>
-        <translation>Termubitアドレスを入力してください (例 %1)</translation>
+        <source>Enter a Termucoin address (e.g. %1)</source>
+        <translation>Termucoinアドレスを入力してください (例 %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -2294,8 +2294,8 @@ Use this functionality with extreme caution.</source>
         <translation>既存の受取用アドレスを再利用する (非推奨) (&amp;E)</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Termubit network.</source>
-        <translation>支払リクエストが開始された時に表示される、支払リクエストに添える任意のメッセージです。注意：メッセージはTermubitネットワークを通じて、支払と共に送られるわけではありません。</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Termucoin network.</source>
+        <translation>支払リクエストが開始された時に表示される、支払リクエストに添える任意のメッセージです。注意：メッセージはTermucoinネットワークを通じて、支払と共に送られるわけではありません。</translation>
     </message>
     <message>
         <source>An optional label to associate with the new receiving address.</source>
@@ -2523,8 +2523,8 @@ Use this functionality with extreme caution.</source>
         <translation>最小手数料</translation>
     </message>
     <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for termubit transactions than the network can process.</source>
-        <translation>ブロックの容量に比べてトランザクション流量が少ないうちは最小手数料のみの支払で十分です。しかしながらネットワークが処理しきれないほどtermubitトランザクションの需要がひとたび生まれてしまった場合には、永遠に検証がされないトランザクションになってしまう可能性があることに注意してください。</translation>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for termucoin transactions than the network can process.</source>
+        <translation>ブロックの容量に比べてトランザクション流量が少ないうちは最小手数料のみの支払で十分です。しかしながらネットワークが処理しきれないほどtermucoinトランザクションの需要がひとたび生まれてしまった場合には、永遠に検証がされないトランザクションになってしまう可能性があることに注意してください。</translation>
     </message>
     <message>
         <source>(read the tooltip)</source>
@@ -2663,8 +2663,8 @@ Use this functionality with extreme caution.</source>
         <translation>要求手数料 %1 のみを支払う</translation>
     </message>
     <message>
-        <source>Warning: Invalid Termubit address</source>
-        <translation>警告：無効なTermubitアドレスです</translation>
+        <source>Warning: Invalid Termucoin address</source>
+        <translation>警告：無効なTermucoinアドレスです</translation>
     </message>
     <message>
         <source>Warning: Unknown change address</source>
@@ -2734,8 +2734,8 @@ Use this functionality with extreme caution.</source>
         <translation>これは通常の支払です。</translation>
     </message>
     <message>
-        <source>The Termubit address to send the payment to</source>
-        <translation>支払の送金先Termubitアドレス</translation>
+        <source>The Termucoin address to send the payment to</source>
+        <translation>支払の送金先Termucoinアドレス</translation>
     </message>
     <message>
         <source>Alt+A</source>
@@ -2754,7 +2754,7 @@ Use this functionality with extreme caution.</source>
         <translation>この項目を削除する</translation>
     </message>
     <message>
-        <source>The fee will be deducted from the amount being sent. The recipient will receive less termubits than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <source>The fee will be deducted from the amount being sent. The recipient will receive less termucoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
         <translation>送金する金額から手数料が差し引かれます。受取人は数量フィールドで指定した量よりも少ないドージコインを受け取ります。受取人が複数いる場合には、手数料は均等割されます。</translation>
     </message>
     <message>
@@ -2778,8 +2778,8 @@ Use this functionality with extreme caution.</source>
         <translation>このアドレスに対するラベルを入力することで、使用済みアドレスの一覧に追加することができます</translation>
     </message>
     <message>
-        <source>A message that was attached to the termubit: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Termubit network.</source>
-        <translation>termubit: URIに添付されていたメッセージです。これは参照用としてトランザクションとともに保存されます。注意：このメッセージはTermubitネットワークを通して送信されるわけではありません。</translation>
+        <source>A message that was attached to the termucoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Termucoin network.</source>
+        <translation>termucoin: URIに添付されていたメッセージです。これは参照用としてトランザクションとともに保存されます。注意：このメッセージはTermucoinネットワークを通して送信されるわけではありません。</translation>
     </message>
     <message>
         <source>Pay To:</source>
@@ -2823,12 +2823,12 @@ Use this functionality with extreme caution.</source>
         <translation>メッセージの署名 (&amp;S)</translation>
     </message>
     <message>
-        <source>You can sign messages/agreements with your addresses to prove you can receive termubits sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <source>You can sign messages/agreements with your addresses to prove you can receive termucoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
         <translation>あなたの所有しているアドレスによりメッセージや合意書に署名をすることで、それらアドレスに対して送られたドージコインを受け取ることができることを証明できます。フィッシング攻撃により不正にあなたの識別情報を署名させられてしまうことを防ぐために、不明確なものやランダムなものに対して署名しないよう注意してください。合意することが可能な、よく詳細の記された文言にのみ署名するようにしてください。</translation>
     </message>
     <message>
-        <source>The Termubit address to sign the message with</source>
-        <translation>メッセージを署名するTermubitアドレス</translation>
+        <source>The Termucoin address to sign the message with</source>
+        <translation>メッセージを署名するTermucoinアドレス</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2859,8 +2859,8 @@ Use this functionality with extreme caution.</source>
         <translation>現在の署名をシステムのクリップボードにコピーする</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Termubit address</source>
-        <translation>この Termubit アドレスを所有していることを証明するためにメッセージに署名</translation>
+        <source>Sign the message to prove you own this Termucoin address</source>
+        <translation>この Termucoin アドレスを所有していることを証明するためにメッセージに署名</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -2883,12 +2883,12 @@ Use this functionality with extreme caution.</source>
         <translation>受取人のアドレスとメッセージ（改行やスペース、タブなども完全に一致するよう注意してください）および署名を以下に入力し、メッセージの署名を検証してください。中間者攻撃により騙されるのを防ぐため、署名対象のメッセージに書かれていること以上の意味を署名から読み取ろうとしないよう注意してください。これは署名作成者がこのアドレスで受け取ったことを証明するだけであり、トランザクションの送信権限を証明するものではないことに注意してください！</translation>
     </message>
     <message>
-        <source>The Termubit address the message was signed with</source>
-        <translation>メッセージの署名に使われたTermubitアドレス</translation>
+        <source>The Termucoin address the message was signed with</source>
+        <translation>メッセージの署名に使われたTermucoinアドレス</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Termubit address</source>
-        <translation>指定された Termubit アドレスで署名されたことを保証するメッセージを検証</translation>
+        <source>Verify the message to ensure it was signed with the specified Termucoin address</source>
+        <translation>指定された Termucoin アドレスで署名されたことを保証するメッセージを検証</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -3595,8 +3595,8 @@ Use this functionality with extreme caution.</source>
         <translation>HTTPサーバを開始できませんでした。詳細はデバッグログをご確認ください。</translation>
     </message>
     <message>
-        <source>Termubit Core</source>
-        <translation>Termubit のコア</translation>
+        <source>Termucoin Core</source>
+        <translation>Termucoin のコア</translation>
     </message>
     <message>
         <source>The %s developers</source>
@@ -4444,7 +4444,7 @@ Use this functionality with extreme caution.</source>
         <translation>エラー</translation>
     </message>
     <message>
-        <source>Bitcoin Core and Termubit Core</source>
+        <source>Bitcoin Core and Termucoin Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

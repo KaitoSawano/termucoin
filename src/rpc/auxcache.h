@@ -1,9 +1,9 @@
-// Copyright (c) 2026 The Termubit Core developers
+// Copyright (c) 2026 The Termucoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef TERMUBIT_AUXCACHE_H
-#define TERMUBIT_AUXCACHE_H
+#ifndef TERMUCOIN_AUXCACHE_H
+#define TERMUCOIN_AUXCACHE_H
 
 #include "script/standard.h"  // for CScriptID
 #include "primitives/block.h" // for CBlock
@@ -41,4 +41,4 @@ public:
 
 };
 
-#endif //TERMUBIT_AUXCACHE_H
+#endif //TERMUCOIN_AUXCACHE_H

@@ -1,8 +1,8 @@
-# Termubit Core 1.7 Alpha
+# Termucoin Core 1.7 Alpha
 =========================
 
-Termubit Core 1.7 is a complete re-architecture of Termubit, changing from
-using the Litecoin client as its base, to Bitcoin 0.9. It's still Termubit,
+Termucoin Core 1.7 is a complete re-architecture of Termucoin, changing from
+using the Litecoin client as its base, to Bitcoin 0.9. It's still Termucoin,
 with the same Scrypt PoW algorithm, same reward schedule, but there are a 
 lot of changes under the hood.
 
@@ -21,19 +21,19 @@ First and foremost, please note that downgrading from 1.7 to 1.6 is not trivial.
 1.7 now uses Berkeley DB 5.1 as its default database (in place of 4.8), and as
 such may create database files which are incompatible with previous versions.
 
-Rebranding to Termubit Core
+Rebranding to Termucoin Core
 ---------------------------
 
-Following in the footsteps of Bitcoin (Core), the Termubit reference client
-has been rebranded as "Termubit Core". This helps separate its identity
-from Termubit (the network).
+Following in the footsteps of Bitcoin (Core), the Termucoin reference client
+has been rebranded as "Termucoin Core". This helps separate its identity
+from Termucoin (the network).
 
-termubit-cli
+termucoin-cli
 ------------
 
-Where previously commands were sent to termubitd by running
-"termubitd <command>", 1.7 adopts the model from Bitcoin Core 0.9 where there is
-a separate "termubit-cli" executable which is used instead. This avoids the risk
+Where previously commands were sent to termucoind by running
+"termucoind <command>", 1.7 adopts the model from Bitcoin Core 0.9 where there is
+a separate "termucoin-cli" executable which is used instead. This avoids the risk
 of accidentally trying to start two daemons at the same time, for example.
 
 
@@ -48,9 +48,9 @@ Testnet
 -------
 
 As mentioned at the start of this document, the alpha-client is for use with the
-Termubit testnet only. This is an alternative Termubit blockchain which is
+Termucoin testnet only. This is an alternative Termucoin blockchain which is
 not used for real transactions, and instead is intended for testing of experimental
-clients. Wallets and addresses are incompatible with the normal Termubit
+clients. Wallets and addresses are incompatible with the normal Termucoin
 network, in order to isolate the two.
 
 As "TestTERM" is essentially valueless, it can be acquired easily for testing,

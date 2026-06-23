@@ -1,6 +1,6 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2016 The Bitcoin Core developers
-// Copyright (c) 2026 The Termubit Core developers
+// Copyright (c) 2026 The Termucoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -1520,7 +1520,7 @@ void ThreadMapPort()
             }
         }
 
-        std::string strDesc = "Termubit " + FormatFullVersion();
+        std::string strDesc = "Termucoin " + FormatFullVersion();
 
         try {
             while (true) {

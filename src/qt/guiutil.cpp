@@ -1,5 +1,5 @@
 // Copyright (c) 2011-2016 The Bitcoin Core developers
-// Copyright (c) 2026 The Termubit Core developers
+// Copyright (c) 2026 The Termucoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -125,7 +125,7 @@ void setupAddressWidget(QValidatedLineEdit *widget, QWidget *parent)
     widget->setFont(fixedPitchFont());
     // We don't want translators to use own addresses in translations
     // and this is the only place, where this address is supplied.
-    widget->setPlaceholderText(QObject::tr("Enter a Termubit address (e.g. %1)").arg(
+    widget->setPlaceholderText(QObject::tr("Enter a Termucoin address (e.g. %1)").arg(
         QString::fromStdString(DummyAddress(Params()))));
     widget->setValidator(new BitcoinAddressEntryValidator(parent));
     widget->setCheckValidator(new BitcoinAddressCheckValidator(parent));
@@ -142,8 +142,8 @@ void setupAmountWidget(QLineEdit *widget, QWidget *parent)
 
 bool parseBitcoinURI(const QUrl &uri, SendCoinsRecipient *out)
 {
-    // return if URI is not valid or is no termubit: URI
-    if(!uri.isValid() || uri.scheme() != QString("termubit"))
+    // return if URI is not valid or is no termucoin: URI
+    if(!uri.isValid() || uri.scheme() != QString("termucoin"))
         return false;
 
     SendCoinsRecipient rv;
@@ -200,13 +200,13 @@ bool parseBitcoinURI(const QUrl &uri, SendCoinsRecipient *out)
 
 bool parseBitcoinURI(QString uri, SendCoinsRecipient *out)
 {
-    // Convert termubit:// to termubit:
+    // Convert termucoin:// to termucoin:
     //
-    //    Cannot handle this later, because termubit:// will cause Qt to see the part after // as host,
+    //    Cannot handle this later, because termucoin:// will cause Qt to see the part after // as host,
     //    which will lower-case it (and thus invalidate the address).
-    if(uri.startsWith("termubit://", Qt::CaseInsensitive))
+    if(uri.startsWith("termucoin://", Qt::CaseInsensitive))
     {
-        uri.replace(0, 11, "termubit:");
+        uri.replace(0, 11, "termucoin:");
     }
     QUrl uriInstance(uri);
     return parseBitcoinURI(uriInstance, out);
@@ -214,7 +214,7 @@ bool parseBitcoinURI(QString uri, SendCoinsRecipient *out)
 
 QString formatBitcoinURI(const SendCoinsRecipient &info)
 {
-    QString ret = QString("termubit:%1").arg(info.address);
+    QString ret = QString("termucoin:%1").arg(info.address);
     int paramCount = 0;
 
     if (info.amount)
@@ -597,10 +597,10 @@ fs::path static StartupShortcutPath()
 {
     std::string chain = ChainNameFromCommandLine();
     if (chain == CBaseChainParams::MAIN)
-        return GetSpecialFolderPath(CSIDL_STARTUP) / "Termubit.lnk";
+        return GetSpecialFolderPath(CSIDL_STARTUP) / "Termucoin.lnk";
     if (chain == CBaseChainParams::TESTNET) // Remove this special case when CBaseChainParams::TESTNET = "testnet4"
-        return GetSpecialFolderPath(CSIDL_STARTUP) / "Termubit (testnet).lnk";
-    return GetSpecialFolderPath(CSIDL_STARTUP) / strprintf("Termubit (%s).lnk", chain);
+        return GetSpecialFolderPath(CSIDL_STARTUP) / "Termucoin (testnet).lnk";
+    return GetSpecialFolderPath(CSIDL_STARTUP) / strprintf("Termucoin (%s).lnk", chain);
 }
 
 bool GetStartOnSystemStartup()
@@ -739,9 +739,9 @@ bool SetStartOnSystemStartup(bool fAutoStart)
         optionFile << "[Desktop Entry]\n";
         optionFile << "Type=Application\n";
         if (chain == CBaseChainParams::MAIN)
-            optionFile << "Name=Termubit\n";
+            optionFile << "Name=Termucoin\n";
         else
-            optionFile << strprintf("Name=Termubit (%s)\n", chain);
+            optionFile << strprintf("Name=Termucoin (%s)\n", chain);
         optionFile << "Exec=" << pszExePath << strprintf(" -min -testnet=%d -regtest=%d\n", GetBoolArg("-testnet", false), GetBoolArg("-regtest", false));
         optionFile << "Terminal=false\n";
         optionFile << "Hidden=false\n";

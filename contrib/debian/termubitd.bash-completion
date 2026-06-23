@@ -1,2 +1,2 @@
-contrib/termubitd.bash-completion	termubitd
-contrib/termubit-cli.bash-completion	termubit-cli
+contrib/termucoind.bash-completion	termucoind
+contrib/termucoin-cli.bash-completion	termucoin-cli

@@ -11,7 +11,7 @@
   </array>
 
   <key>CFBundleIconFile</key>
-  <string>termubit.icns</string>
+  <string>termucoin.icns</string>
 
   <key>CFBundlePackageType</key>
   <string>APPL</string>
@@ -29,16 +29,16 @@
   <string>????</string>
 
   <key>CFBundleExecutable</key>
-  <string>Termubit-Qt</string>
+  <string>Termucoin-Qt</string>
 
   <key>CFBundleName</key>
-  <string>Termubit-Qt</string>
+  <string>Termucoin-Qt</string>
 
   <key>LSHasLocalizedDisplayName</key>
   <true/>
 
   <key>CFBundleIdentifier</key>
-  <string>com.termubit.Termubit-Qt</string>
+  <string>com.termucoin.Termucoin-Qt</string>
 
   <key>CFBundleURLTypes</key>
   <array>
@@ -46,10 +46,10 @@
       <key>CFBundleTypeRole</key>
       <string>Editor</string>
       <key>CFBundleURLName</key>
-      <string>com.termubit.TermubitPayment</string>
+      <string>com.termucoin.TermucoinPayment</string>
       <key>CFBundleURLSchemes</key>
       <array>
-        <string>termubit</string>
+        <string>termucoin</string>
       </array>
     </dict>
   </array>
@@ -58,9 +58,9 @@
   <array>
     <dict>
       <key>UTTypeIdentifier</key>
-      <string>com.termubit.paymentrequest</string>
+      <string>com.termucoin.paymentrequest</string>
       <key>UTTypeDescription</key>
-      <string>Termubit payment request</string>
+      <string>Termucoin payment request</string>
       <key>UTTypeConformsTo</key>
       <array>
         <string>public.data</string>
@@ -68,10 +68,10 @@
       <key>UTTypeTagSpecification</key>
       <dict>
         <key>public.mime-type</key>
-        <string>application/termubit-paymentrequest</string>
+        <string>application/termucoin-paymentrequest</string>
         <key>public.filename-extension</key>
         <array>
-          <string>termubitpaymentrequest</string>
+          <string>termucoinpaymentrequest</string>
         </array>
       </dict>
     </dict>
@@ -84,7 +84,7 @@
       <string>Editor</string>
       <key>LSItemContentTypes</key>
       <array>
-        <string>com.termubit.paymentrequest</string>
+        <string>com.termucoin.paymentrequest</string>
       </array>
       <key>LSHandlerRank</key>
       <string>Owner</string>

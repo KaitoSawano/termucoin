@@ -1,33 +1,33 @@
-# /etc/conf.d/termubitd: config file for /etc/init.d/termubitd
+# /etc/conf.d/termucoind: config file for /etc/init.d/termucoind
 
 # Config file location
-#TERMUBITD_CONFIGFILE="/etc/termubit/termubit.conf"
+#TERMUCOIND_CONFIGFILE="/etc/termucoin/termucoin.conf"
 
-# What directory to write pidfile to?  (created and owned by $TERMUBITD_USER)
-#TERMUBITD_PIDDIR="/var/run/termubitd"
+# What directory to write pidfile to?  (created and owned by $TERMUCOIND_USER)
+#TERMUCOIND_PIDDIR="/var/run/termucoind"
 
 # What filename to give the pidfile
-#TERMUBITD_PIDFILE="${TERMUBITD_PIDDIR}/termubitd.pid"
+#TERMUCOIND_PIDFILE="${TERMUCOIND_PIDDIR}/termucoind.pid"
 
-# Where to write termubitd data (be mindful that the blockchain is large)
-#TERMUBITD_DATADIR="/var/lib/termubitd"
+# Where to write termucoind data (be mindful that the blockchain is large)
+#TERMUCOIND_DATADIR="/var/lib/termucoind"
 
-# User and group to own termubitd process
-#TERMUBITD_USER="termubit"
-#TERMUBITD_GROUP="termubit"
+# User and group to own termucoind process
+#TERMUCOIND_USER="termucoin"
+#TERMUCOIND_GROUP="termucoin"
 
-# Path to termubitd executable
-#TERMUBITD_BIN="/usr/bin/termubitd"
+# Path to termucoind executable
+#TERMUCOIND_BIN="/usr/bin/termucoind"
 
-# Nice value to run termubitd under
-#TERMUBITD_NICE=0
+# Nice value to run termucoind under
+#TERMUCOIND_NICE=0
 
 # Additional options (avoid -conf and -datadir, use flags above)
-TERMUBITD_OPTS="-disablewallet"
+TERMUCOIND_OPTS="-disablewallet"
 
-# The timeout in seconds OpenRC will wait for termubitd to terminate
+# The timeout in seconds OpenRC will wait for termucoind to terminate
 # after a SIGTERM has been raised.
 # Note that this will be mapped as argument to start-stop-daemon's
 # '--retry' option, which means you can specify a retry schedule
 # here. For more information see man 8 start-stop-daemon.
-TERMUBITD_SIGTERM_TIMEOUT=60
+TERMUCOIND_SIGTERM_TIMEOUT=60

@@ -1,7 +1,7 @@
 // Copyright (c) 2009-2014 The Bitcoin Core developers
 // Copyright (c) 2011 Vince Durham
 // Copyright (c) 2014-2016 Daniel Kraft
-// Copyright (c) 2026 The Termubit Core developers
+// Copyright (c) 2026 The Termucoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -41,11 +41,11 @@ void AuxMiningCheck()
         throw JSONRPCError(RPC_CLIENT_P2P_DISABLED, "Error: Peer-to-peer functionality missing or disabled");
 
     if (g_connman->GetNodeCount(CConnman::CONNECTIONS_ALL) == 0 && !Params().MineBlocksOnDemand())
-        throw JSONRPCError(RPC_CLIENT_NOT_CONNECTED, "Termubit is not connected!");
+        throw JSONRPCError(RPC_CLIENT_NOT_CONNECTED, "Termucoin is not connected!");
 
     if (IsInitialBlockDownload() && !Params().MineBlocksOnDemand())
         throw JSONRPCError(RPC_CLIENT_IN_INITIAL_DOWNLOAD,
-                           "Termubit is downloading blocks...");
+                           "Termucoin is downloading blocks...");
 
     /* This should never fail, since the chain is already
        past the point of merge-mining start.  Check nevertheless.  */
@@ -66,12 +66,12 @@ static UniValue AuxMiningCreateBlock(const CScript& scriptPubKey)
     static uint64_t nStart;
     static unsigned nExtraNonce = 0;
 
-    // Termubit: Never mine witness tx
+    // Termucoin: Never mine witness tx
     const bool fMineWitnessTx = false;
 
     /* Search for cached blocks with given scriptPubKey and assign it to pBlock
      * if we find a match. This allows for creating multiple aux templates with
-     * a single termubitd instance, for example when a pool runs multiple sub-
+     * a single termucoind instance, for example when a pool runs multiple sub-
      * pools with different payout strategies.
      */
     std::shared_ptr<CBlock> pblock;

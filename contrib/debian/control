@@ -1,4 +1,4 @@
-Source: termubit
+Source: termucoin
 Section: utils
 Priority: optional
 Maintainer: Matt Corallo <matt@mattcorallo.com>
@@ -26,15 +26,15 @@ Build-Depends: debhelper,
  python,
  libzmq3-dev
 Standards-Version: 3.9.2
-Homepage: http://www.termubit.com/
-Vcs-Git: git://github.com/termubit/termubit.git
-Vcs-Browser: http://github.com/termubit/termubit
+Homepage: http://www.termucoin.com/
+Vcs-Git: git://github.com/termucoin/termucoin.git
+Vcs-Browser: http://github.com/termucoin/termucoin
 
-Package: termubitd
+Package: termucoind
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: peer-to-peer network based digital currency - daemon
- Termubit is a free open source peer-to-peer electronic cash system that
+ Termucoin is a free open source peer-to-peer electronic cash system that
  is completely decentralized, without the need for a central server or
  trusted parties.  Users hold the crypto keys to their own money and
  transact directly with each other, with the help of a P2P network to
@@ -43,31 +43,31 @@ Description: peer-to-peer network based digital currency - daemon
  Full transaction history is stored locally at each client.  This
  requires 20+ GB of space, slowly growing.
  .
- This package provides the daemon, termubitd, and the CLI tool
- termubit-cli to interact with the daemon.
+ This package provides the daemon, termucoind, and the CLI tool
+ termucoin-cli to interact with the daemon.
 
-Package: termubit-qt
+Package: termucoin-qt
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: peer-to-peer network based digital currency - Qt GUI
- Termubit is a free open source peer-to-peer electronic cash system that
+ Termucoin is a free open source peer-to-peer electronic cash system that
  is completely decentralized, without the need for a central server or
  trusted parties.  Users hold the crypto keys to their own money and
  transact directly with each other, with the help of a P2P network to
  check for double-spending.
  .
- This package provides Termubit-Qt, a GUI for Termubit based on Qt.
+ This package provides Termucoin-Qt, a GUI for Termucoin based on Qt.
 
-Package: termubit-tx
+Package: termucoin-tx
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: peer-to-peer digital currency - standalone transaction tool
- Termubit is a free open source peer-to-peer electronic cash system that
+ Termucoin is a free open source peer-to-peer electronic cash system that
  is completely decentralized, without the need for a central server or
  trusted parties.  Users hold the crypto keys to their own money and
  transact directly with each other, with the help of a P2P network to
  check for double-spending.
  .
- This package provides termubit-tx, a command-line transaction creation
- tool which can be used without a termubit daemon.  Some means of
+ This package provides termucoin-tx, a command-line transaction creation
+ tool which can be used without a termucoin daemon.  Some means of
  exchanging minimal transaction data with peers is still required.

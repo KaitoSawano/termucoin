@@ -1,5 +1,5 @@
 // Copyright (c) 2011-2016 The Bitcoin Core developers
-// Copyright (c) 2026 The Termubit Core developers
+// Copyright (c) 2026 The Termucoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -18,7 +18,7 @@
 
 #include "base58.h"
 #include "chainparams.h"
-#include "termubit-fees.h"
+#include "termucoin-fees.h"
 #include "wallet/coincontrol.h"
 #include "validation.h" // mempool and minRelayTxFeeRate
 #include "ui_interface.h"
@@ -577,7 +577,7 @@ void SendCoinsDialog::updateFeeSectionControls()
 {
     ui->sliderSmartFee          ->setEnabled(ui->radioSmartFee->isChecked());
     ui->labelPriority           ->setEnabled(ui->radioSmartFee->isChecked());
-    // Termubit: We don't use smart fees in the UI, so don't need to warn they're not available
+    // Termucoin: We don't use smart fees in the UI, so don't need to warn they're not available
     // ui->labelPriority2          ->setEnabled(ui->radioSmartFee->isChecked());
     ui->labelPriority3          ->setEnabled(ui->radioSmartFee->isChecked());
     ui->labelFeeEstimation      ->setEnabled(ui->radioSmartFee->isChecked());
@@ -602,8 +602,8 @@ void SendCoinsDialog::updateGlobalFeeVariables()
         CoinControlDialog::coinControl->nMinimumTotalFee = 0;
 
         // show the estimated required time for confirmation
-        // Termubit: We manually set height well past the last hard fork here
-        ui->confirmationTargetLabel->setText(GetTermubitPriorityLabel(nPriority).c_str());
+        // Termucoin: We manually set height well past the last hard fork here
+        ui->confirmationTargetLabel->setText(GetTermucoinPriorityLabel(nPriority).c_str());
     }
     else
     {
@@ -642,7 +642,7 @@ void SendCoinsDialog::updateFeeLabel()
         return;
 
     int nPriority = ui->sliderSmartFee->value();
-    CFeeRate feeRate = GetTermubitFeeRate(nPriority);
+    CFeeRate feeRate = GetTermucoinFeeRate(nPriority);
     if (feeRate <= CFeeRate(0)) // not enough data => minfee
     {
         ui->labelPriority->setText(BitcoinUnits::formatWithUnit(model->getOptionsModel()->getDisplayUnit(),
@@ -660,7 +660,7 @@ void SendCoinsDialog::updateFeeLabel()
         ui->labelPriority->setText(BitcoinUnits::formatWithUnit(model->getOptionsModel()->getDisplayUnit(),
                                                                 std::max(feeRate.GetFeePerK(), CWallet::GetRequiredFee(1000))) + "/kB");
         // ui->labelPriority2->hide();
-        // Termubit: We don't use smart fees, so we don't have the data to estimate when it will get in
+        // Termucoin: We don't use smart fees, so we don't have the data to estimate when it will get in
         ui->labelFeeEstimation->setText("");
         // ui->labelFeeEstimation->setText(tr("Estimated to begin confirmation within %n block(s).", "", estimateFoundAtBlocks));
         ui->fallbackFeeWarningLabel->setVisible(false);
@@ -765,7 +765,7 @@ void SendCoinsDialog::coinControlChangeEdited(const QString& text)
         }
         else if (!addr.IsValid()) // Invalid address
         {
-            ui->labelCoinControlChangeLabel->setText(tr("Warning: Invalid Termubit address"));
+            ui->labelCoinControlChangeLabel->setText(tr("Warning: Invalid Termucoin address"));
         }
         else // Valid address
         {

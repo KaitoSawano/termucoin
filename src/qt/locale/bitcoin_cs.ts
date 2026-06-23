@@ -99,12 +99,12 @@
         <translation>Přijímací adresy</translation>
     </message>
     <message>
-        <source>These are your Termubit addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Tohle jsou tvé termubitové adresy pro posílání plateb. Před odesláním mincí si vždy zkontroluj částku a cílovou adresu.</translation>
+        <source>These are your Termucoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Tohle jsou tvé termucoinové adresy pro posílání plateb. Před odesláním mincí si vždy zkontroluj částku a cílovou adresu.</translation>
     </message>
     <message>
-        <source>These are your Termubit addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Tohle jsou tvé termubitové adresy pro příjem plateb. Nezapomeň si pro každou transakci vždy vygenerovat novou adresu.</translation>
+        <source>These are your Termucoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Tohle jsou tvé termucoinové adresy pro příjem plateb. Nezapomeň si pro každou transakci vždy vygenerovat novou adresu.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -205,8 +205,8 @@
         <translation>Potvrď zašifrování peněženky</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR TERMUBITS&lt;/b&gt;!</source>
-        <translation>Upozornění: Pokud si zašifruješ peněženku a ztratíš či zapomeneš heslo, &lt;b&gt;PŘIJDEŠ O VŠECHNY TERMUBITY&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR TERMUCOINS&lt;/b&gt;!</source>
+        <translation>Upozornění: Pokud si zašifruješ peněženku a ztratíš či zapomeneš heslo, &lt;b&gt;PŘIJDEŠ O VŠECHNY TERMUCOINY&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -217,8 +217,8 @@
         <translation>Peněženka je zašifrována</translation>
     </message>
     <message>
-        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your termubits from being stolen by malware infecting your computer.</source>
-        <translation>%1 se teď ukončí, aby dokončil zašifrování. Pamatuj však, že pouhé zašifrování peněženky nemůže zabránit krádeži tvých termubitů malwarem, kterým se může počítač nakazit.</translation>
+        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your termucoins from being stolen by malware infecting your computer.</source>
+        <translation>%1 se teď ukončí, aby dokončil zašifrování. Pamatuj však, že pouhé zašifrování peněženky nemůže zabránit krádeži tvých termucoinů malwarem, kterým se může počítač nakazit.</translation>
     </message>
     <message>
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
@@ -375,8 +375,8 @@
         <translation>Vytvářím nový index bloků na disku...</translation>
     </message>
     <message>
-        <source>Send coins to a Termubit address</source>
-        <translation>Pošli mince na termubitovou adresu</translation>
+        <source>Send coins to a Termucoin address</source>
+        <translation>Pošli mince na termucoinovou adresu</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -399,8 +399,8 @@
         <translation>&amp;Ověř zprávu...</translation>
     </message>
     <message>
-        <source>Termubit</source>
-        <translation>Termubit</translation>
+        <source>Termucoin</source>
+        <translation>Termucoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -427,12 +427,12 @@
         <translation>Zašifruj soukromé klíče ve své peněžence</translation>
     </message>
     <message>
-        <source>Sign messages with your Termubit addresses to prove you own them</source>
-        <translation>Podepiš zprávy svými termubitovými adresami, čímž prokážeš, že jsi jejich vlastníkem</translation>
+        <source>Sign messages with your Termucoin addresses to prove you own them</source>
+        <translation>Podepiš zprávy svými termucoinovými adresami, čímž prokážeš, že jsi jejich vlastníkem</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Termubit addresses</source>
-        <translation>Ověř zprávy, aby ses ujistil, že byly podepsány danými termubitovými adresami</translation>
+        <source>Verify messages to ensure they were signed with specified Termucoin addresses</source>
+        <translation>Ověř zprávy, aby ses ujistil, že byly podepsány danými termucoinovými adresami</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -451,8 +451,8 @@
         <translation>Panel s listy</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and termubit: URIs)</source>
-        <translation>Požaduj platby (generuje QR kódy a termubit: URI)</translation>
+        <source>Request payments (generates QR codes and termucoin: URIs)</source>
+        <translation>Požaduj platby (generuje QR kódy a termucoin: URI)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -463,19 +463,19 @@
         <translation>Ukaž seznam použitých přijímacích adres a jejich označení</translation>
     </message>
     <message>
-        <source>Open a termubit: URI or payment request</source>
-        <translation>Načti termubit: URI nebo platební požadavek</translation>
+        <source>Open a termucoin: URI or payment request</source>
+        <translation>Načti termucoin: URI nebo platební požadavek</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
         <translation>Ar&amp;gumenty příkazové řádky</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Termubit network</source>
+        <source>%n active connection(s) to Termucoin network</source>
         <translation>
-            <numerusform>%n aktivní spojení do termubitové sítě</numerusform>
-            <numerusform>%n aktivní spojení do termubitové sítě</numerusform>
-            <numerusform>%n aktivních spojení do termubitové sítě</numerusform>
+            <numerusform>%n aktivní spojení do termucoinové sítě</numerusform>
+            <numerusform>%n aktivní spojení do termucoinové sítě</numerusform>
+            <numerusform>%n aktivních spojení do termucoinové sítě</numerusform>
         </translation>
     </message>
     <message>
@@ -523,8 +523,8 @@
         <translation>Aktuální</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible Termubit command-line options</source>
-        <translation>Seznam argumentů Termubitu pro příkazovou řádku získáš v nápovědě %1</translation>
+        <source>Show the %1 help message to get a list with possible Termucoin command-line options</source>
+        <translation>Seznam argumentů Termucoinu pro příkazovou řádku získáš v nápovědě %1</translation>
     </message>
     <message>
         <source>%1 client</source>
@@ -593,8 +593,8 @@
         <translation>Peněženka je &lt;b&gt;zašifrovaná&lt;/b&gt; a momentálně &lt;b&gt;zamčená&lt;/b&gt;</translation>
     </message>
     <message>
-        <source>A fatal error occurred. Termubit can no longer continue safely and will quit.</source>
-        <translation>Stala se fatální chyba. Termubit nemůže bezpečně pokračovat v činnosti, a proto skončí.</translation>
+        <source>A fatal error occurred. Termucoin can no longer continue safely and will quit.</source>
+        <translation>Stala se fatální chyba. Termucoin nemůže bezpečně pokračovat v činnosti, a proto skončí.</translation>
     </message>
     <message>
         <source>&amp;Print paper wallets</source>
@@ -617,7 +617,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Import a Termubit private key</source>
+        <source>Import a Termucoin private key</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -819,8 +819,8 @@
         <translation>Uprav odesílací adresu</translation>
     </message>
     <message>
-        <source>The entered address &quot;%1&quot; is not a valid Termubit address.</source>
-        <translation>Zadaná adresa „%1“ není platná termubitová adresa.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid Termucoin address.</source>
+        <translation>Zadaná adresa „%1“ není platná termucoinová adresa.</translation>
     </message>
     <message>
         <source>The entered address &quot;%1&quot; is already in the address book.</source>
@@ -991,7 +991,7 @@
         <translation>Tohle je poprvé, co spouštíš %1, takže si můžeš zvolit, kam bude ukládat svá data.</translation>
     </message>
     <message>
-        <source>%1 will download and store a copy of the Termubit block chain. At least %2GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <source>%1 will download and store a copy of the Termucoin block chain. At least %2GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
         <translation>%1 bude stahovat kopii řetězce bloků. Proto bude potřeba do tohoto adresáře uložit nejméně %2 GB dat – toto číslo bude navíc v průběhu času růst. Tvá peněženka bude rovněž uložena v tomto adresáři.</translation>
     </message>
     <message>
@@ -1038,12 +1038,12 @@
         <translation>Formulář</translation>
     </message>
     <message>
-        <source>Recent transactions may not yet be visible, and therefore your wallet&apos;s balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the termubit network, as detailed below.</source>
-        <translation>Nedávné transakce ještě nemusí být vidět, takže stav tvého účtu nemusí být platný. Jakmile se však tvá peněženka dosynchronizuje s termubitovou sítí (viz informace níže), tak už bude stav správně.</translation>
+        <source>Recent transactions may not yet be visible, and therefore your wallet&apos;s balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the termucoin network, as detailed below.</source>
+        <translation>Nedávné transakce ještě nemusí být vidět, takže stav tvého účtu nemusí být platný. Jakmile se však tvá peněženka dosynchronizuje s termucoinovou sítí (viz informace níže), tak už bude stav správně.</translation>
     </message>
     <message>
-        <source>Attempting to spend termubits that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
-        <translation>Utrácení termubitů, které už utratily zatím nezobrazené transakce, nebude termubitovou sítí umožněno.</translation>
+        <source>Attempting to spend termucoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <translation>Utrácení termucoinů, které už utratily zatím nezobrazené transakce, nebude termucoinovou sítí umožněno.</translation>
     </message>
     <message>
         <source>Number of blocks left</source>
@@ -1200,7 +1200,7 @@
         <translation>&amp;Utrácet i ještě nepotvrzené drobné</translation>
     </message>
     <message>
-        <source>Automatically open the Termubit client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <source>Automatically open the Termucoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
         <translation>Automaticky otevře potřebný port na routeru. Tohle funguje jen za předpokladu, že tvůj router podporuje UPnP a že je UPnP povolené.</translation>
     </message>
     <message>
@@ -1208,8 +1208,8 @@
         <translation>Namapovat port přes &amp;UPnP</translation>
     </message>
     <message>
-        <source>Connect to the Termubit network through a SOCKS5 proxy.</source>
-        <translation>Připojí se do termubitové sítě přes SOCKS5 proxy.</translation>
+        <source>Connect to the Termucoin network through a SOCKS5 proxy.</source>
+        <translation>Připojí se do termucoinové sítě přes SOCKS5 proxy.</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
@@ -1248,8 +1248,8 @@
         <translation>Tor</translation>
     </message>
     <message>
-        <source>Connect to the Termubit network through a separate SOCKS5 proxy for Tor hidden services.</source>
-        <translation>Připojí se do termubitové sítě přes SOCKS5 proxy vyhrazenou pro skryté služby v Tor síti.</translation>
+        <source>Connect to the Termucoin network through a separate SOCKS5 proxy for Tor hidden services.</source>
+        <translation>Připojí se do termucoinové sítě přes SOCKS5 proxy vyhrazenou pro skryté služby v Tor síti.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services:</source>
@@ -1363,8 +1363,8 @@
         <translation>Formulář</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Termubit network after a connection is established, but this process has not completed yet.</source>
-        <translation>Zobrazené informace nemusí být aktuální. Tvá peněženka se automaticky sesynchronizuje s termubitovou sítí, jakmile se s ní spojí. Zatím ale ještě není synchronizace dokončena.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Termucoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Zobrazené informace nemusí být aktuální. Tvá peněženka se automaticky sesynchronizuje s termucoinovou sítí, jakmile se s ní spojí. Zatím ale ještě není synchronizace dokončena.</translation>
     </message>
     <message>
         <source>Watch-only:</source>
@@ -1471,11 +1471,11 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>To see ongoing development and contribute, check out the Termubit Core repository on GitHub</source>
+        <source>To see ongoing development and contribute, check out the Termucoin Core repository on GitHub</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Services that claim to double your termubits are always ponzi schemes</source>
+        <source>Services that claim to double your termucoins are always ponzi schemes</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -1661,8 +1661,8 @@ p, li { white-space: pre-wrap; }
         <translation>Chyba platebního požadavku</translation>
     </message>
     <message>
-        <source>Cannot start termubit: click-to-pay handler</source>
-        <translation>Nemůžu spustit termubit: obsluha click-to-pay</translation>
+        <source>Cannot start termucoin: click-to-pay handler</source>
+        <translation>Nemůžu spustit termucoin: obsluha click-to-pay</translation>
     </message>
     <message>
         <source>URI handling</source>
@@ -1677,8 +1677,8 @@ p, li { white-space: pre-wrap; }
         <translation>Neplatná platební adresa %1</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid Termubit address or malformed URI parameters.</source>
-        <translation>Nepodařilo se analyzovat URI! Důvodem může být neplatná termubitová adresa nebo poškozené parametry URI.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid Termucoin address or malformed URI parameters.</source>
+        <translation>Nepodařilo se analyzovat URI! Důvodem může být neplatná termucoinová adresa nebo poškozené parametry URI.</translation>
     </message>
     <message>
         <source>Payment request file handling</source>
@@ -1826,8 +1826,8 @@ Use this functionality with extreme caution.</source>
         <translation>Částka</translation>
     </message>
     <message>
-        <source>Enter a Termubit address (e.g. %1)</source>
-        <translation>Zadej termubitovou adresu (např. %1)</translation>
+        <source>Enter a Termucoin address (e.g. %1)</source>
+        <translation>Zadej termucoinovou adresu (např. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -2318,8 +2318,8 @@ Use this functionality with extreme caution.</source>
         <translation>&amp;Recyklovat již existující adresy (nedoporučeno)</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Termubit network.</source>
-        <translation>Volitelná zpráva, která se připojí k platebnímu požadavku a která se zobrazí, když se požadavek otevře. Poznámka: tahle zpráva se neposílá s platbou po termubitové síti.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Termucoin network.</source>
+        <translation>Volitelná zpráva, která se připojí k platebnímu požadavku a která se zobrazí, když se požadavek otevře. Poznámka: tahle zpráva se neposílá s platbou po termucoinové síti.</translation>
     </message>
     <message>
         <source>An optional label to associate with the new receiving address.</source>
@@ -2551,8 +2551,8 @@ Use this functionality with extreme caution.</source>
         <translation>přinejmenším</translation>
     </message>
     <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for termubit transactions than the network can process.</source>
-        <translation>Platit jen minimální poplatek je v pořádku, pokud je zrovna méně transakcí než místa v blocích. Ale počítej s tím, že to také může skončit transakcí, která nikdy nebude potvrzena, pokud je větší poptávka po termubitových transakcích, než síť zvládne zpracovat.</translation>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for termucoin transactions than the network can process.</source>
+        <translation>Platit jen minimální poplatek je v pořádku, pokud je zrovna méně transakcí než místa v blocích. Ale počítej s tím, že to také může skončit transakcí, která nikdy nebude potvrzena, pokud je větší poptávka po termucoinových transakcích, než síť zvládne zpracovat.</translation>
     </message>
     <message>
         <source>(read the tooltip)</source>
@@ -2723,8 +2723,8 @@ Use this functionality with extreme caution.</source>
         </translation>
     </message>
     <message>
-        <source>Warning: Invalid Termubit address</source>
-        <translation>Upozornění: Neplatná termubitová adresa</translation>
+        <source>Warning: Invalid Termucoin address</source>
+        <translation>Upozornění: Neplatná termucoinová adresa</translation>
     </message>
     <message>
         <source>Warning: Unknown change address</source>
@@ -2790,8 +2790,8 @@ Use this functionality with extreme caution.</source>
         <translation>Tohle je normální platba.</translation>
     </message>
     <message>
-        <source>The Termubit address to send the payment to</source>
-        <translation>Termubitová adresa příjemce</translation>
+        <source>The Termucoin address to send the payment to</source>
+        <translation>Termucoinová adresa příjemce</translation>
     </message>
     <message>
         <source>Alt+A</source>
@@ -2810,8 +2810,8 @@ Use this functionality with extreme caution.</source>
         <translation>Smaž tento záznam</translation>
     </message>
     <message>
-        <source>The fee will be deducted from the amount being sent. The recipient will receive less termubits than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
-        <translation>Poplatek se odečte od posílané částky. Příjemce tak dostane méně termubitů, než zadáš do pole Částka. Pokud vybereš více příjemců, tak se poplatek rovnoměrně rozloží.</translation>
+        <source>The fee will be deducted from the amount being sent. The recipient will receive less termucoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <translation>Poplatek se odečte od posílané částky. Příjemce tak dostane méně termucoinů, než zadáš do pole Částka. Pokud vybereš více příjemců, tak se poplatek rovnoměrně rozloží.</translation>
     </message>
     <message>
         <source>S&amp;ubtract fee from amount</source>
@@ -2834,8 +2834,8 @@ Use this functionality with extreme caution.</source>
         <translation>Zadej označení této adresy; obojí se ti pak uloží do adresáře</translation>
     </message>
     <message>
-        <source>A message that was attached to the termubit: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Termubit network.</source>
-        <translation>Zpráva, která byla připojena k termubit: URI a která se ti pro přehled uloží k transakci. Poznámka: Tahle zpráva se neposílá s platbou po termubitové síti.</translation>
+        <source>A message that was attached to the termucoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Termucoin network.</source>
+        <translation>Zpráva, která byla připojena k termucoin: URI a která se ti pro přehled uloží k transakci. Poznámka: Tahle zpráva se neposílá s platbou po termucoinové síti.</translation>
     </message>
     <message>
         <source>Pay To:</source>
@@ -2879,12 +2879,12 @@ Use this functionality with extreme caution.</source>
         <translation>&amp;Podepiš zprávu</translation>
     </message>
     <message>
-        <source>You can sign messages/agreements with your addresses to prove you can receive termubits sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
-        <translation>Podepsáním zprávy/smlouvy svými adresami můžeš prokázat, že jsi na ně schopen přijmout termubity. Buď opatrný a nepodepisuj nic vágního nebo náhodného; například při phishingových útocích můžeš být lákán, abys něco takového podepsal. Podepisuj pouze naprosto úplná a detailní prohlášení, se kterými souhlasíš.</translation>
+        <source>You can sign messages/agreements with your addresses to prove you can receive termucoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <translation>Podepsáním zprávy/smlouvy svými adresami můžeš prokázat, že jsi na ně schopen přijmout termucoiny. Buď opatrný a nepodepisuj nic vágního nebo náhodného; například při phishingových útocích můžeš být lákán, abys něco takového podepsal. Podepisuj pouze naprosto úplná a detailní prohlášení, se kterými souhlasíš.</translation>
     </message>
     <message>
-        <source>The Termubit address to sign the message with</source>
-        <translation>Termubitová adresa, kterou se zpráva podepíše</translation>
+        <source>The Termucoin address to sign the message with</source>
+        <translation>Termucoinová adresa, kterou se zpráva podepíše</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2915,8 +2915,8 @@ Use this functionality with extreme caution.</source>
         <translation>Zkopíruj tento podpis do schránky</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Termubit address</source>
-        <translation>Podepiš zprávu, čímž prokážeš, že jsi vlastníkem této termubitové adresy</translation>
+        <source>Sign the message to prove you own this Termucoin address</source>
+        <translation>Podepiš zprávu, čímž prokážeš, že jsi vlastníkem této termucoinové adresy</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -2939,12 +2939,12 @@ Use this functionality with extreme caution.</source>
         <translation>K ověření podpisu zprávy zadej adresu příjemce, zprávu (ověř si, že správně kopíruješ zalomení řádků, mezery, tabulátory apod.) a podpis. Dávej pozor na to, abys nezkopíroval do podpisu víc, než co je v samotné podepsané zprávě, abys nebyl napálen man-in-the-middle útokem. Poznamenejme však, že takto lze pouze prokázat, že podepisující je schopný na dané adrese přijmout platbu, ale není možnéprokázat, že odeslal jakoukoli transakci!</translation>
     </message>
     <message>
-        <source>The Termubit address the message was signed with</source>
-        <translation>Termubitová adresa, kterou je zpráva podepsána</translation>
+        <source>The Termucoin address the message was signed with</source>
+        <translation>Termucoinová adresa, kterou je zpráva podepsána</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Termubit address</source>
-        <translation>Ověř zprávu, aby ses ujistil, že byla podepsána danou termubitovou adresou</translation>
+        <source>Verify the message to ensure it was signed with the specified Termucoin address</source>
+        <translation>Ověř zprávu, aby ses ujistil, že byla podepsána danou termucoinovou adresou</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -3659,8 +3659,8 @@ Use this functionality with extreme caution.</source>
         <translation>Nemohu spustit HTTP server. Detaily viz v debug.log.</translation>
     </message>
     <message>
-        <source>Termubit Core</source>
-        <translation>Termubit Core</translation>
+        <source>Termucoin Core</source>
+        <translation>Termucoin Core</translation>
     </message>
     <message>
         <source>The %s developers</source>
@@ -4511,7 +4511,7 @@ Use this functionality with extreme caution.</source>
         <translation>Chyba</translation>
     </message>
     <message>
-        <source>Bitcoin Core and Termubit Core</source>
+        <source>Bitcoin Core and Termucoin Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

@@ -1,9 +1,9 @@
-Termubit Core 0.14.2
+Termucoin Core 0.14.2
 =====================
 
 Development
 ---------------------
-The Termubit repo's [root README](/README.md) contains relevant information on the development process and automated testing.
+The Termucoin repo's [root README](/README.md) contains relevant information on the development process and automated testing.
 
 - [Developer Notes](developer-notes.md)
 - [Release Notes](release-notes.md)
@@ -18,8 +18,8 @@ The Termubit repo's [root README](/README.md) contains relevant information on t
 - [Benchmarking](benchmarking.md)
 
 ### Resources
-* Discuss on the [BitcoinTalk](https://bitcointalk.org/) forums, in the [Termubit thread](https://bitcointalk.org/index.php?topic=5585615).
-* Discuss on [#termubit-dev](http://webchat.freenode.net/?channels=termubit-dev) on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net/?channels=termubit-dev).
+* Discuss on the [BitcoinTalk](https://bitcointalk.org/) forums, in the [Termucoin thread](https://bitcointalk.org/index.php?topic=5585615).
+* Discuss on [#termucoin-dev](http://webchat.freenode.net/?channels=termucoin-dev) on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net/?channels=termucoin-dev).
 
 ### Miscellaneous
 - [Assets Attribution](assets-attribution.md)
@@ -33,6 +33,6 @@ The Termubit repo's [root README](/README.md) contains relevant information on t
 License
 ---------------------
 Distributed under the [MIT software license](/COPYING).
-This product includes software developed by the Bitcoin developers for use in [Termubit Core](https://www.bitcoin.org/). 
+This product includes software developed by the Bitcoin developers for use in [Termucoin Core](https://www.bitcoin.org/). 
 This product includes software developed by the OpenSSL Project for use in the [OpenSSL Toolkit](https://www.openssl.org/). This product includes
 cryptographic software written by Eric Young ([eay@cryptsoft.com](mailto:eay@cryptsoft.com)), and UPnP software written by Thomas Bernard.

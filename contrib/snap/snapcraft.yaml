@@ -1,9 +1,9 @@
-name: termubit-core
+name: termucoin-core
 # Running 'snapcraft register <name>' is advised
 version: '1.14.6'
-summary: Reference client of Termubit, a peer-to-peer digital currency like Bitcoin.
+summary: Reference client of Termucoin, a peer-to-peer digital currency like Bitcoin.
 description: |
-  Termubit is a community-driven cryptocurrency that was Technology. The Termubit Core software allows anyone to operate a node in the Termubit blockchain networks and uses the Scrypt hashing method for Proof of Work. It is adapted from Bitcoin Core and other cryptocurrencies.
+  Termucoin is a community-driven cryptocurrency that was Technology. The Termucoin Core software allows anyone to operate a node in the Termucoin blockchain networks and uses the Scrypt hashing method for Proof of Work. It is adapted from Bitcoin Core and other cryptocurrencies.
 
 grade: stable
 confinement: strict
@@ -19,29 +19,29 @@ architectures:
 
 apps:
   d:
-    command: termubitd
+    command: termucoind
     plugs: [home, removable-media, network, network-bind]
     environment:
-      # Override HOME so the datadir is located at ~/snap/termubit-core/common/.termubit/ instead of ~/snap/termubit-core/current/.termubit/, and each new version of the snap won't have a different data directory: https://docs.snapcraft.io/environment-variables/7983
+      # Override HOME so the datadir is located at ~/snap/termucoin-core/common/.termucoin/ instead of ~/snap/termucoin-core/current/.termucoin/, and each new version of the snap won't have a different data directory: https://docs.snapcraft.io/environment-variables/7983
       HOME: $SNAP_USER_COMMON
   qt:
-    command: desktop-launch termubit-qt
+    command: desktop-launch termucoin-qt
     plugs: [home, removable-media, network, network-bind, desktop, x11, unity7]
     environment:
       HOME: $SNAP_USER_COMMON
       DISABLE_WAYLAND: 1
   cli:
-    command: termubit-cli
+    command: termucoin-cli
     plugs: [home, removable-media, network]
     environment:
       HOME: $SNAP_USER_COMMON
   tx:
-    command: termubit-tx
+    command: termucoin-tx
     plugs: [home, removable-media, network]
     environment:
       HOME: $SNAP_USER_COMMON
   test:
-    command: test_termubit
+    command: test_termucoin
     plugs: [home, removable-media, network]
     environment:
       HOME: $SNAP_USER_COMMON
@@ -76,48 +76,48 @@ parts:
       - xdg-user-dirs
       - fcitx-frontend-qt5
 
-  termubit-core:
+  termucoin-core:
     plugin: nil
     override-build: |
-      echo "This script is viewable at https://github.com/termubit/termubit/blob/master/contrib/snap/snapcraft.yaml"
+      echo "This script is viewable at https://github.com/termucoin/termucoin/blob/master/contrib/snap/snapcraft.yaml"
       echo "Downloading files..."
-      if [ "$SNAPCRAFT_ARCH_TRIPLET" = "i386-linux-gnu" ]; then # snap designates 32-bit as i386, but termubit designates it as i686
+      if [ "$SNAPCRAFT_ARCH_TRIPLET" = "i386-linux-gnu" ]; then # snap designates 32-bit as i386, but termucoin designates it as i686
         BUILD_ARCH_TRIPLET=i686-pc-linux-gnu
       else
         BUILD_ARCH_TRIPLET=$SNAPCRAFT_ARCH_TRIPLET
       fi
-      wget https://github.com/termubit/termubit/releases/download/v${SNAPCRAFT_PROJECT_VERSION}/termubit-${SNAPCRAFT_PROJECT_VERSION}-${BUILD_ARCH_TRIPLET}.tar.gz
-      wget https://github.com/termubit/gitian.sigs/archive/refs/heads/master.tar.gz
+      wget https://github.com/termucoin/termucoin/releases/download/v${SNAPCRAFT_PROJECT_VERSION}/termucoin-${SNAPCRAFT_PROJECT_VERSION}-${BUILD_ARCH_TRIPLET}.tar.gz
+      wget https://github.com/termucoin/gitian.sigs/archive/refs/heads/master.tar.gz
       tar -xvf master.tar.gz
       echo "Verifying secure hash matches signed values..."
-      checksum=$(sha256sum termubit-${SNAPCRAFT_PROJECT_VERSION}-${BUILD_ARCH_TRIPLET}.tar.gz)
-      if ! (grep -r $checksum * | grep termubit-${SNAPCRAFT_PROJECT_VERSION}-${BUILD_ARCH_TRIPLET}.tar.gz); then
+      checksum=$(sha256sum termucoin-${SNAPCRAFT_PROJECT_VERSION}-${BUILD_ARCH_TRIPLET}.tar.gz)
+      if ! (grep -r $checksum * | grep termucoin-${SNAPCRAFT_PROJECT_VERSION}-${BUILD_ARCH_TRIPLET}.tar.gz); then
         echo "Secure hash not verified."
         return
       else
         echo "Secure hash verified."
       fi
-      tar -xvf termubit-${SNAPCRAFT_PROJECT_VERSION}-${BUILD_ARCH_TRIPLET}.tar.gz
+      tar -xvf termucoin-${SNAPCRAFT_PROJECT_VERSION}-${BUILD_ARCH_TRIPLET}.tar.gz
       echo "Running tests..."
-      if ! (termubit-${SNAPCRAFT_PROJECT_VERSION}/bin/test_termubit); then
-        echo "Termubit tests failed."
+      if ! (termucoin-${SNAPCRAFT_PROJECT_VERSION}/bin/test_termucoin); then
+        echo "Termucoin tests failed."
         return
       else
-        echo "Termubit tests passed."
+        echo "Termucoin tests passed."
       fi
-      wget https://raw.githubusercontent.com/termubit/termubit/v${SNAPCRAFT_PROJECT_VERSION}/doc/release-notes.md
+      wget https://raw.githubusercontent.com/termucoin/termucoin/v${SNAPCRAFT_PROJECT_VERSION}/doc/release-notes.md
       cat release-notes.md
-      echo "Installing Termubit Core..."
+      echo "Installing Termucoin Core..."
       echo "Version ${SNAPCRAFT_PROJECT_VERSION}"
-      install -m 0755 -D -t $SNAPCRAFT_PART_INSTALL/bin termubit-${SNAPCRAFT_PROJECT_VERSION}/bin/termubitd
-      if ! ([ "$BUILD_ARCH_TRIPLET" = "aarch64-linux-gnu" ]); then # there is no official termubit-qt build on arm64
-        install -m 0755 -D -t $SNAPCRAFT_PART_INSTALL/bin termubit-${SNAPCRAFT_PROJECT_VERSION}/bin/termubit-qt
+      install -m 0755 -D -t $SNAPCRAFT_PART_INSTALL/bin termucoin-${SNAPCRAFT_PROJECT_VERSION}/bin/termucoind
+      if ! ([ "$BUILD_ARCH_TRIPLET" = "aarch64-linux-gnu" ]); then # there is no official termucoin-qt build on arm64
+        install -m 0755 -D -t $SNAPCRAFT_PART_INSTALL/bin termucoin-${SNAPCRAFT_PROJECT_VERSION}/bin/termucoin-qt
       fi
-      install -m 0755 -D -t $SNAPCRAFT_PART_INSTALL/bin termubit-${SNAPCRAFT_PROJECT_VERSION}/bin/termubit-cli
-      install -m 0755 -D -t $SNAPCRAFT_PART_INSTALL/bin termubit-${SNAPCRAFT_PROJECT_VERSION}/bin/termubit-tx
-      install -m 0755 -D -t $SNAPCRAFT_PART_INSTALL/bin termubit-${SNAPCRAFT_PROJECT_VERSION}/bin/test_termubit
-      wget https://raw.githubusercontent.com/termubit/termubit/master/share/pixmaps/termubit128.png
-      install -m 0644 -D -t $SNAPCRAFT_PART_INSTALL/share/pixmaps termubit128.png
+      install -m 0755 -D -t $SNAPCRAFT_PART_INSTALL/bin termucoin-${SNAPCRAFT_PROJECT_VERSION}/bin/termucoin-cli
+      install -m 0755 -D -t $SNAPCRAFT_PART_INSTALL/bin termucoin-${SNAPCRAFT_PROJECT_VERSION}/bin/termucoin-tx
+      install -m 0755 -D -t $SNAPCRAFT_PART_INSTALL/bin termucoin-${SNAPCRAFT_PROJECT_VERSION}/bin/test_termucoin
+      wget https://raw.githubusercontent.com/termucoin/termucoin/master/share/pixmaps/termucoin128.png
+      install -m 0644 -D -t $SNAPCRAFT_PART_INSTALL/share/pixmaps termucoin128.png
     build-packages:
       - wget
     after:

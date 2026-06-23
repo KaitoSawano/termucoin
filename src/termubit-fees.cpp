@@ -1,4 +1,4 @@
-// Copyright (c) 2026 The Termubit Core developers
+// Copyright (c) 2026 The Termucoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -7,11 +7,11 @@
 
 #include "policy/policy.h"
 #include "arith_uint256.h"
-#include "termubit.h"
+#include "termucoin.h"
 #include "txmempool.h"
 #include "util.h"
 #include "validation.h"
-#include "termubit-fees.h"
+#include "termucoin-fees.h"
 #include "amount.h"
 #ifdef ENABLE_WALLET
 #include "wallet/wallet.h"
@@ -19,7 +19,7 @@
 
 #ifdef ENABLE_WALLET
 
-CFeeRate GetTermubitFeeRate(int priority)
+CFeeRate GetTermucoinFeeRate(int priority)
 {
     switch(priority)
     {
@@ -40,7 +40,7 @@ CFeeRate GetTermubitFeeRate(int priority)
     return CWallet::minTxFee;
 }
 
-const std::string GetTermubitPriorityLabel(int priority)
+const std::string GetTermucoinPriorityLabel(int priority)
 {
     switch(priority)
     {
@@ -64,7 +64,7 @@ const std::string GetTermubitPriorityLabel(int priority)
 
 #endif
 
-CAmount GetTermubitMinRelayFee(const CTransaction& tx, unsigned int nBytes, bool fAllowFree)
+CAmount GetTermucoinMinRelayFee(const CTransaction& tx, unsigned int nBytes, bool fAllowFree)
 {
     {
         LOCK(mempool.cs);
@@ -77,7 +77,7 @@ CAmount GetTermubitMinRelayFee(const CTransaction& tx, unsigned int nBytes, bool
     }
 
     CAmount nMinFee = ::minRelayTxFeeRate.GetFee(nBytes);
-    nMinFee += GetTermubitDustFee(tx.vout, nDustLimit);
+    nMinFee += GetTermucoinDustFee(tx.vout, nDustLimit);
 
     if (fAllowFree)
     {
@@ -94,7 +94,7 @@ CAmount GetTermubitMinRelayFee(const CTransaction& tx, unsigned int nBytes, bool
     return nMinFee;
 }
 
-CAmount GetTermubitDustFee(const std::vector<CTxOut> &vout, const CAmount dustLimit) {
+CAmount GetTermucoinDustFee(const std::vector<CTxOut> &vout, const CAmount dustLimit) {
     CAmount nFee = 0;
 
     // To limit dust spam, add the dust limit for each output

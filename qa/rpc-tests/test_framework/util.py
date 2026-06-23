@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # Copyright (c) 2014-2016 The Bitcoin Core developers
-# Copyright (c) 2026 The Termubit Core developers
+# Copyright (c) 2026 The Termucoin Core developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -37,7 +37,7 @@ PORT_MIN = 11000
 # The number of ports to "reserve" for p2p and rpc, each
 PORT_RANGE = 5000
 
-TERMUBITD_PROC_WAIT_TIMEOUT = 60
+TERMUCOIND_PROC_WAIT_TIMEOUT = 60
 
 
 class PortSeed:
@@ -177,14 +177,14 @@ def sync_mempools(rpc_connections, *, wait=1, timeout=60):
         timeout -= wait
     raise AssertionError("Mempool sync failed")
 
-termubitd_processes = {}
+termucoind_processes = {}
 
 def initialize_datadir(dirname, n):
     datadir = os.path.join(dirname, "node"+str(n))
     if not os.path.isdir(datadir):
         os.makedirs(datadir)
     rpc_u, rpc_p = rpc_auth_pair(n)
-    with open(os.path.join(datadir, "termubit.conf"), 'w', encoding='utf8') as f:
+    with open(os.path.join(datadir, "termucoin.conf"), 'w', encoding='utf8') as f:
         f.write("regtest=1\n")
         f.write("rpcuser=" + rpc_u + "\n")
         f.write("rpcpassword=" + rpc_p + "\n")
@@ -208,14 +208,14 @@ def rpc_url(i, rpchost=None):
             host = rpchost
     return "http://%s:%s@%s:%d" % (rpc_u, rpc_p, host, int(port))
 
-def wait_for_termubitd_start(process, url, i):
+def wait_for_termucoind_start(process, url, i):
     '''
-    Wait for termubitd to start. This means that RPC is accessible and fully initialized.
-    Raise an exception if termubitd exits during initialization.
+    Wait for termucoind to start. This means that RPC is accessible and fully initialized.
+    Raise an exception if termucoind exits during initialization.
     '''
     while True:
         if process.poll() is not None:
-            raise Exception('termubitd exited with status %i during initialization' % process.returncode)
+            raise Exception('termucoind exited with status %i during initialization' % process.returncode)
         try:
             rpc = get_rpc_proxy(url, i)
             blocks = rpc.getblockcount()
@@ -248,16 +248,16 @@ def initialize_chain(test_dir, num_nodes, cachedir):
             if os.path.isdir(os.path.join(cachedir,"node"+str(i))):
                 shutil.rmtree(os.path.join(cachedir,"node"+str(i)))
 
-        # Create cache directories, run termubitds:
+        # Create cache directories, run termucoinds:
         for i in range(MAX_NODES):
             datadir=initialize_datadir(cachedir, i)
-            args = [ os.getenv("TERMUBITD", "termubitd"), "-server", "-keypool=1", "-datadir="+datadir, "-discover=0" ]
+            args = [ os.getenv("TERMUCOIND", "termucoind"), "-server", "-keypool=1", "-datadir="+datadir, "-discover=0" ]
             if i > 0:
                 args.append("-connect=127.0.0.1:"+str(p2p_port(0)))
-            termubitd_processes[i] = subprocess.Popen(args)
+            termucoind_processes[i] = subprocess.Popen(args)
             if os.getenv("PYTHON_DEBUG", ""):
-                print("initialize_chain: termubitd started, waiting for RPC to come up")
-            wait_for_termubitd_start(termubitd_processes[i], rpc_url(i), i)
+                print("initialize_chain: termucoind started, waiting for RPC to come up")
+            wait_for_termucoind_start(termucoind_processes[i], rpc_url(i), i)
             if os.getenv("PYTHON_DEBUG", ""):
                 print("initialize_chain: RPC successfully started")
 
@@ -300,7 +300,7 @@ def initialize_chain(test_dir, num_nodes, cachedir):
         from_dir = os.path.join(cachedir, "node"+str(i))
         to_dir = os.path.join(test_dir,  "node"+str(i))
         shutil.copytree(from_dir, to_dir)
-        initialize_datadir(test_dir, i) # Overwrite port/rpcport in termubit.conf
+        initialize_datadir(test_dir, i) # Overwrite port/rpcport in termucoin.conf
 
 def initialize_chain_clean(test_dir, num_nodes):
     """
@@ -333,18 +333,18 @@ def _rpchost_to_args(rpchost):
 
 def start_node(i, dirname, extra_args=None, rpchost=None, timewait=None, binary=None):
     """
-    Start a termubitd and return RPC connection to it
+    Start a termucoind and return RPC connection to it
     """
     datadir = os.path.join(dirname, "node"+str(i))
     if binary is None:
-        binary = os.getenv("TERMUBITD", "termubitd")
+        binary = os.getenv("TERMUCOIND", "termucoind")
     args = [ binary, "-datadir="+datadir, "-server", "-keypool=1", "-discover=0", "-rest", "-mocktime="+str(get_mocktime()) ]
     if extra_args is not None: args.extend(extra_args)
-    termubitd_processes[i] = subprocess.Popen(args)
+    termucoind_processes[i] = subprocess.Popen(args)
     if os.getenv("PYTHON_DEBUG", ""):
-        print("start_node: termubitd started, waiting for RPC to come up")
+        print("start_node: termucoind started, waiting for RPC to come up")
     url = rpc_url(i, rpchost)
-    wait_for_termubitd_start(termubitd_processes[i], url, i)
+    wait_for_termucoind_start(termucoind_processes[i], url, i)
     if os.getenv("PYTHON_DEBUG", ""):
         print("start_node: RPC successfully started")
     proxy = get_rpc_proxy(url, i, timeout=timewait)
@@ -356,7 +356,7 @@ def start_node(i, dirname, extra_args=None, rpchost=None, timewait=None, binary=
 
 def start_nodes(num_nodes, dirname, extra_args=None, rpchost=None, timewait=None, binary=None):
     """
-    Start multiple termubitds, return RPC connections to them
+    Start multiple termucoinds, return RPC connections to them
     """
     if extra_args is None: extra_args = [ None for _ in range(num_nodes) ]
     if binary is None: binary = [ None for _ in range(num_nodes) ]
@@ -377,14 +377,14 @@ def stop_node(node, i):
         node.stop()
     except http.client.CannotSendRequest as e:
         print("WARN: Unable to stop node: " + repr(e))
-    return_code = termubitd_processes[i].wait(timeout=TERMUBITD_PROC_WAIT_TIMEOUT)
+    return_code = termucoind_processes[i].wait(timeout=TERMUCOIND_PROC_WAIT_TIMEOUT)
     assert_equal(return_code, 0)
-    del termubitd_processes[i]
+    del termucoind_processes[i]
 
 def stop_nodes(nodes):
     for i, node in enumerate(nodes):
         stop_node(node, i)
-    assert not termubitd_processes.values() # All connections must be gone now
+    assert not termucoind_processes.values() # All connections must be gone now
 
 def set_node_times(nodes, t):
     for node in nodes:

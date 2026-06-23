@@ -5,10 +5,10 @@ of the latest changes on NixOS.
 
 Clone and enter the repo:
 
-    $ git clone https://github.com/termubit/termubit
-    $ cd termubit
+    $ git clone https://github.com/termucoin/termucoin
+    $ cd termucoin
 
-Enter the `nix-shell` environment with all the Termubit dependencies present:
+Enter the `nix-shell` environment with all the Termucoin dependencies present:
 
     $ nix-shell ./contrib/nixos/shell.nix
 
@@ -20,4 +20,4 @@ Run the build steps with flags necessary for NixOS:
 
 Start the GUI!
 
-    $ ./src/qt/termubit-qt
+    $ ./src/qt/termucoin-qt

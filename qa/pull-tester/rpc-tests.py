@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # Copyright (c) 2014-2016 The Bitcoin Core developers
-# Copyright (c) 2026 The Termubit Core developers
+# Copyright (c) 2026 The Termucoin Core developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -44,8 +44,8 @@ RPC_TESTS_DIR = SRCDIR + '/qa/rpc-tests/'
 #If imported values are not defined then set to zero (or disabled)
 if 'ENABLE_WALLET' not in vars():
     ENABLE_WALLET=0
-if 'ENABLE_TERMUBITD' not in vars():
-    ENABLE_TERMUBITD=0
+if 'ENABLE_TERMUCOIND' not in vars():
+    ENABLE_TERMUCOIND=0
 if 'ENABLE_UTILS' not in vars():
     ENABLE_UTILS=0
 if 'ENABLE_ZMQ' not in vars():
@@ -76,8 +76,8 @@ for arg in sys.argv[1:]:
         opts.add(arg)
 
 #Set env vars
-if "TERMUBITD" not in os.environ:
-    os.environ["TERMUBITD"] = BUILDDIR + '/src/termubitd' + EXEEXT
+if "TERMUCOIND" not in os.environ:
+    os.environ["TERMUCOIND"] = BUILDDIR + '/src/termucoind' + EXEEXT
 
 if EXEEXT == ".exe" and "-win" not in opts:
     # https://github.com/bitcoin/bitcoin/commit/d52802551752140cf41f0d9a225a43e84404d3e9
@@ -85,8 +85,8 @@ if EXEEXT == ".exe" and "-win" not in opts:
     print("Win tests currently disabled by default.  Use -win option to enable")
     sys.exit(0)
 
-if not (ENABLE_WALLET == 1 and ENABLE_UTILS == 1 and ENABLE_TERMUBITD == 1):
-    print("No rpc tests to run. Wallet, utils, and termubitd must all be enabled")
+if not (ENABLE_WALLET == 1 and ENABLE_UTILS == 1 and ENABLE_TERMUCOIND == 1):
+    print("No rpc tests to run. Wallet, utils, and termucoind must all be enabled")
     sys.exit(0)
 
 # python3-zmq may not be installed. Handle this gracefully and with some helpful info
@@ -289,7 +289,7 @@ class RPCTestHandler:
         self.test_list = test_list
         self.flags = flags
         self.num_running = 0
-        # In case there is a graveyard of zombie termubitds, we can apply a
+        # In case there is a graveyard of zombie termucoinds, we can apply a
         # pseudorandom offset to hopefully jump over them.
         # (625 is PORT_RANGE/MAX_NODES)
         self.portseed_offset = int(time.time() * 1000) % 625
@@ -336,7 +336,7 @@ class RPCCoverage(object):
     Coverage calculation works by having each test script subprocess write
     coverage files into a particular directory. These files contain the RPC
     commands invoked during testing, as well as a complete listing of RPC
-    commands per `termubit-cli help` (`rpc_interface.txt`).
+    commands per `termucoin-cli help` (`rpc_interface.txt`).
 
     After all tests complete, the commands run are combined and diff'd against
     the complete list to calculate uncovered RPC commands.

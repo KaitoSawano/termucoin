@@ -24,23 +24,23 @@ BITCOIN_INCLUDES=-I$(builddir) -I$(builddir)/obj $(BDB_CPPFLAGS) $(BOOST_CPPFLAG
 BITCOIN_INCLUDES += -I$(srcdir)/secp256k1/include
 BITCOIN_INCLUDES += $(UNIVALUE_CFLAGS)
 
-LIBTERMUBIT_SERVER=libtermubit_server.a
-LIBTERMUBIT_COMMON=libtermubit_common.a
-LIBTERMUBIT_CONSENSUS=libtermubit_consensus.a
-LIBTERMUBIT_CLI=libtermubit_cli.a
-LIBTERMUBIT_UTIL=libtermubit_util.a
-LIBTERMUBIT_CRYPTO=crypto/libtermubit_crypto.a
-LIBTERMUBITQT=qt/libtermubitqt.a
+LIBTERMUCOIN_SERVER=libtermucoin_server.a
+LIBTERMUCOIN_COMMON=libtermucoin_common.a
+LIBTERMUCOIN_CONSENSUS=libtermucoin_consensus.a
+LIBTERMUCOIN_CLI=libtermucoin_cli.a
+LIBTERMUCOIN_UTIL=libtermucoin_util.a
+LIBTERMUCOIN_CRYPTO=crypto/libtermucoin_crypto.a
+LIBTERMUCOINQT=qt/libtermucoinqt.a
 LIBSECP256K1=secp256k1/libsecp256k1.la
 
 if ENABLE_ZMQ
-LIBTERMUBIT_ZMQ=libtermubit_zmq.a
+LIBTERMUCOIN_ZMQ=libtermucoin_zmq.a
 endif
 if BUILD_BITCOIN_LIBS
-LIBTERMUBITCONSENSUS=libtermubitconsensus.la
+LIBTERMUCOINCONSENSUS=libtermucoinconsensus.la
 endif
 if ENABLE_WALLET
-LIBTERMUBIT_WALLET=libtermubit_wallet.a
+LIBTERMUCOIN_WALLET=libtermucoin_wallet.a
 endif
 
 $(LIBSECP256K1): $(wildcard secp256k1/src/*) $(wildcard secp256k1/include/*)
@@ -49,16 +49,16 @@ $(LIBSECP256K1): $(wildcard secp256k1/src/*) $(wildcard secp256k1/include/*)
 # Make is not made aware of per-object dependencies to avoid limiting building parallelization
 # But to build the less dependent modules first, we manually select their order here:
 EXTRA_LIBRARIES += \
-  $(LIBTERMUBIT_CRYPTO) \
-  $(LIBTERMUBIT_UTIL) \
-  $(LIBTERMUBIT_COMMON) \
-  $(LIBTERMUBIT_CONSENSUS) \
-  $(LIBTERMUBIT_SERVER) \
-  $(LIBTERMUBIT_CLI) \
-  $(LIBTERMUBIT_WALLET) \
-  $(LIBTERMUBIT_ZMQ)
+  $(LIBTERMUCOIN_CRYPTO) \
+  $(LIBTERMUCOIN_UTIL) \
+  $(LIBTERMUCOIN_COMMON) \
+  $(LIBTERMUCOIN_CONSENSUS) \
+  $(LIBTERMUCOIN_SERVER) \
+  $(LIBTERMUCOIN_CLI) \
+  $(LIBTERMUCOIN_WALLET) \
+  $(LIBTERMUCOIN_ZMQ)
 
-lib_LTLIBRARIES = $(LIBTERMUBITCONSENSUS)
+lib_LTLIBRARIES = $(LIBTERMUCOINCONSENSUS)
 
 bin_PROGRAMS =
 noinst_PROGRAMS =
@@ -66,11 +66,11 @@ TESTS =
 BENCHMARKS =
 
 if BUILD_BITCOIND
-  bin_PROGRAMS += termubitd
+  bin_PROGRAMS += termucoind
 endif
 
 if BUILD_BITCOIN_UTILS
-  bin_PROGRAMS += termubit-cli termubit-tx
+  bin_PROGRAMS += termucoin-cli termucoin-tx
 endif
 
 .PHONY: FORCE check-symbols check-security
@@ -100,10 +100,10 @@ BITCOIN_CORE_H = \
   core_io.h \
   core_memusage.h \
   cuckoocache.h \
-  termubit.cpp \
-  termubit.h \
-  termubit-fees.cpp \
-  termubit-fees.h \
+  termucoin.cpp \
+  termucoin.h \
+  termucoin-fees.cpp \
+  termucoin-fees.h \
   fs.h \
   httprpc.h \
   httpserver.h \
@@ -185,12 +185,12 @@ obj/build.h: FORCE
 	@$(MKDIR_P) $(builddir)/obj
 	@$(top_srcdir)/share/genbuild.sh $(abs_top_builddir)/src/obj/build.h \
 	  $(abs_top_srcdir)
-libtermubit_util_a-clientversion.$(OBJEXT): obj/build.h
+libtermucoin_util_a-clientversion.$(OBJEXT): obj/build.h
 
 # server: shared between bitcoind and bitcoin-qt
-libtermubit_server_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(MINIUPNPC_CPPFLAGS) $(EVENT_CFLAGS) $(EVENT_PTHREADS_CFLAGS)
-libtermubit_server_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-libtermubit_server_a_SOURCES = \
+libtermucoin_server_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(MINIUPNPC_CPPFLAGS) $(EVENT_CFLAGS) $(EVENT_PTHREADS_CFLAGS)
+libtermucoin_server_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+libtermucoin_server_a_SOURCES = \
   addrman.cpp \
   addrdb.cpp \
   bloom.cpp \
@@ -232,9 +232,9 @@ libtermubit_server_a_SOURCES = \
   $(BITCOIN_CORE_H)
 
 if ENABLE_ZMQ
-libtermubit_zmq_a_CPPFLAGS = $(BITCOIN_INCLUDES) $(ZMQ_CFLAGS)
-libtermubit_zmq_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-libtermubit_zmq_a_SOURCES = \
+libtermucoin_zmq_a_CPPFLAGS = $(BITCOIN_INCLUDES) $(ZMQ_CFLAGS)
+libtermucoin_zmq_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+libtermucoin_zmq_a_SOURCES = \
   zmq/zmqabstractnotifier.cpp \
   zmq/zmqnotificationinterface.cpp \
   zmq/zmqpublishnotifier.cpp
@@ -243,9 +243,9 @@ endif
 
 # wallet: shared between bitcoind and bitcoin-qt, but only linked
 # when wallet enabled
-libtermubit_wallet_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-libtermubit_wallet_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-libtermubit_wallet_a_SOURCES = \
+libtermucoin_wallet_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+libtermucoin_wallet_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+libtermucoin_wallet_a_SOURCES = \
   wallet/crypter.cpp \
   wallet/db.cpp \
   wallet/rpcdump.cpp \
@@ -257,9 +257,9 @@ libtermubit_wallet_a_SOURCES = \
   $(BITCOIN_CORE_H)
 
 # crypto primitives library
-crypto_libtermubit_crypto_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_CONFIG_INCLUDES)
-crypto_libtermubit_crypto_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-crypto_libtermubit_crypto_a_SOURCES = \
+crypto_libtermucoin_crypto_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_CONFIG_INCLUDES)
+crypto_libtermucoin_crypto_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+crypto_libtermucoin_crypto_a_SOURCES = \
   crypto/aes.cpp \
   crypto/aes.h \
   crypto/chacha20.h \
@@ -282,13 +282,13 @@ crypto_libtermubit_crypto_a_SOURCES = \
 
 # only include SSE2 scrypt sources if USE_SCRYPT_SSE2 is defined
 if USE_SCRYPT_SSE2
-crypto_libtermubit_crypto_a_SOURCES += crypto/scrypt-sse2.cpp
+crypto_libtermucoin_crypto_a_SOURCES += crypto/scrypt-sse2.cpp
 endif
 
 # consensus: shared between all executables that validate any consensus rules.
-libtermubit_consensus_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-libtermubit_consensus_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-libtermubit_consensus_a_SOURCES = \
+libtermucoin_consensus_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+libtermucoin_consensus_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+libtermucoin_consensus_a_SOURCES = \
   amount.h \
   arith_uint256.cpp \
   arith_uint256.h \
@@ -323,9 +323,9 @@ libtermubit_consensus_a_SOURCES = \
   version.h
 
 # common: shared between bitcoind, and bitcoin-qt and non-server tools
-libtermubit_common_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-libtermubit_common_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-libtermubit_common_a_SOURCES = \
+libtermucoin_common_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+libtermucoin_common_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+libtermucoin_common_a_SOURCES = \
   amount.cpp \
   arith_uint256.cpp \
   auxpow.cpp \
@@ -352,9 +352,9 @@ libtermubit_common_a_SOURCES = \
 # util: shared between all executables.
 # This library *must* be included to make sure that the glibc
 # backward-compatibility objects and their sanity checks are linked.
-libtermubit_util_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-libtermubit_util_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-libtermubit_util_a_SOURCES = \
+libtermucoin_util_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+libtermucoin_util_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+libtermucoin_util_a_SOURCES = \
   support/lockedpool.cpp \
   chainparamsbase.cpp \
   clientversion.cpp \
@@ -375,99 +375,99 @@ libtermubit_util_a_SOURCES = \
 
 if GLIBC_BACK_COMPAT
 
-libtermubit_util_a_SOURCES += compat/glibc_compat.cpp
+libtermucoin_util_a_SOURCES += compat/glibc_compat.cpp
 AM_LDFLAGS += $(COMPAT_LDFLAGS)
 
 endif
 
 # cli: shared between bitcoin-cli and bitcoin-qt
-libtermubit_cli_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-libtermubit_cli_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-libtermubit_cli_a_SOURCES = \
+libtermucoin_cli_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+libtermucoin_cli_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+libtermucoin_cli_a_SOURCES = \
   rpc/client.cpp \
   $(BITCOIN_CORE_H)
 
-nodist_libtermubit_util_a_SOURCES = $(srcdir)/obj/build.h
+nodist_libtermucoin_util_a_SOURCES = $(srcdir)/obj/build.h
 #
 
 # bitcoind binary #
-termubitd_SOURCES = bitcoind.cpp
-termubitd_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-termubitd_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-termubitd_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+termucoind_SOURCES = bitcoind.cpp
+termucoind_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+termucoind_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+termucoind_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-termubitd_SOURCES += bitcoind-res.rc
+termucoind_SOURCES += bitcoind-res.rc
 endif
 
-termubitd_LDADD = \
-  $(LIBTERMUBIT_SERVER) \
-  $(LIBTERMUBIT_COMMON) \
+termucoind_LDADD = \
+  $(LIBTERMUCOIN_SERVER) \
+  $(LIBTERMUCOIN_COMMON) \
   $(LIBUNIVALUE) \
-  $(LIBTERMUBIT_UTIL) \
-  $(LIBTERMUBIT_WALLET) \
-  $(LIBTERMUBIT_ZMQ) \
-  $(LIBTERMUBIT_CONSENSUS) \
-  $(LIBTERMUBIT_CRYPTO) \
+  $(LIBTERMUCOIN_UTIL) \
+  $(LIBTERMUCOIN_WALLET) \
+  $(LIBTERMUCOIN_ZMQ) \
+  $(LIBTERMUCOIN_CONSENSUS) \
+  $(LIBTERMUCOIN_CRYPTO) \
   $(LIBLEVELDB) \
   $(LIBMEMENV) \
   $(LIBSECP256K1)
 
-termubitd_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS) $(ZMQ_LIBS)
+termucoind_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS) $(ZMQ_LIBS)
 
 # bitcoin-cli binary #
-termubit_cli_SOURCES = bitcoin-cli.cpp
-termubit_cli_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
-termubit_cli_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-termubit_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+termucoin_cli_SOURCES = bitcoin-cli.cpp
+termucoin_cli_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
+termucoin_cli_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+termucoin_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-termubit_cli_SOURCES += bitcoin-cli-res.rc
+termucoin_cli_SOURCES += bitcoin-cli-res.rc
 endif
 
-termubit_cli_LDADD = \
-  $(LIBTERMUBIT_CLI) \
+termucoin_cli_LDADD = \
+  $(LIBTERMUCOIN_CLI) \
   $(LIBUNIVALUE) \
-  $(LIBTERMUBIT_UTIL) \
-  $(LIBTERMUBIT_CRYPTO)
+  $(LIBTERMUCOIN_UTIL) \
+  $(LIBTERMUCOIN_CRYPTO)
 
-termubit_cli_LDADD += $(BOOST_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(EVENT_LIBS)
+termucoin_cli_LDADD += $(BOOST_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(EVENT_LIBS)
 #
 
 # bitcoin-tx binary #
-termubit_tx_SOURCES = bitcoin-tx.cpp
-termubit_tx_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-termubit_tx_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-termubit_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+termucoin_tx_SOURCES = bitcoin-tx.cpp
+termucoin_tx_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+termucoin_tx_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+termucoin_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-termubit_tx_SOURCES += bitcoin-tx-res.rc
+termucoin_tx_SOURCES += bitcoin-tx-res.rc
 endif
 
-termubit_tx_LDADD = \
+termucoin_tx_LDADD = \
   $(LIBUNIVALUE) \
-  $(LIBTERMUBIT_COMMON) \
-  $(LIBTERMUBIT_UTIL) \
-  $(LIBTERMUBIT_CONSENSUS) \
-  $(LIBTERMUBIT_CRYPTO) \
+  $(LIBTERMUCOIN_COMMON) \
+  $(LIBTERMUCOIN_UTIL) \
+  $(LIBTERMUCOIN_CONSENSUS) \
+  $(LIBTERMUCOIN_CRYPTO) \
   $(LIBSECP256K1)
 
-termubit_tx_LDADD += $(BOOST_LIBS) $(CRYPTO_LIBS)
+termucoin_tx_LDADD += $(BOOST_LIBS) $(CRYPTO_LIBS)
 #
 
 # bitcoinconsensus library #
 if BUILD_BITCOIN_LIBS
 include_HEADERS = script/bitcoinconsensus.h
-libtermubitconsensus_la_SOURCES = $(crypto_libtermubit_crypto_a_SOURCES) $(libtermubit_consensus_a_SOURCES)
+libtermucoinconsensus_la_SOURCES = $(crypto_libtermucoin_crypto_a_SOURCES) $(libtermucoin_consensus_a_SOURCES)
 
 if GLIBC_BACK_COMPAT
-  libtermubitconsensus_la_SOURCES += compat/glibc_compat.cpp
+  libtermucoinconsensus_la_SOURCES += compat/glibc_compat.cpp
 endif
 
-libtermubitconsensus_la_LDFLAGS = $(AM_LDFLAGS) -no-undefined $(RELDFLAGS)
-libtermubitconsensus_la_LIBADD = $(LIBSECP256K1)
-libtermubitconsensus_la_CPPFLAGS = $(AM_CPPFLAGS) -I$(builddir)/obj -I$(srcdir)/secp256k1/include -DBUILD_BITCOIN_INTERNAL
-libtermubitconsensus_la_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+libtermucoinconsensus_la_LDFLAGS = $(AM_LDFLAGS) -no-undefined $(RELDFLAGS)
+libtermucoinconsensus_la_LIBADD = $(LIBSECP256K1)
+libtermucoinconsensus_la_CPPFLAGS = $(AM_CPPFLAGS) -I$(builddir)/obj -I$(srcdir)/secp256k1/include -DBUILD_BITCOIN_INTERNAL
+libtermucoinconsensus_la_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 
 endif
 #

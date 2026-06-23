@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 # Copyright (c) 2016 The Bitcoin Core developers
-# Copyright (c) 2026 The Termubit Core developers
+# Copyright (c) 2026 The Termucoin Core developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 from test_framework.test_framework import BitcoinTestFramework
-from test_framework.util import (start_nodes, start_node, assert_equal, termubitd_processes, JSONRPCException)
+from test_framework.util import (start_nodes, start_node, assert_equal, termucoind_processes, JSONRPCException)
 
 
 def read_dump(file_name, addrs, hd_master_addr_old):
@@ -95,7 +95,7 @@ class WalletDumpTest(BitcoinTestFramework):
 
         #encrypt wallet, restart, unlock and dump
         self.nodes[0].encryptwallet('test')
-        termubitd_processes[0].wait()
+        termucoind_processes[0].wait()
         self.nodes[0] = start_node(0, self.options.tmpdir, self.extra_args[0])
         self.nodes[0].walletpassphrase('test', 10)
         # Should be a no-op:

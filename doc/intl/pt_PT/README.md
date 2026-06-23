@@ -1,23 +1,23 @@
 <h1 align="center">
-<img src="https://raw.githubusercontent.com/termubit/termubit/master/share/pixmaps/termubit256.svg" alt="Termubit" width="256"/>
+<img src="https://raw.githubusercontent.com/termucoin/termucoin/master/share/pixmaps/termucoin256.svg" alt="Termucoin" width="256"/>
 <br/><br/>
-Termubit Core [TERM, ]  
+Termucoin Core [TERM, ]  
 </h1>
 
-Termubit é uma criptomoeda voltada para a comunidade inspirada num   . O software Termubit Core permite que qualquer pessoa opere um nó nas redes blockchain Termubit e usa o método de hash Scrypt para Prova de Trabalho. É adaptado do Bitcoin Core e outras criptomoedas.
+Termucoin é uma criptomoeda voltada para a comunidade inspirada num   . O software Termucoin Core permite que qualquer pessoa opere um nó nas redes blockchain Termucoin e usa o método de hash Scrypt para Prova de Trabalho. É adaptado do Bitcoin Core e outras criptomoedas.
 
-Para mais informações acerca das taxas de transação utilizadas na rede Termubit, por favor clica aqui:
+Para mais informações acerca das taxas de transação utilizadas na rede Termucoin, por favor clica aqui:
 [taxas recomendadas](doc/fee-recommendation.md).
 
 ## Utilização 💻
 
-Para começares a tua jornada com o Termubit Core, ve o [manual de instalação](INSTALL.md) e o [guia para iniciantes](doc/getting-started.md).
+Para começares a tua jornada com o Termucoin Core, ve o [manual de instalação](INSTALL.md) e o [guia para iniciantes](doc/getting-started.md).
 
-A API JSON-RPC incluida no Termubit Core é auto documentada e pode ser vista com o comando `termubit-cli help`, mais informações detalhadas sobre cada comando podem ser encontradas utilizando `termubit-cli help <command>`.
+A API JSON-RPC incluida no Termucoin Core é auto documentada e pode ser vista com o comando `termucoin-cli help`, mais informações detalhadas sobre cada comando podem ser encontradas utilizando `termucoin-cli help <command>`.
 
 ### Quais as portas
 
-O Termubit Core utiliza por padrão a porta `8599` para comunicação em rede
+O Termucoin Core utiliza por padrão a porta `8599` para comunicação em rede
 ponto-a-ponto que é necessária para sincronizar a blockchain da "rede principal",
 (mainnet), e se manter atualizadas de novas transações e blocos. Adicionalmente a
 porta JSONRPC pode ser aberta que por defeito é `8598` para a rede principal.
@@ -30,12 +30,12 @@ porta JSONRPC pode ser aberta que por defeito é `8598` para a rede principal.
 
 ## Desenvolvimento continuo - Plano Lua 🌒
 
-O Termubit Core é um programa de código aberto gerido pela comunidade. O processo de desenvolvimento é aberto e visivel publicamente; qualquer um pode ver, discutir e trabalhar no programa.
+O Termucoin Core é um programa de código aberto gerido pela comunidade. O processo de desenvolvimento é aberto e visivel publicamente; qualquer um pode ver, discutir e trabalhar no programa.
 
 Recursos principais de Desenvolvimento:
 
-* [Projetos do Github](https://github.com/termubit/termubit/projects) é utilizado para conduzir trabalhos planeados ou que estejam em desenvolvimento para as próximas atualizações.
-* [Discussão do Github](https://github.com/termubit/termubit/discussions) é usado para discutir sobre as funcionalidades, planeadas ou não, relacionadas ao desenvolvimento do programa Termubit Core, os protocolos adjacentes e o criptoativo TERM.
+* [Projetos do Github](https://github.com/termucoin/termucoin/projects) é utilizado para conduzir trabalhos planeados ou que estejam em desenvolvimento para as próximas atualizações.
+* [Discussão do Github](https://github.com/termucoin/termucoin/discussions) é usado para discutir sobre as funcionalidades, planeadas ou não, relacionadas ao desenvolvimento do programa Termucoin Core, os protocolos adjacentes e o criptoativo TERM.
 
 ### Estratégia das Versões
 Os numeros de compilação seguem a seguinte semantica:  ```major.minor.patch```
@@ -54,19 +54,19 @@ Este repositório possui 3 principais ramificações (branchs), são estas:
 
 ## Contribuindo 🤝
 
-Se encontrastes um bug ou tivestes alguma situação incomum com este programa, por favor informa-nos do ocorrido utilizando o [sistema de problemas (issues)](https://github.com/termubit/termubit/issues/new?assignees=&labels=bug&template=bug_report.md&title=%5Bbug%5D+).
+Se encontrastes um bug ou tivestes alguma situação incomum com este programa, por favor informa-nos do ocorrido utilizando o [sistema de problemas (issues)](https://github.com/termucoin/termucoin/issues/new?assignees=&labels=bug&template=bug_report.md&title=%5Bbug%5D+).
 
 Por favor, acede ao [guia de contribuições](CONTRIBUTING.md) para ver como podes participar
-no desenvolvimento do Termubit Core. Existem alguns [pedidos de ajuda](https://github.com/termubit/termubit/labels/help%20wanted)
+no desenvolvimento do Termucoin Core. Existem alguns [pedidos de ajuda](https://github.com/termucoin/termucoin/labels/help%20wanted)
 onde os contribuintes terão uma grande importância e apreço. wow.
 
 ## Perguntas frequentes ❓
 
-Tens alguma questão relacionada com o Termubit? Talvez já haja uma resposta, disponivel no
+Tens alguma questão relacionada com o Termucoin? Talvez já haja uma resposta, disponivel no
 [FAQ](doc/FAQ.md) ou na
-[seção Q&A](https://github.com/termubit/termubit/discussions/categories/q-a)
+[seção Q&A](https://github.com/termucoin/termucoin/discussions/categories/q-a)
 do nosso quadro de discussão!
 
 ## Licenças ⚖️
-Termubit Core é disponibilizada sob os termos de uso da licença MIT. Vê,
+Termucoin Core é disponibilizada sob os termos de uso da licença MIT. Vê,
 [COPYING](COPYING) para mais informações.

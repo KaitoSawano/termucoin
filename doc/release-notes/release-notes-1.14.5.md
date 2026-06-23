@@ -1,28 +1,28 @@
-Termubit Core version 1.14.5 is now available from:
+Termucoin Core version 1.14.5 is now available from:
 
-  <https://github.com/termubit/termubit/releases/tag/v1.14.5/>
+  <https://github.com/termucoin/termucoin/releases/tag/v1.14.5/>
 
 This is a new minor version release, including important security updates and
-changes to network policies. All Termubit Core users, miners, services, relay
+changes to network policies. All Termucoin Core users, miners, services, relay
 operators and wallet users are strongly recommended to upgrade.
 
 Please report bugs using the issue tracker at github:
 
-  <https://github.com/termubit/termubit/issues>
+  <https://github.com/termucoin/termucoin/issues>
 
 To receive security and update notifications, please watch reddit or Twitter:
 
-  * https://www.reddit.com/r/termubitdev/
-  * @Termubit on Twitter for high priority announcements
-  * @termubit\_devs on Twitter for updates on development work
+  * https://www.reddit.com/r/termucoindev/
+  * @Termucoin on Twitter for high priority announcements
+  * @termucoin\_devs on Twitter for updates on development work
 
 Compatibility
 ==============
 
-Termubit Core is extensively tested on Ubuntu Server LTS, Intel-based macOS
+Termucoin Core is extensively tested on Ubuntu Server LTS, Intel-based macOS
 and Windows 10.
 
-Termubit Core should also work on most other Unix-like systems but is not
+Termucoin Core should also work on most other Unix-like systems but is not
 frequently tested on them.
 
 Notable changes
@@ -32,33 +32,33 @@ Important Security Updates
 --------------------------
 
 This release contains fixes for 2 high severity vulnerabilities that affect
-most Termubit Core users.
+most Termucoin Core users.
 
-### Remote Code Execution in Termubit QT (CVE-2021-3401)
+### Remote Code Execution in Termucoin QT (CVE-2021-3401)
 
 This release addresses CVE-2021-3401 that opened potential remote code execution
 on QT (graphical user interface) wallets through malicious use of
-`termubit:` URIs.
+`termucoin:` URIs.
 
-**Termubit QT users are urged to please update their installations to this
+**Termucoin QT users are urged to please update their installations to this
 version immediately**, to prevent malicious actors from exploiting this
 vulnerability.
 
 ### Sensitive Information Exposure on Unix platforms (CVE-2019-15947)
 
 A fix for CVE-2019-15947 was back-ported from Bitcoin Core to prevent potential
-leakage of sensitive information when Termubit Core crashes on Unix platforms.
+leakage of sensitive information when Termucoin Core crashes on Unix platforms.
 The vulnerability is patched for systems that run a Linux kernel equal to or
 higher than 3.4.
 
-**Termubit Core wallet users on Linux platforms are urged to please update to
+**Termucoin Core wallet users on Linux platforms are urged to please update to
 this version.**
 
 Fee Reductions
 --------------
 
 This release finalizes a new minimum fee recommendation for all participants on
-the Termubit network, following the reduction of relay and mining defaults in
+the Termucoin network, following the reduction of relay and mining defaults in
 1.14.4. The recommendation has been documented and can be found
 [here](../fee-recommendation.md). With this release, the minimum fees when
 creating transactions are recommended to be as follows:
@@ -71,8 +71,8 @@ creating transactions are recommended to be as follows:
 
 * The user interface for selecting fees when transacting TERM has been updated
   to give an idea of how much is being spent, rather than a block target. As
-  Termubit blocks are not full, typically all transactions are mined in the next
-  block, and therefore the target estimation does not makes sense for Termubit.
+  Termucoin blocks are not full, typically all transactions are mined in the next
+  block, and therefore the target estimation does not makes sense for Termucoin.
 * Transaction sizes are no longer rounded up to the nearest kilobyte before
   calculating fees, which significantly simplifies fee calculation logic and
   makes it more similar to Bitcoin and Litecoin.
@@ -108,7 +108,7 @@ creating transactions are recommended to be as follows:
 BDB Updated to 5.3
 ------------------
 
-The Berkley DB version used by Termubit Core has been updated to 5.3 (from 5.1)
+The Berkley DB version used by Termucoin Core has been updated to 5.3 (from 5.1)
 as 5.3 is now standard on many Linux distributions. 5.1 and 5.3 wallet files
 have been tested to be interchangeable.
 
@@ -173,7 +173,7 @@ automatically.
 Additionally, an experimental CI build environment has been introduced to enable
 ongoing testing and maintenance of incubating features that are not yet ready
 for release. Currently this contains the AVX2 features that aim to increase the
-performance of cryptographic routines within Termubit Core.
+performance of cryptographic routines within Termucoin Core.
 
 Minor Changes
 =============

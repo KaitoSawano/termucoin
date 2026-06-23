@@ -1,5 +1,5 @@
 // Copyright (c) 2011-2016 The Bitcoin Core developers
-// Copyright (c) 2026 The Termubit Core developers
+// Copyright (c) 2026 The Termucoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -37,7 +37,7 @@
 #include <QUrlQuery>
 
 const int BITCOIN_IPC_CONNECT_TIMEOUT = 1000; // milliseconds
-const QString BITCOIN_IPC_PREFIX("termubit:");
+const QString BITCOIN_IPC_PREFIX("termucoin:");
 const int IPC_SOCKET_HASH = GetRandInt(INT_MAX);
 
 //
@@ -47,7 +47,7 @@ const int IPC_SOCKET_HASH = GetRandInt(INT_MAX);
 //
 static QString ipcServerName()
 {
-    QString name("TermubitQt");
+    QString name("TermucoinQt");
 
     // Append a simple hash of the datadir
     // Note that GetDataDir(true) returns a different path
@@ -167,7 +167,7 @@ void PaymentServer::initializeServer(QObject* parent, QString ipcServerName, boo
         if (!uriServer->listen(ipcServerName)) {
             // constructor is called early in init, so don't use "Q_EMIT message()" here
             QMessageBox::critical(0, tr("Payment request error"),
-                tr("Cannot start termubit: click-to-pay handler"));
+                tr("Cannot start termucoin: click-to-pay handler"));
         }
         else {
             connect(uriServer, SIGNAL(newConnection()), this, SLOT(handleURIConnection()));
@@ -248,7 +248,7 @@ void PaymentServer::handleURIOrFile(const QString& s)
         }
         else
             Q_EMIT message(tr("URI handling"),
-                tr("URI cannot be parsed! This can be caused by an invalid Termubit address or malformed URI parameters."),
+                tr("URI cannot be parsed! This can be caused by an invalid Termucoin address or malformed URI parameters."),
                 CClientUIInterface::ICON_WARNING);
 
         return;

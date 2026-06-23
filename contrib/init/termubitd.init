@@ -1,36 +1,36 @@
 #!/bin/bash
 #
-#  termubitd The termubit core server.
+#  termucoind The termucoin core server.
 #
 #
 # chkconfig: 345 80 20
-# description: termubitd
-# processname: termubitd
+# description: termucoind
+# processname: termucoind
 #
 
 # Source function library.
 . /etc/init.d/functions
 
-# you can override defaults in /etc/sysconfig/termubitd, see below
-if [ -f /etc/sysconfig/termubitd ]; then
-        . /etc/sysconfig/termubitd
+# you can override defaults in /etc/sysconfig/termucoind, see below
+if [ -f /etc/sysconfig/termucoind ]; then
+        . /etc/sysconfig/termucoind
 fi
 
 RETVAL=0
 
-prog=termubitd
-# you can override the lockfile via TERMUBITD_LOCKFILE in /etc/sysconfig/termubitd
-lockfile=${TERMUBITD_LOCKFILE-/var/lock/subsys/termubitd}
+prog=termucoind
+# you can override the lockfile via TERMUCOIND_LOCKFILE in /etc/sysconfig/termucoind
+lockfile=${TERMUCOIND_LOCKFILE-/var/lock/subsys/termucoind}
 
-# termubitd defaults to /usr/bin/termubitd, override with TERMUBITD_BIN
-termubitd=${TERMUBITD_BIN-/usr/bin/termubitd}
+# termucoind defaults to /usr/bin/termucoind, override with TERMUCOIND_BIN
+termucoind=${TERMUCOIND_BIN-/usr/bin/termucoind}
 
-# termubitd opts default to -disablewallet, override with TERMUBITD_OPTS
-termubitd_opts=${TERMUBITD_OPTS--disablewallet}
+# termucoind opts default to -disablewallet, override with TERMUCOIND_OPTS
+termucoind_opts=${TERMUCOIND_OPTS--disablewallet}
 
 start() {
     echo -n $"Starting $prog: "
-    daemon $DAEMONOPTS $termubitd $termubitd_opts
+    daemon $DAEMONOPTS $termucoind $termucoind_opts
     RETVAL=$?
     echo
     [ $RETVAL -eq 0 ] && touch $lockfile

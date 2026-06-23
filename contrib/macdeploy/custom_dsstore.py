@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # Copyright (c) 2013-2016 The Bitcoin Core developers
-# Copyright (c) 2026 The Termubit Core developers
+# Copyright (c) 2026 The Termucoin Core developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 from __future__ import division,print_function,unicode_literals
@@ -46,8 +46,8 @@ alias = Alias.from_bytes(icvp['backgroundImageAlias'])
 alias.volume.name = package_name_ns
 alias.volume.posix_path = '/Volumes/' + package_name_ns
 alias.volume.disk_image_alias.target.filename = package_name_ns + '.temp.dmg'
-alias.volume.disk_image_alias.target.carbon_path = 'Macintosh HD:Users:\x00termubituser:\x00Documents:\x00termubit:\x00termubit:\x00' + package_name_ns + '.temp.dmg'
-alias.volume.disk_image_alias.target.posix_path = 'Users/termubituser/Documents/termubit/termubit/' + package_name_ns + '.temp.dmg'
+alias.volume.disk_image_alias.target.carbon_path = 'Macintosh HD:Users:\x00termucoinuser:\x00Documents:\x00termucoin:\x00termucoin:\x00' + package_name_ns + '.temp.dmg'
+alias.volume.disk_image_alias.target.posix_path = 'Users/termucoinuser/Documents/termucoin/termucoin/' + package_name_ns + '.temp.dmg'
 alias.target.carbon_path = package_name_ns + ':.background:\x00background.tiff'
 icvp['backgroundImageAlias'] = biplist.Data(alias.to_bytes())
 ds['.']['icvp'] = icvp
@@ -55,7 +55,7 @@ ds['.']['icvp'] = icvp
 ds['.']['vSrn'] = ('long', 1)
 
 ds['Applications']['Iloc'] = (370, 156)
-ds['Termubit-Qt.app']['Iloc'] = (128, 156)
+ds['Termucoin-Qt.app']['Iloc'] = (128, 156)
 
 ds.flush()
 ds.close()

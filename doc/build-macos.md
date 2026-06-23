@@ -1,11 +1,11 @@
-# Building Termubit Core on MacOS #
+# Building Termucoin Core on MacOS #
 
 Tested on MacOs Ventura and Sonoma on Intel (x86_64) and Apple Silicon (arm64) macs.
 
-### Clone termubit locally, or check it out, etc. ###
+### Clone termucoin locally, or check it out, etc. ###
 
 ```sh
-git clone https://github.com/termubit/termubit.git
+git clone https://github.com/termucoin/termucoin.git
 ```
 
 ### Set up OSX basic build dependencies. ##
@@ -39,10 +39,10 @@ brew install autoconf automake libtool miniupnpc openssl pkg-config protobuf \
              qt5 zeromq qrencode librsvg boost berkeley-db@5 libevent
 ```
 
-### Go back to your Termubit repo ###
+### Go back to your Termucoin repo ###
 
 ```sh
-cd ~/termubit
+cd ~/termucoin
 
 ./autogen.sh
 ./configure --enable-c++17 --with-gui --with-boost=`brew --prefix boost`
@@ -60,5 +60,5 @@ Go have another beverage.
 Run it.
 
 ```sh
-/usr/local/bin/termubit-qt
+/usr/local/bin/termucoin-qt
 ```

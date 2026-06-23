@@ -1,16 +1,16 @@
-# Contributing to Termubit Core
+# Contributing to Termucoin Core
 
-Termubit Core is open source software, and we would welcome contributions
+Termucoin Core is open source software, and we would welcome contributions
 which improve the state of the software. For those wanting to discuss changes,
 or look for work that needs doing, please see:
 
-* [Help requests](https://github.com/termubit/termubit/labels/help%20wanted)
-* [Projects](https://github.com/termubit/termubit/projects)
-* [Termubitdev on reddit](https://www.reddit.com/r/termubitdev/)
+* [Help requests](https://github.com/termucoin/termucoin/labels/help%20wanted)
+* [Projects](https://github.com/termucoin/termucoin/projects)
+* [Termucoindev on reddit](https://www.reddit.com/r/termucoindev/)
 
 ## Branch Strategy
 
-Termubit Core's default branch is intentionally a stable release, so that anyone
+Termucoin Core's default branch is intentionally a stable release, so that anyone
 downloading the code and compiling it gets a stable release. Active development
 occurs on the `master` branch. When raising PRs, please raise them against
 `master`.
@@ -101,13 +101,13 @@ in the future, they may be removed.
 
 ### Refactoring
 
-Termubit Core is a direct fork of Bitcoin Core and therefore benefits from as
+Termucoin Core is a direct fork of Bitcoin Core and therefore benefits from as
 little refactoring as possible on code that is created upstream. If you see any
 structural issues with upstream code, please propose these fixes for
-[bitcoin/bitcoin](https://github.com/bitcoin/bitcoin) and future Termubit Core
+[bitcoin/bitcoin](https://github.com/bitcoin/bitcoin) and future Termucoin Core
 releases will automatically benefit from these.
 
-When refactoring Termubit-specific code, please keep refactoring requests short,
+When refactoring Termucoin-specific code, please keep refactoring requests short,
 low complexity and easy to verify.
 
 ### Experimental features and optimizations
@@ -126,23 +126,23 @@ For more information, see the
 
 ## "Decision Making" Process
 
-The following applies to code changes to Termubit Core, and is not to be
-confused with overall Termubit Network Protocol consensus changes. All consensus
+The following applies to code changes to Termucoin Core, and is not to be
+confused with overall Termucoin Network Protocol consensus changes. All consensus
 changes **must** be ratified by miners; a proposal to implement protocol changes
 does not guarantee activation on the mainnet, not even when a binary gets
 released by maintainers.
 
-Whether a pull request is merged into Termubit Core rests with the repository
+Whether a pull request is merged into Termucoin Core rests with the repository
 maintainers.
 
 Maintainers will take into consideration if a patch is in line with the general
-principles of Termubit; meets the minimum standards for inclusion; and will
+principles of Termucoin; meets the minimum standards for inclusion; and will
 take into account the consensus among frequent contributors.
 
 In general, all pull requests must:
 
   - have a clear use case, fix a demonstrable bug or serve the greater good of
-    Termubit;
+    Termucoin;
   - be peer reviewed;
   - have unit tests and functional tests;
   - follow code style guidelines;
@@ -173,11 +173,11 @@ there is consensus to merge a pull request.
 
 Maintainers reserve the right to weigh the opinions of peer reviewers
 using common sense judgement and also may weight based on meritocracy: Those
-that have demonstrated a deeper commitment and understanding towards Termubit
+that have demonstrated a deeper commitment and understanding towards Termucoin
 (over time) or have clear domain expertise may naturally have more weight, as
 one would expect in all walks of life.
 
-Where a patch set proposes to change the Termubit consensus, it must have been
+Where a patch set proposes to change the Termucoin consensus, it must have been
 discussed extensively, be accompanied by widely discussed documentation and have
 a generally widely perceived technical consensus of being a worthwhile change,
 based on the judgement of the maintainers.

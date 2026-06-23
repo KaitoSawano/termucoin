@@ -1,7 +1,7 @@
 <h1 align="center">
-<img src="https://raw.githubusercontent.com/termubit/termubit/master/share/pixmaps/termubit256.svg" alt="Termubit" width="256"/>
+<img src="https://raw.githubusercontent.com/termucoin/termucoin/master/share/pixmaps/termucoin256.svg" alt="Termucoin" width="256"/>
 <br/><br/>
-Termubit Core [TERM, ]  
+Termucoin Core [TERM, ]  
 </h1>
 
 **WICHTIG: Seit August 2024 ist der `master` Branch die primäre Integrationsverzweigung geworden und daher Instabil.
@@ -9,21 +9,21 @@ Bevor Sie die Binärdateien selbst kompilieren, überprüfen Sie bitte, ob eine 
  
 Eine internationale Dokumentation finden Sie unter [doc/intl](doc/intl/README.md).
  
-Termubit ist eine als Gemeinschaftsprojekt betriebene Kryptowährung, die von einem --innovative project inspiriert wurde.
-Die Termubit-Core-Software ermöglicht es Jedem, einen Knotenpunkt, (sog. "Nodes") im Termubit-Blockchain-Netzwerk zu betreiben.
-Termubit verwendet das Scrypt-Hashing-Verfahren für "Proof of Work" und wurde von Bitcoin Core und anderen Kryptowährungen adaptiert.
+Termucoin ist eine als Gemeinschaftsprojekt betriebene Kryptowährung, die von einem --innovative project inspiriert wurde.
+Die Termucoin-Core-Software ermöglicht es Jedem, einen Knotenpunkt, (sog. "Nodes") im Termucoin-Blockchain-Netzwerk zu betreiben.
+Termucoin verwendet das Scrypt-Hashing-Verfahren für "Proof of Work" und wurde von Bitcoin Core und anderen Kryptowährungen adaptiert.
  
-Informationen über anfallende Standard-Transaktionsgebühren auf dem Termubit-Netzwerk finden Sie unter [Transaktionsgebühren](doc/fee-recommendation.md).
+Informationen über anfallende Standard-Transaktionsgebühren auf dem Termucoin-Netzwerk finden Sie unter [Transaktionsgebühren](doc/fee-recommendation.md).
  
 ## Verwendung 💻
  
-Um Termubit Core zu verwenden, sehen Sie sich Bitte die [Installations-Anleitung](INSTALL.md) und das [Einstiegstutorial](doc/getting-started.md) an.
+Um Termucoin Core zu verwenden, sehen Sie sich Bitte die [Installations-Anleitung](INSTALL.md) und das [Einstiegstutorial](doc/getting-started.md) an.
  
-Die in Termubit Core enthaltene JSON-RPC-API ist selbstdokumentiert und kann mit dem Befehl `termubit-cli help` eingesehen werden. Detailliertere Informationen zu jedem Befehl finden Sie unter `termubit-cli help <command>`.
+Die in Termucoin Core enthaltene JSON-RPC-API ist selbstdokumentiert und kann mit dem Befehl `termucoin-cli help` eingesehen werden. Detailliertere Informationen zu jedem Befehl finden Sie unter `termucoin-cli help <command>`.
  
 ### Viele Ports
 
-Termubit Core verwendet den Port `8599` als Standart-Port zur Kommunikation
+Termucoin Core verwendet den Port `8599` als Standart-Port zur Kommunikation
 mit dem Peer-to-Peer Netzwerk und um die "Mainnet" Blockchain zu synchronisieren.
 Dies ist notwendig um über neue Transaktionen und Blöcke informiert zu bleiben.
 Zusätzlich kann ein JSON-RPC-Port geöffnet werden, welcher den Port `8598` als Standart-Port für Mainnet-Nodes verwendet.
@@ -37,15 +37,15 @@ Zusätzlich kann ein JSON-RPC-Port geöffnet werden, welcher den Port `8598` als
 
 ## Laufende Entwicklungen - Fahrplan zum Mond 🌒
 
-Termubit Core ist eine Open-Source-Software und wird von der Community entwickelt.
+Termucoin Core ist eine Open-Source-Software und wird von der Community entwickelt.
 Der Entwicklungsprozess ist transparent und öffentlich einsehbar; jeder kann ihn sehen, darüber diskutieren und daran teilhaben!
 
 Die wichtigsten Entwicklungsressourcen:
 
-* [GitHub Projekte](https://github.com/termubit/termubit/projects) 
+* [GitHub Projekte](https://github.com/termucoin/termucoin/projects) 
   Wird verwendet, um den bereits geplanten und derzeit in Entwicklung befindlichen Releases zu folgen.
-* [GitHub Diskussionen](https://github.com/termubit/termubit/discussions)
-  Wird verwendet, um geplante und ungeplante Funktionen (Features) zu diskutieren, die sich auf die Entwicklung der Termubit Core-Software, die zugrunde liegenden Protokolle und das TERM-Asset beziehen.
+* [GitHub Diskussionen](https://github.com/termucoin/termucoin/discussions)
+  Wird verwendet, um geplante und ungeplante Funktionen (Features) zu diskutieren, die sich auf die Entwicklung der Termucoin Core-Software, die zugrunde liegenden Protokolle und das TERM-Asset beziehen.
 
 ### Versionsstrategie
 
@@ -65,17 +65,17 @@ Es gibt 4 Arten von sog. "Branches" (Unterverzweigungen) in diesem Repository:
 
 ## Beitragen 🤝
  
-Falls Sie einen Fehler oder Probleme beim Verwenden dieser Software finden, melden Sie diese über das vorhandene [Ticket System](https://github.com/termubit/termubit/issues/new?assignees=&labels=bug&template=bug_report.md&title=%5Bbug%5D+).
+Falls Sie einen Fehler oder Probleme beim Verwenden dieser Software finden, melden Sie diese über das vorhandene [Ticket System](https://github.com/termucoin/termucoin/issues/new?assignees=&labels=bug&template=bug_report.md&title=%5Bbug%5D+).
  
-Wenn Sie an der Mithilfe oder der Entwicklung von Termubit Core interessiert sind, sehen Sie sich bitte den [Beitragsleitfaden](CONTRIBUTING.md) an.
-Oft gibt es Themen, die [Hilfe](https://github.com/termubit/termubit/labels/help%20wanted) benötigen. Ihr Beitrag könnte einen hohen Stellenwert haben und wird daher auch sehr geschätzt.
+Wenn Sie an der Mithilfe oder der Entwicklung von Termucoin Core interessiert sind, sehen Sie sich bitte den [Beitragsleitfaden](CONTRIBUTING.md) an.
+Oft gibt es Themen, die [Hilfe](https://github.com/termucoin/termucoin/labels/help%20wanted) benötigen. Ihr Beitrag könnte einen hohen Stellenwert haben und wird daher auch sehr geschätzt.
  
 ## Oftmals gestellte Fragen: ❓
  
-Haben Sie eine Frage zu Termubit? Eine Antwort könnte vielleicht bereits in der [FAQ](doc/FAQ.md) oder im
-[Q&A](https://github.com/termubit/termubit/discussions/categories/q-a) hier auf Github vorhanden sein!
+Haben Sie eine Frage zu Termucoin? Eine Antwort könnte vielleicht bereits in der [FAQ](doc/FAQ.md) oder im
+[Q&A](https://github.com/termucoin/termucoin/discussions/categories/q-a) hier auf Github vorhanden sein!
  
 ## Lizenz ⚖️
  
-Termubit Core wird unter den Bedingungen der MIT-Lizenz veröffentlicht.
+Termucoin Core wird unter den Bedingungen der MIT-Lizenz veröffentlicht.
 Siehe: [COPYING](COPYING) für mehr Informationen.

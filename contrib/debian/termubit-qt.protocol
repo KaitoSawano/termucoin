@@ -1,6 +1,6 @@
 [Protocol]
-exec=termubit-qt '%u'
-protocol=termubit
+exec=termucoin-qt '%u'
+protocol=termucoin
 input=none
 output=none
 helper=true

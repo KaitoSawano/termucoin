@@ -1,11 +1,11 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: Termubit Core
-Source: https://github.com/termubit/termubit
+Upstream-Name: Termucoin Core
+Source: https://github.com/termucoin/termucoin
 
 Files: *
-Copyright: 2009-2024, Bitcoin Core and Termubit Core Developers
+Copyright: 2009-2024, Bitcoin Core and Termucoin Core Developers
 License: Expat
-Comment: The Bitcoin Core and Termubit Core Developers encompasses all
+Comment: The Bitcoin Core and Termucoin Core Developers encompasses all
          contributors to the project, listed in the release notes or the git log
 
 Files: debian/*

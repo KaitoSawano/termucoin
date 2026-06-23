@@ -1,5 +1,5 @@
 // Copyright (c) 2011-2016 The Bitcoin Core developers
-// Copyright (c) 2026 The Termubit Core developers
+// Copyright (c) 2026 The Termucoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -58,11 +58,11 @@ QString BitcoinUnits::description(int unit)
 {
     switch(unit)
     {
-    case MBTC: return QString("Mega-Termubits (1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
-    case kBTC: return QString("Kilo-Termubits (1" THIN_SP_UTF8 "000)");
-    case BTC: return QString("Termubits");
-    case mBTC: return QString("Milli-Termubits (1 / 1" THIN_SP_UTF8 "000)");
-    case uBTC: return QString("Micro-Termubits (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+    case MBTC: return QString("Mega-Termucoins (1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+    case kBTC: return QString("Kilo-Termucoins (1" THIN_SP_UTF8 "000)");
+    case BTC: return QString("Termucoins");
+    case mBTC: return QString("Milli-Termucoins (1 / 1" THIN_SP_UTF8 "000)");
+    case uBTC: return QString("Micro-Termucoins (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
     default: return QString("???");
     }
 }

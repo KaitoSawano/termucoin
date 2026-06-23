@@ -1,23 +1,23 @@
 <h1 align="center">
-<img src="https://raw.githubusercontent.com/termubit/termubit/master/share/pixmaps/termubit256.svg" alt="Termubit" width="256"/>
+<img src="https://raw.githubusercontent.com/termucoin/termucoin/master/share/pixmaps/termucoin256.svg" alt="Termucoin" width="256"/>
 <br/><br/>
-Termubit Core [TERM, ]  
+Termucoin Core [TERM, ]  
 </h1>
 
-Termubit é uma criptomoeda gerida pela comunidade que foi inspirada no   . O programa Termubit Core permite qualquer um operar um nó na rede blockchain da Termubit e utilizar o algoritmo de hash Scrypt para mineração usando Prova de Trabalho (Proof of Work). O Termubit Core é uma adaptação do Bitcoin Core e de outras criptomoedas.
+Termucoin é uma criptomoeda gerida pela comunidade que foi inspirada no   . O programa Termucoin Core permite qualquer um operar um nó na rede blockchain da Termucoin e utilizar o algoritmo de hash Scrypt para mineração usando Prova de Trabalho (Proof of Work). O Termucoin Core é uma adaptação do Bitcoin Core e de outras criptomoedas.
 
-Para maiores informações acerca das taxas de transação usadas na rede Termubit, por favor acesse: 
+Para maiores informações acerca das taxas de transação usadas na rede Termucoin, por favor acesse: 
 [taxas recomendadas](doc/fee-recommendation.md).
 
 ## Uso 💻
 
-Para começar a sua jornada com o Termubit Core, veja o [manual de instalação](INSTALL.md) e o [guia para iniciantes](doc/getting-started.md).
+Para começar a sua jornada com o Termucoin Core, veja o [manual de instalação](INSTALL.md) e o [guia para iniciantes](doc/getting-started.md).
 
-A API JSON-RPC fornecida pelo Termubit Core é auto documentada e pode ser buscada pelo comando `termubit-cli help`, informações mais detalhadas sobre cada comando podem ser encontradas usando `termubit-cli help <command>`.
+A API JSON-RPC fornecida pelo Termucoin Core é auto documentada e pode ser buscada pelo comando `termucoin-cli help`, informações mais detalhadas sobre cada comando podem ser encontradas usando `termucoin-cli help <command>`.
 
 ### Quais as portas
 
-A Termubit Core utiliza por padrão a porta `8599` para comunicação par-a-par, que é necessária para sincronizar a blockchain da "rede principal" e se manter informada de novas transações e blocos. Outrosim, uma porta JSONRPC pode ser aberta, que por padrão é a porta `8598` para nós da rede principal. Recomendamos fortemente não expor portas RPC para a internet pública. 
+A Termucoin Core utiliza por padrão a porta `8599` para comunicação par-a-par, que é necessária para sincronizar a blockchain da "rede principal" e se manter informada de novas transações e blocos. Outrosim, uma porta JSONRPC pode ser aberta, que por padrão é a porta `8598` para nós da rede principal. Recomendamos fortemente não expor portas RPC para a internet pública. 
 
 |  Função  | mainnet | testnet | regtest |
 | :------- | ------: | ------: | ------: |
@@ -26,12 +26,12 @@ A Termubit Core utiliza por padrão a porta `8599` para comunicação par-a-par,
 
 ## Desenvolvimento continuo - Plano Lua 🌒
 
-A Termubit Core é um programa de código aberto gerido pela comunidade. O processo de desenvolvimento é aberto e visivel publicamente; qualquer um pode ver, discutir e trabalhar no programa.
+A Termucoin Core é um programa de código aberto gerido pela comunidade. O processo de desenvolvimento é aberto e visivel publicamente; qualquer um pode ver, discutir e trabalhar no programa.
 
 Recursos principais de Desenvolvimento:
 
-* [Projetos do Github](https://github.com/termubit/termubit/projects) é utilizado para conduzir trabalhos planejados ou que estejam em desenvolvimento para as próximas atualizações.
-* [Discussão do Github](https://github.com/termubit/termubit/discussions) é usado para discutir sobre funcionalidades, planejadas ou não, relacionadas ao desenvolvimento do programa Termubit Core, os protocolos adjacentes e o criptoativo TERM.
+* [Projetos do Github](https://github.com/termucoin/termucoin/projects) é utilizado para conduzir trabalhos planejados ou que estejam em desenvolvimento para as próximas atualizações.
+* [Discussão do Github](https://github.com/termucoin/termucoin/discussions) é usado para discutir sobre funcionalidades, planejadas ou não, relacionadas ao desenvolvimento do programa Termucoin Core, os protocolos adjacentes e o criptoativo TERM.
 
 ### Estratégia das Versões
 Os numeros de compilação seguem a seguinte semantica:  ```major.minor.patch```
@@ -50,19 +50,19 @@ Este repositório possui 3 principais ramificações (branchs), são essas:
 
 ## Contribuindo 🤝
 
-Se você achar um bug ou passar por alguma experiência incomum com este programa, por favor reporte o ocorrido usado o [sistema de problemas (issues)](https://github.com/termubit/termubit/issues/new?assignees=&labels=bug&template=bug_report.md&title=%5Bbug%5D+).
+Se você achar um bug ou passar por alguma experiência incomum com este programa, por favor reporte o ocorrido usado o [sistema de problemas (issues)](https://github.com/termucoin/termucoin/issues/new?assignees=&labels=bug&template=bug_report.md&title=%5Bbug%5D+).
 
 Por favor, acesse o [guia de contribuições](CONTRIBUTING.md) para ver como você pode participar
-do desenvolvimento do Termubit Core. Existem alguns [pedidos de ajuda](https://github.com/termubit/termubit/labels/help%20wanted)
+do desenvolvimento do Termucoin Core. Existem alguns [pedidos de ajuda](https://github.com/termucoin/termucoin/labels/help%20wanted)
 onde os contribuintes terão grande importância e apreço. wow.
 
 ## Perguntas frequentes ❓
 
-Você possui alguma questão relacionada à Termubit? Talvez uma resposta já esteja disponivel no
+Você possui alguma questão relacionada à Termucoin? Talvez uma resposta já esteja disponivel no
 [FAQ](doc/FAQ.md) ou na
-[seção Q&A](https://github.com/termubit/termubit/discussions/categories/q-a)
+[seção Q&A](https://github.com/termucoin/termucoin/discussions/categories/q-a)
 do nosso quadro de discussão!
 
 ## Licenças ⚖️
-Termubit Core é disponibilizada sob os termos de uso da licença MIT. Veja,
+Termucoin Core é disponibilizada sob os termos de uso da licença MIT. Veja,
 [COPYING](COPYING) para mais informações.

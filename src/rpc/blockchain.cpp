@@ -1,6 +1,6 @@
 // Copyright (c) 2010 Satoshi Nakamoto
 // Copyright (c) 2009-2016 The Bitcoin Core developers
-// Copyright (c) 2026 The Termubit Core developers
+// Copyright (c) 2026 The Termucoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -13,7 +13,7 @@
 #include "coins.h"
 #include "consensus/validation.h"
 #include "core_io.h"
-#include "termubit.h"
+#include "termucoin.h"
 #include "validation.h"
 #include "policy/policy.h"
 #include "primitives/transaction.h"
@@ -1020,8 +1020,8 @@ UniValue gettxout(const JSONRPCRequest& request)
             "     \"hex\" : \"hex\",        (string) \n"
             "     \"reqSigs\" : n,          (numeric) Number of required signatures\n"
             "     \"type\" : \"pubkeyhash\", (string) The type, eg pubkeyhash\n"
-            "     \"addresses\" : [          (array of string) array of termubit addresses\n"
-            "        \"address\"     (string) termubit address\n"
+            "     \"addresses\" : [          (array of string) array of termucoin addresses\n"
+            "        \"address\"     (string) termucoin address\n"
             "        ,...\n"
             "     ]\n"
             "  },\n"

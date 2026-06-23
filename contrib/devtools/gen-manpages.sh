@@ -4,10 +4,10 @@ TOPDIR=${TOPDIR:-$(git rev-parse --show-toplevel)}
 SRCDIR=${SRCDIR:-$TOPDIR/src}
 MANDIR=${MANDIR:-$TOPDIR/doc/man}
 
-BITCOIND=${BITCOIND:-$SRCDIR/termubitd}
-BITCOINCLI=${BITCOINCLI:-$SRCDIR/termubit-cli}
-BITCOINTX=${BITCOINTX:-$SRCDIR/termubit-tx}
-BITCOINQT=${BITCOINQT:-$SRCDIR/qt/termubit-qt}
+BITCOIND=${BITCOIND:-$SRCDIR/termucoind}
+BITCOINCLI=${BITCOINCLI:-$SRCDIR/termucoin-cli}
+BITCOINTX=${BITCOINTX:-$SRCDIR/termucoin-tx}
+BITCOINQT=${BITCOINQT:-$SRCDIR/qt/termucoin-qt}
 
 [ ! -x $BITCOIND ] && echo "$BITCOIND not found or not executable." && exit 1
 
@@ -15,8 +15,8 @@ BITCOINQT=${BITCOINQT:-$SRCDIR/qt/termubit-qt}
 BTCVER=($($BITCOINCLI --version | head -n1 | awk -F'[ -]' '{ print $6, $7 }'))
 
 # Create a footer file with copyright content.
-# This gets autodetected fine for termubitd if --version-string is not set,
-# but has different outcomes for termubit-qt and termubit-cli.
+# This gets autodetected fine for termucoind if --version-string is not set,
+# but has different outcomes for termucoin-qt and termucoin-cli.
 echo "[COPYRIGHT]" > footer.h2m
 $BITCOIND --version | sed -n '1!p' >> footer.h2m
 

@@ -1,9 +1,9 @@
 #!/usr/bin/make -f
 # -*- mode: makefile; coding: utf-8 -*-
 
-#DEB_MAKE_CHECK_TARGET = test_termubit
-#build/termubitd::
-#	$(if $(filter nocheck,$(DEB_BUILD_OPTIONS)),,src/test_termubit)
+#DEB_MAKE_CHECK_TARGET = test_termucoin
+#build/termucoind::
+#	$(if $(filter nocheck,$(DEB_BUILD_OPTIONS)),,src/test_termucoin)
 
 %:
 	dh --with bash-completion $@

@@ -80,11 +80,11 @@
     </message>
     <message>
         <source>Choose the address to send coins to</source>
-        <translation>Scegli l&apos;indirizzo a cui inviare Termubit</translation>
+        <translation>Scegli l&apos;indirizzo a cui inviare Termucoin</translation>
     </message>
     <message>
         <source>Choose the address to receive coins with</source>
-        <translation>Scegli l&apos;indirizzo con cui ricevere Termubit</translation>
+        <translation>Scegli l&apos;indirizzo con cui ricevere Termucoin</translation>
     </message>
     <message>
         <source>C&amp;hoose</source>
@@ -99,12 +99,12 @@
         <translation>Indirizzi di ricezione</translation>
     </message>
     <message>
-        <source>These are your Termubit addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Questo è un elenco di indirizzi Termubit a cui puoi inviare pagamenti. Controlla sempre l&apos;importo e l&apos;indirizzo del beneficiario prima di inviare Termubit.</translation>
+        <source>These are your Termucoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Questo è un elenco di indirizzi Termucoin a cui puoi inviare pagamenti. Controlla sempre l&apos;importo e l&apos;indirizzo del beneficiario prima di inviare Termucoin.</translation>
     </message>
     <message>
-        <source>These are your Termubit addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Questi sono i tuoi indirizzi Termubit che puoi usare per ricevere pagamenti. Si raccomanda di generare un nuovo indirizzo per ogni transazione.</translation>
+        <source>These are your Termucoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Questi sono i tuoi indirizzi Termucoin che puoi usare per ricevere pagamenti. Si raccomanda di generare un nuovo indirizzo per ogni transazione.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -205,8 +205,8 @@
         <translation>Conferma la criptatura del portafoglio</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR TERMUBITS&lt;/b&gt;!</source>
-        <translation>Attenzione: se cripti il portafoglio e perdi la password, &lt;b&gt;PERDERAI TUTTI I TUOI TERMUBIT&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR TERMUCOINS&lt;/b&gt;!</source>
+        <translation>Attenzione: se cripti il portafoglio e perdi la password, &lt;b&gt;PERDERAI TUTTI I TUOI TERMUCOIN&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -253,8 +253,8 @@
         <translation>Attenzione: è attivo il tasto blocco maiuscole !</translation>
     </message>
     <message>
-        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your termubits from being stolen by malware infecting your computer.</source>
-        <translation>%1 si chiuderá per completare il processo di criptatura. Ricordati che criptare il portafoglio potrebbe non proteggere i tuoi termubit nel caso in cui il tuo computer sia infetto da malware.</translation>
+        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your termucoins from being stolen by malware infecting your computer.</source>
+        <translation>%1 si chiuderá per completare il processo di criptatura. Ricordati che criptare il portafoglio potrebbe non proteggere i tuoi termucoin nel caso in cui il tuo computer sia infetto da malware.</translation>
     </message>
 </context>
 <context>
@@ -351,8 +351,8 @@
         <translation>Re-indicizzazione blocchi su disco...</translation>
     </message>
     <message>
-        <source>Send coins to a Termubit address</source>
-        <translation>Invia monete ad un indirizzo Termubit</translation>
+        <source>Send coins to a Termucoin address</source>
+        <translation>Invia monete ad un indirizzo Termucoin</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -375,8 +375,8 @@
         <translation>&amp;Verifica messaggio...</translation>
     </message>
     <message>
-        <source>Termubit</source>
-        <translation>Termubit</translation>
+        <source>Termucoin</source>
+        <translation>Termucoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -403,12 +403,12 @@
         <translation>Cripta le chiavi private del tuo portafoglio</translation>
     </message>
     <message>
-        <source>Sign messages with your Termubit addresses to prove you own them</source>
-        <translation>Firma i messaggi con il tuo indirizzo Termubit per dimostrarne il possesso</translation>
+        <source>Sign messages with your Termucoin addresses to prove you own them</source>
+        <translation>Firma i messaggi con il tuo indirizzo Termucoin per dimostrarne il possesso</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Termubit addresses</source>
-        <translation>Verifica i messaggi per accertare che siano stati firmati con gli indirizzi Termubit specificati</translation>
+        <source>Verify messages to ensure they were signed with specified Termucoin addresses</source>
+        <translation>Verifica i messaggi per accertare che siano stati firmati con gli indirizzi Termucoin specificati</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -427,8 +427,8 @@
         <translation>Barra degli strumenti</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and termubit: URIs)</source>
-        <translation>Richiedi pagamenti (genera codici QR e termubit: URI)</translation>
+        <source>Request payments (generates QR codes and termucoin: URIs)</source>
+        <translation>Richiedi pagamenti (genera codici QR e termucoin: URI)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -439,7 +439,7 @@
         <translation>Mostra la lista degli indirizzi di ricezione utilizzati</translation>
     </message>
     <message>
-        <source>Open a termubit: URI or payment request</source>
+        <source>Open a termucoin: URI or payment request</source>
         <translation>Apri un URI o una richiesta di pagamento</translation>
     </message>
     <message>
@@ -447,10 +447,10 @@
         <translation>Opzioni della riga di &amp;comando</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Termubit network</source>
+        <source>%n active connection(s) to Termucoin network</source>
         <translation>
-            <numerusform>%n connessione attiva alla rete Termubit</numerusform>
-            <numerusform>%n connessioni attive alla rete Termubit</numerusform>
+            <numerusform>%n connessione attiva alla rete Termucoin</numerusform>
+            <numerusform>%n connessioni attive alla rete Termucoin</numerusform>
         </translation>
     </message>
     <message>
@@ -497,8 +497,8 @@
         <translation>Aggiornato</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible Termubit command-line options</source>
-        <translation>Mostra il messaggio di aiuto di %1 per ottenere una lista di opzioni di comando per Termubit </translation>
+        <source>Show the %1 help message to get a list with possible Termucoin command-line options</source>
+        <translation>Mostra il messaggio di aiuto di %1 per ottenere una lista di opzioni di comando per Termucoin </translation>
     </message>
     <message>
         <source>%1 client</source>
@@ -575,7 +575,7 @@
         <translation>&amp;Importa chiave privata</translation>
     </message>
     <message>
-        <source>Import a Termubit private key</source>
+        <source>Import a Termucoin private key</source>
         <translation>Importa una chiave privata</translation>
     </message>
     <message>
@@ -611,8 +611,8 @@
         <translation>Eccezione runaway</translation>
     </message>
     <message>
-        <source>A fatal error occurred. Termubit can no longer continue safely and will quit.</source>
-        <translation>Si è verificato un errore critico. Termubit non può più continuare ad operare in sicurezza e verrà chiuso.</translation>
+        <source>A fatal error occurred. Termucoin can no longer continue safely and will quit.</source>
+        <translation>Si è verificato un errore critico. Termucoin non può più continuare ad operare in sicurezza e verrà chiuso.</translation>
     </message>
 </context>
 <context>
@@ -805,8 +805,8 @@
         <translation>Modifica indirizzo d&apos;invio</translation>
     </message>
     <message>
-        <source>The entered address &quot;%1&quot; is not a valid Termubit address.</source>
-        <translation>L&apos;indirizzo inserito &quot;%1&quot; non è un indirizzo Termubit valido.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid Termucoin address.</source>
+        <translation>L&apos;indirizzo inserito &quot;%1&quot; non è un indirizzo Termucoin valido.</translation>
     </message>
     <message>
         <source>The entered address &quot;%1&quot; is already in the address book.</source>
@@ -977,8 +977,8 @@
         <translation>Dato che questa è la prima volta che il programma viene lanciato, puoi scegliere dove %1 salverà i suoi dati.</translation>
     </message>
     <message>
-        <source>%1 will download and store a copy of the Termubit block chain. At least %2GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>%1 scaricherà e salverà una copia della blockchain di Termubit. Saranno salvati almeno %2GB di dati in questa directory e continueranno ad aumentare col tempo. Anche il portafoglio verrà salvato in questa directory.</translation>
+        <source>%1 will download and store a copy of the Termucoin block chain. At least %2GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>%1 scaricherà e salverà una copia della blockchain di Termucoin. Saranno salvati almeno %2GB di dati in questa directory e continueranno ad aumentare col tempo. Anche il portafoglio verrà salvato in questa directory.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1042,12 +1042,12 @@
         <translation>Nascondi</translation>
     </message>
     <message>
-        <source>Recent transactions may not yet be visible, and therefore your wallet&apos;s balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the termubit network, as detailed below.</source>
-        <translation>Le transazioni recenti potrebbero non essere ancora visibili, quindi il saldo totale del tuo portafoglio potrebbe non essere corretto. Il saldo risulterà corretto quando il tuo portafoglio avrà completato la sincronizzazione con la rete termubit, come indicato più sotto.</translation>
+        <source>Recent transactions may not yet be visible, and therefore your wallet&apos;s balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the termucoin network, as detailed below.</source>
+        <translation>Le transazioni recenti potrebbero non essere ancora visibili, quindi il saldo totale del tuo portafoglio potrebbe non essere corretto. Il saldo risulterà corretto quando il tuo portafoglio avrà completato la sincronizzazione con la rete termucoin, come indicato più sotto.</translation>
     </message>
     <message>
-        <source>Attempting to spend termubits that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
-        <translation>Il tentativo di spendere termubit legati a transazioni non ancora visualizzate non verrà accettato dalla rete</translation>
+        <source>Attempting to spend termucoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <translation>Il tentativo di spendere termucoin legati a transazioni non ancora visualizzate non verrà accettato dalla rete</translation>
     </message>
     <message>
         <source>Progress increase per hour</source>
@@ -1185,16 +1185,16 @@ Per specificare più URL separarli con una barra verticale &quot;|&quot;.</trans
         <translation>&amp;Spendi resti non confermati</translation>
     </message>
     <message>
-        <source>Automatically open the Termubit client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Apri automaticamente la porta del client Termubit sul router. Il protocollo UPnP deve essere supportato da parte del router ed attivo.</translation>
+        <source>Automatically open the Termucoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Apri automaticamente la porta del client Termucoin sul router. Il protocollo UPnP deve essere supportato da parte del router ed attivo.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation>Mappa le porte tramite &amp;UPnP</translation>
     </message>
     <message>
-        <source>Connect to the Termubit network through a SOCKS5 proxy.</source>
-        <translation>Connessione alla rete Termubit attraverso un proxy SOCKS5.</translation>
+        <source>Connect to the Termucoin network through a SOCKS5 proxy.</source>
+        <translation>Connessione alla rete Termucoin attraverso un proxy SOCKS5.</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
@@ -1233,8 +1233,8 @@ Per specificare più URL separarli con una barra verticale &quot;|&quot;.</trans
         <translation>Tor</translation>
     </message>
     <message>
-        <source>Connect to the Termubit network through a separate SOCKS5 proxy for Tor hidden services.</source>
-        <translation>Connessione alla rete Termubit attraverso un proxy SOCKS5 separato per Tor.</translation>
+        <source>Connect to the Termucoin network through a separate SOCKS5 proxy for Tor hidden services.</source>
+        <translation>Connessione alla rete Termucoin attraverso un proxy SOCKS5 separato per Tor.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services:</source>
@@ -1282,7 +1282,7 @@ Per specificare più URL separarli con una barra verticale &quot;|&quot;.</trans
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
-        <translation>Scegli l&apos;unità di suddivisione predefinita da utilizzare per l&apos;interfaccia e per l&apos;invio di termubit.</translation>
+        <translation>Scegli l&apos;unità di suddivisione predefinita da utilizzare per l&apos;interfaccia e per l&apos;invio di termucoin.</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1348,8 +1348,8 @@ Per specificare più URL separarli con una barra verticale &quot;|&quot;.</trans
         <translation>Modulo</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Termubit network after a connection is established, but this process has not completed yet.</source>
-        <translation>Le informazioni visualizzate potrebbero non essere aggiornate. Il portafoglio si sincronizza automaticamente con la rete Termubit una volta stabilita una connessione, ma questo processo non è ancora stato completato.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Termucoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Le informazioni visualizzate potrebbero non essere aggiornate. Il portafoglio si sincronizza automaticamente con la rete Termucoin una volta stabilita una connessione, ma questo processo non è ancora stato completato.</translation>
     </message>
     <message>
         <source>Watch-only:</source>
@@ -1436,8 +1436,8 @@ Per specificare più URL separarli con una barra verticale &quot;|&quot;.</trans
         <translation>Fai le dovute ricerche prima di utilizzare qualsiasi servizio criptovalute.</translation>
     </message>
     <message>
-        <source>Services that claim to double your termubits are always ponzi schemes</source>
-        <translation>Tutti i servizi che promettono di moltiplicare i tuoi Termubit sono delle truffe.</translation>
+        <source>Services that claim to double your termucoins are always ponzi schemes</source>
+        <translation>Tutti i servizi che promettono di moltiplicare i tuoi Termucoin sono delle truffe.</translation>
     </message>
     <message>
         <source>Never share your wallet.dat file with anyone</source>
@@ -1460,8 +1460,8 @@ Per specificare più URL separarli con una barra verticale &quot;|&quot;.</trans
         <translation>Chiunque abbia accesso alla chiave privata ha il controllo totale sul portafoglio.</translation>
     </message>
     <message>
-        <source>To see ongoing development and contribute, check out the Termubit Core repository on GitHub</source>
-        <translation>Per essere aggiornato sullo sviluppo di Termubit e contribuire, segui il repository su GitHub!</translation>
+        <source>To see ongoing development and contribute, check out the Termucoin Core repository on GitHub</source>
+        <translation>Per essere aggiornato sullo sviluppo di Termucoin e contribuire, segui il repository su GitHub!</translation>
     </message>
 </context>
 <context>
@@ -1588,7 +1588,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Send Coins</source>
-        <translation>Invia Termubit</translation>
+        <translation>Invia Termucoin</translation>
     </message>
     <message>
         <source>The recipient address is not valid, please recheck.</source>
@@ -1608,7 +1608,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Duplicate address found, can only send to each address once per send operation.</source>
-        <translation>Indirizzo già inserito. Puoi inviare Termubit allo stesso indirizzo solo una volta nella stessa operazione.</translation>
+        <translation>Indirizzo già inserito. Puoi inviare Termucoin allo stesso indirizzo solo una volta nella stessa operazione.</translation>
     </message>
     <message>
         <source>Transaction creation failed!</source>
@@ -1646,8 +1646,8 @@ p, li { white-space: pre-wrap; }
         <translation>Errore di richiesta di pagamento</translation>
     </message>
     <message>
-        <source>Cannot start termubit: click-to-pay handler</source>
-        <translation>Impossibile avviare termubit: gestore click-to-pay</translation>
+        <source>Cannot start termucoin: click-to-pay handler</source>
+        <translation>Impossibile avviare termucoin: gestore click-to-pay</translation>
     </message>
     <message>
         <source>URI handling</source>
@@ -1662,8 +1662,8 @@ p, li { white-space: pre-wrap; }
         <translation>Indirizzo di pagamento non valido %1</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid Termubit address or malformed URI parameters.</source>
-        <translation>Impossibile interpretare l&apos;URI! I parametri dell&apos;URI o l&apos;indirizzo Termubit potrebbero non essere corretti.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid Termucoin address or malformed URI parameters.</source>
+        <translation>Impossibile interpretare l&apos;URI! I parametri dell&apos;URI o l&apos;indirizzo Termucoin potrebbero non essere corretti.</translation>
     </message>
     <message>
         <source>Payment request file handling</source>
@@ -1813,8 +1813,8 @@ Use this functionality with extreme caution.</source>
         <translation>Importo</translation>
     </message>
     <message>
-        <source>Enter a Termubit address (e.g. %1)</source>
-        <translation>Inserisci un indirizzo Termubit (ad es. %1)</translation>
+        <source>Enter a Termucoin address (e.g. %1)</source>
+        <translation>Inserisci un indirizzo Termucoin (ad es. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -2299,8 +2299,8 @@ Use this functionality with extreme caution.</source>
         <translation>R&amp;iusa un indirizzo di ricezione (non raccomandato)</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Termubit network.</source>
-        <translation>Un messaggio opzionale da allegare alla richiesta di pagamento, il quale sarà mostrato all&apos;apertura della richiesta. Nota: Il messaggio non sarà inviato con il pagamento sulla rete Termubit.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Termucoin network.</source>
+        <translation>Un messaggio opzionale da allegare alla richiesta di pagamento, il quale sarà mostrato all&apos;apertura della richiesta. Nota: Il messaggio non sarà inviato con il pagamento sulla rete Termucoin.</translation>
     </message>
     <message>
         <source>An optional label to associate with the new receiving address.</source>
@@ -2453,7 +2453,7 @@ Use this functionality with extreme caution.</source>
     <name>SendCoinsDialog</name>
     <message>
         <source>Send Coins</source>
-        <translation>Invia Termubit</translation>
+        <translation>Invia Termucoin</translation>
     </message>
     <message>
         <source>Coin Control Features</source>
@@ -2528,7 +2528,7 @@ Use this functionality with extreme caution.</source>
         <translation>somma almeno</translation>
     </message>
     <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for termubit transactions than the network can process.</source>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for termucoin transactions than the network can process.</source>
         <translation>Pagare la commissione minima dovrebbe essere sufficiente, a patto che il volume delle transazioni sia inferiore allo spazio disponibile nei blocchi. Occorre comunque essere consapevoli che ciò potrebbe impedire la conferma delle transazioni nel caso in cui la rete risultasse satura.</translation>
     </message>
     <message>
@@ -2632,8 +2632,8 @@ Use this functionality with extreme caution.</source>
         <translation>Richiesta di pagamento scaduta.</translation>
     </message>
     <message>
-        <source>Warning: Invalid Termubit address</source>
-        <translation>Attenzione: Indirizzo Termubit non valido</translation>
+        <source>Warning: Invalid Termucoin address</source>
+        <translation>Attenzione: Indirizzo Termucoin non valido</translation>
     </message>
     <message>
         <source>Warning: Unknown change address</source>
@@ -2739,8 +2739,8 @@ Use this functionality with extreme caution.</source>
         <translation>Questo è un normale pagamento.</translation>
     </message>
     <message>
-        <source>The Termubit address to send the payment to</source>
-        <translation>L&apos;indirizzo Termubit a cui vuoi inviare il pagamento</translation>
+        <source>The Termucoin address to send the payment to</source>
+        <translation>L&apos;indirizzo Termucoin a cui vuoi inviare il pagamento</translation>
     </message>
     <message>
         <source>Alt+A</source>
@@ -2759,8 +2759,8 @@ Use this functionality with extreme caution.</source>
         <translation>Rimuovi questa voce</translation>
     </message>
     <message>
-        <source>The fee will be deducted from the amount being sent. The recipient will receive less termubits than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
-        <translation>La commissione sarà sottratta dall&apos;importo che si sta inviando. Il beneficiario riceverà un totale di termubit inferiore al valore inserito. Nel caso in cui siano stati selezionati più beneficiari la commissione sarà divisa in parti uguali.</translation>
+        <source>The fee will be deducted from the amount being sent. The recipient will receive less termucoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <translation>La commissione sarà sottratta dall&apos;importo che si sta inviando. Il beneficiario riceverà un totale di termucoin inferiore al valore inserito. Nel caso in cui siano stati selezionati più beneficiari la commissione sarà divisa in parti uguali.</translation>
     </message>
     <message>
         <source>S&amp;ubtract fee from amount</source>
@@ -2783,8 +2783,8 @@ Use this functionality with extreme caution.</source>
         <translation>Inserisci un&apos;etichetta per questo indirizzo per aggiungerlo alla lista degli indirizzi utilizzati</translation>
     </message>
     <message>
-        <source>A message that was attached to the termubit: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Termubit network.</source>
-        <translation>Messaggio incluso nell&apos;URI termubit e che sarà memorizzato con la transazione. Nota: questo messaggio non sarà inviato attraverso la rete Termubit.</translation>
+        <source>A message that was attached to the termucoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Termucoin network.</source>
+        <translation>Messaggio incluso nell&apos;URI termucoin e che sarà memorizzato con la transazione. Nota: questo messaggio non sarà inviato attraverso la rete Termucoin.</translation>
     </message>
     <message>
         <source>Pay To:</source>
@@ -2828,12 +2828,12 @@ Use this functionality with extreme caution.</source>
         <translation>&amp;Firma Messaggio</translation>
     </message>
     <message>
-        <source>You can sign messages/agreements with your addresses to prove you can receive termubits sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
-        <translation>Puoi firmare messaggi/accordi con i tuoi indirizzi per dimostrare di poterli utilizzare per ricevere Termubit. Si consiglia di fare attenzione a non firmare dichiarazioni vaghe o casuali che potrebbero essere utilizzate in attacchi phishing. Si raccomanda di firmare esclusivamente dichiarazioni dettagliate e delle quali si condivide in pieno il contenuto.</translation>
+        <source>You can sign messages/agreements with your addresses to prove you can receive termucoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <translation>Puoi firmare messaggi/accordi con i tuoi indirizzi per dimostrare di poterli utilizzare per ricevere Termucoin. Si consiglia di fare attenzione a non firmare dichiarazioni vaghe o casuali che potrebbero essere utilizzate in attacchi phishing. Si raccomanda di firmare esclusivamente dichiarazioni dettagliate e delle quali si condivide in pieno il contenuto.</translation>
     </message>
     <message>
-        <source>The Termubit address to sign the message with</source>
-        <translation>L&apos;indirizzo Termubit da utilizzare per firmare il messaggio</translation>
+        <source>The Termucoin address to sign the message with</source>
+        <translation>L&apos;indirizzo Termucoin da utilizzare per firmare il messaggio</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2864,7 +2864,7 @@ Use this functionality with extreme caution.</source>
         <translation>Copia la firma corrente nella clipboard</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Termubit address</source>
+        <source>Sign the message to prove you own this Termucoin address</source>
         <translation>Firma un messaggio per dimostrare di possedere questo indirizzo</translation>
     </message>
     <message>
@@ -2888,11 +2888,11 @@ Use this functionality with extreme caution.</source>
         <translation>Per verificare il messaggio inserire l&apos;indirizzo del firmatario, il messaggio e la firma nei campi sottostanti, assicurandosi di copiare esattamente anche ritorni a capo, spazi, tabulazioni, etc. Si raccomanda di non lasciarsi fuorviare dalla firma a leggere più di quanto non sia riportato nel testo del messaggio stesso, in modo da evitare di cadere vittima di attacchi di tipo man-in-the-middle. Si ricorda che la verifica della firma dimostra soltanto che il firmatario può ricevere pagamenti con l&apos;indirizzo corrispondente, non prova l&apos;invio di alcuna transazione.</translation>
     </message>
     <message>
-        <source>The Termubit address the message was signed with</source>
-        <translation>L&apos;indirizzo Termubit con cui è stato firmato il messaggio</translation>
+        <source>The Termucoin address the message was signed with</source>
+        <translation>L&apos;indirizzo Termucoin con cui è stato firmato il messaggio</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Termubit address</source>
+        <source>Verify the message to ensure it was signed with the specified Termucoin address</source>
         <translation>Verifica il messaggio per accertare che sia stato firmato con l&apos;indirizzo specificato</translation>
     </message>
     <message>
@@ -3175,7 +3175,7 @@ Use this functionality with extreme caution.</source>
     </message>
     <message>
         <source>Generated coins must mature %1 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to &quot;not accepted&quot; and it won&apos;t be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
-        <translation>I termubit generati devono maturare ancora per %1 blocchi prima di essere spendibili. Dopo essere stato generato, questo blocco è stato trasmesso alla rete per essere aggiunto alla blockchain. Se l&apos;inserimento nella blockchain dovesse fallire, il suo stato cambierà a &quot;non accettato&quot; e i termubit non saranno spendibili. Alle volte, questo può accadere nel caso in cui un altro nodo generi un blocco entro pochi secondi dal tuo.</translation>
+        <translation>I termucoin generati devono maturare ancora per %1 blocchi prima di essere spendibili. Dopo essere stato generato, questo blocco è stato trasmesso alla rete per essere aggiunto alla blockchain. Se l&apos;inserimento nella blockchain dovesse fallire, il suo stato cambierà a &quot;non accettato&quot; e i termucoin non saranno spendibili. Alle volte, questo può accadere nel caso in cui un altro nodo generi un blocco entro pochi secondi dal tuo.</translation>
     </message>
 </context>
 <context>
@@ -3472,7 +3472,7 @@ Use this functionality with extreme caution.</source>
     <name>WalletModel</name>
     <message>
         <source>Send Coins</source>
-        <translation>Invia Termubit</translation>
+        <translation>Invia Termucoin</translation>
     </message>
 </context>
 <context>
@@ -3569,8 +3569,8 @@ Use this functionality with extreme caution.</source>
         <translation>Impossibile avviare il server HTTP. Dettagli nel log di debug.</translation>
     </message>
     <message>
-        <source>Termubit Core</source>
-        <translation>Termubit Core</translation>
+        <source>Termucoin Core</source>
+        <translation>Termucoin Core</translation>
     </message>
     <message>
         <source>The %s developers</source>
@@ -4305,8 +4305,8 @@ Use this functionality with extreme caution.</source>
         <translation>Errore</translation>
     </message>
     <message>
-        <source>Bitcoin Core and Termubit Core</source>
-        <translation>Bitcoin Core e Termubit Core</translation>
+        <source>Bitcoin Core and Termucoin Core</source>
+        <translation>Bitcoin Core e Termucoin Core</translation>
     </message>
     <message>
         <source>Accept connections from outside (default: 1 if no -proxy or -connect/-noconnect)</source>

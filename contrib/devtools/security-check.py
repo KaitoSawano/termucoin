@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # Copyright (c) 2015-2021 The Bitcoin Core developers
-# Copyright (c) 2026 The Termubit Core developers
+# Copyright (c) 2026 The Termucoin Core developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 '''
@@ -210,7 +210,7 @@ BASE_PE = [
     ('NX', check_NX),
     #('RELOC_SECTION', check_PE_RELOC_SECTION),
     # Note: RELOC_SECTION is newer than our source and currently doesn't pass
-    #       on cli tools and tests, but does work for termubitd / termubit-qt
+    #       on cli tools and tests, but does work for termucoind / termucoin-qt
     #('CONTROL_FLOW', check_PE_control_flow),
     # Note: CONTROL_FLOW can be re-enabled when we build with gcc8 or higher
 ]

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# Copyright (c) 2026 The Termubit Core developers
+# Copyright (c) 2026 The Termucoin Core developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -159,7 +159,7 @@ class WalletNotifyTest(BitcoinTestFramework):
 
         # stop, remove the mempool, zap the wallet, and start again
         self.nodes[2].stop()
-        termubitd_processes[2].wait()
+        termucoind_processes[2].wait()
         os.remove(log_filename(self.options.tmpdir, 2, "mempool.dat"))
         self.nodes[2] = start_node(2, self.options.tmpdir,["-debug", "-acceptnonstdtxn=0", "-minrelaytxfee=1", "-zapwallettxes"])
 

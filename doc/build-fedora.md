@@ -44,9 +44,9 @@ From the root of the repository, run:
 make
 ```
 
-This builds `termubitd` and `termubit-cli`.
+This builds `termucoind` and `termucoin-cli`.
 
-To also build the Qt GUI (`termubit-qt`), install the GUI requirements above and run:
+To also build the Qt GUI (`termucoin-qt`), install the GUI requirements above and run:
 
 ```sh
 ./autogen.sh
