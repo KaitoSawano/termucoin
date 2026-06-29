@@ -257,7 +257,7 @@ public:
         digishieldConsensus.fDigishieldDifficultyCalculation = true;
         digishieldConsensus.fSimplifiedRewards = true;
         digishieldConsensus.fPowAllowMinDifficultyBlocks = false;
-        digishieldConsensus.nCoinbaseMaturity = 240;
+        digishieldConsensus.nCoinbaseMaturity = 100;
 
         // Blocks 323900 - 344999 are Digishield with minimum difficulty on all blocks
         minDifficultyConsensus = digishieldConsensus;
