@@ -16,7 +16,7 @@ jobs:
           ./configure --disable-tests --disable-bench
           make -j$(nproc)
       - name: Upload Binary
-        uses: actions/upload-artifact@v4  # <--- SUDAH DIGANTI v4
+        uses: actions/upload-artifact@v4
         with:
           name: termucoin-linux
           path: src/termucoind
@@ -27,12 +27,11 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
       - name: Install dependencies
-        # DITAMBAHKAN libdb++-dev DAN libdb-dev DI BAWAH INI
         run: sudo apt-get update && sudo apt-get install -y mingw-w64 build-essential libtool autotools-dev automake pkg-config libssl-dev libevent-dev bsdmainutils libboost-all-dev libdb-dev libdb++-dev
       - name: Build
         run: |
           ./autogen.sh
-          ./configure --host=x86_64-w64-mingw32 --disable-tests
+          ./configure --host=x86_64-w64-mingw32 --disable-wallet --disable-tests
           make -j$(nproc)
       - name: Upload Binary
         uses: actions/upload-artifact@v4
