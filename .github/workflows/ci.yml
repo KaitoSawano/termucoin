@@ -9,13 +9,13 @@ jobs:
       fail-fast: false
       matrix:
         target:
-          - { name: "x86_64-linux", flags: "" }
-          - { name: "aarch64-linux", flags: "" }
-          - { name: "armhf-linux", flags: "" }
-          - { name: "i686-linux", flags: "--enable-zmq" }
-          - { name: "x86_64-linux-dbg", flags: "--enable-debug CPPFLAGS=-DDEBUG_LOCKORDER" }
-          - { name: "x86_64-linux-nowallet", flags: "--disable-wallet" }
-          - { name: "x86_64-linux-experimental", flags: "--enable-experimental --enable-c++14" }
+          - { name: "x86_64-linux", host: "--host=x86_64-linux-gnu", flags: "" }
+          - { name: "aarch64-linux", host: "--host=aarch64-linux-gnu", flags: "" }
+          - { name: "armhf-linux", host: "--host=arm-linux-gnueabihf", flags: "" }
+          - { name: "i686-linux", host: "--host=i686-linux-gnu", flags: "--enable-zmq" }
+          - { name: "x86_64-linux-dbg", host: "--host=x86_64-linux-gnu", flags: "--enable-debug CPPFLAGS=-DDEBUG_LOCKORDER" }
+          - { name: "x86_64-linux-nowallet", host: "--host=x86_64-linux-gnu", flags: "--disable-wallet" }
+          - { name: "x86_64-linux-experimental", host: "--host=x86_64-linux-gnu", flags: "--enable-experimental --enable-c++14" }
 
     steps:
       - name: Checkout
@@ -27,12 +27,13 @@ jobs:
           sudo apt-get install -y build-essential libtool autotools-dev automake pkg-config \
           libssl-dev libevent-dev libboost-all-dev libdb-dev libdb++-dev libsqlite3-dev \
           qtbase5-dev qttools5-dev-tools libqt5gui5 libqt5core5a libqt5dbus5 \
-          binutils-gold bsdmainutils python3
+          binutils-gold bsdmainutils python3 \
+          g++-aarch64-linux-gnu g++-arm-linux-gnueabihf g++-i686-linux-gnu
 
       - name: Build
         run: |
           ./autogen.sh
-          ./configure ${{ matrix.target.flags }} --with-gui=qt5 --disable-tests --disable-bench CXXFLAGS="-std=c++14"
+          ./configure ${{ matrix.target.host }} ${{ matrix.target.flags }} --with-gui=qt5 --disable-tests --disable-bench CXXFLAGS="-std=c++14"
           make -j$(nproc)
 
       - name: Collect Binaries
