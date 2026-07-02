@@ -26,5 +26,5 @@ jobs:
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: termucoin-native
+          name: termucoind-native
           path: src/termucoind
