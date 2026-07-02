@@ -40,7 +40,7 @@ jobs:
         include:
           - name: i686-linux
             host: i686-pc-linux-gnu
-            container: ubuntu:20.04
+            container: ubuntu:24.04
             packages: g++-multilib bc python3-zmq
             run-bench: true
             test-script: |
@@ -54,7 +54,7 @@ jobs:
             goal: install
           - name: armhf-linux
             host: arm-linux-gnueabihf
-            container: ubuntu:20.04
+            container: ubuntu:24.04
             packages: g++-arm-linux-gnueabihf qemu-user-static qemu-user
             run-bench: false
             test-script: |
@@ -66,7 +66,7 @@ jobs:
             goal: install
           - name: aarch64-linux-experimental
             host: aarch64-linux-gnu
-            container: ubuntu:20.04
+            container: ubuntu:24.04
             packages: g++-aarch64-linux-gnu qemu-user-static qemu-user
             run-bench: false
             test-script: |
@@ -78,7 +78,7 @@ jobs:
             goal: install
           - name: aarch64-linux
             host: aarch64-linux-gnu
-            container: ubuntu:20.04
+            container: ubuntu:24.04
             packages: g++-aarch64-linux-gnu qemu-user-static qemu-user
             run-bench: false
             test-script: |
@@ -90,7 +90,7 @@ jobs:
             goal: install
           - name: x86_64-linux-nowallet
             host: x86_64-unknown-linux-gnu
-            container: ubuntu:20.04
+            container: ubuntu:24.04
             packages: python3
             run-bench: true
             test-script: |
@@ -102,7 +102,7 @@ jobs:
             goal: install
           - name: x86_64-linux-dbg
             host: x86_64-unknown-linux-gnu
-            container: ubuntu:20.04
+            container: ubuntu:24.04
             packages: bc python3-zmq
             run-bench: true
             test-script: |
@@ -116,7 +116,7 @@ jobs:
             goal: install
           - name: x86_64-linux-experimental
             host: x86_64-linux-gnu
-            container: ubuntu:20.04
+            container: ubuntu:24.04
             packages: bc python3-zmq
             run-bench: true
             test-script: |
@@ -192,5 +192,5 @@ jobs:
           
       - name: Build depends
         run: |
-          make $MAKEJOBS -C depends HOST=${{ matrix.host }} ${{ matrix.dep-opts }}
+          make -j$(nproc) -C depends HOST=${{ matrix.host }} ${{ matrix.dep-opts }}
           
