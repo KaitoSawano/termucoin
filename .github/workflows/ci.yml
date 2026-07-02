@@ -9,36 +9,33 @@ jobs:
       fail-fast: false
       matrix:
         target:
-          - { name: "x86_64-linux", host: "" }
-          - { name: "aarch64-linux", host: "--host=aarch64-linux-gnu" }
+          - { name: "aarch64-linux", flags: "--disable-wallet" }
+          - { name: "aarch64-linux-experimental", flags: "--enable-experimental --enable-c++14" }
+          - { name: "armhf-linux", flags: "--disable-wallet" }
+          - { name: "i686-linux", flags: "--enable-zmq" }
+          - { name: "x86_64-linux-dbg", flags: "--enable-debug CPPFLAGS=-DDEBUG_LOCKORDER" }
+          - { name: "x86_64-linux-nowallet", flags: "--disable-wallet" }
+          - { name: "x86_64-linux-experimental", flags: "--enable-experimental --enable-c++14" }
 
     steps:
-      - uses: actions/checkout@v5
+      - name: Checkout
+        uses: actions/checkout@v5
 
       - name: Install dependencies
         run: |
           sudo apt-get update
           sudo apt-get install -y build-essential libtool autotools-dev automake pkg-config \
-          libssl-dev libevent-dev libboost-all-dev libdb-dev libdb++-dev libsqlite3-dev \
-          qtbase5-dev qttools5-dev-tools libqt5gui5 libqt5core5a libqt5dbus5 \
-          g++-aarch64-linux-gnu
+          libssl-dev libevent-dev libboost-all-dev libdb++-dev libsqlite3-dev \
+          binutils-gold bsdmainutils python3 g++-multilib
 
       - name: Build
         run: |
           ./autogen.sh
-          ./configure ${{ matrix.target.host }} --with-gui=qt5 --disable-tests --disable-bench CXXFLAGS="-std=c++14"
+          ./configure ${{ matrix.target.flags }} --disable-tests --disable-bench CXXFLAGS="-std=c++14"
           make -j$(nproc)
-
-      - name: Collect Binaries
-        run: |
-          mkdir -p release_binaries
-          cp src/termucoind release_binaries/termucoind || true
-          cp src/termucoin-cli release_binaries/termucoin-cli || true
-          cp src/termucoin-tx release_binaries/termucoin-tx || true
-          cp src/qt/termucoin-qt release_binaries/termucoin-qt || true
 
       - name: Upload Artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: termucoin-binaries-${{ matrix.target.name }}
-          path: release_binaries/
+          name: termucoin-${{ matrix.target.name }}
+          path: src/termucoind
