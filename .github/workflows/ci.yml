@@ -9,13 +9,14 @@ jobs:
       fail-fast: false
       matrix:
         target:
-          - { name: "aarch64-linux", flags: "--disable-wallet" }
-          - { name: "aarch64-linux-experimental", flags: "--enable-experimental --enable-c++14" }
-          - { name: "armhf-linux", flags: "--disable-wallet" }
-          - { name: "i686-linux", flags: "--enable-zmq" }
-          - { name: "x86_64-linux-dbg", flags: "--enable-debug CPPFLAGS=-DDEBUG_LOCKORDER" }
-          - { name: "x86_64-linux-nowallet", flags: "--disable-wallet" }
-          - { name: "x86_64-linux-experimental", flags: "--enable-experimental --enable-c++14" }
+          - { name: "x86_64-linux", host: "x86_64-linux-gnu", flags: "--disable-wallet" }
+          - { name: "aarch64-linux", host: "aarch64-linux-gnu", flags: "--disable-wallet" }
+          - { name: "aarch64-linux-experimental", host: "aarch64-linux-gnu", flags: "--enable-experimental --enable-c++14" }
+          - { name: "armhf-linux", host: "arm-linux-gnueabihf", flags: "--disable-wallet" }
+          - { name: "i686-linux", host: "i686-linux-gnu", flags: "--enable-zmq" }
+          - { name: "x86_64-linux-dbg", host: "x86_64-linux-gnu", flags: "--enable-debug CPPFLAGS=-DDEBUG_LOCKORDER" }
+          - { name: "x86_64-linux-nowallet", host: "x86_64-linux-gnu", flags: "--disable-wallet" }
+          - { name: "x86_64-linux-experimental", host: "x86_64-linux-gnu", flags: "--enable-experimental --enable-c++14" }
 
     steps:
       - name: Checkout
@@ -24,18 +25,26 @@ jobs:
       - name: Install dependencies
         run: |
           sudo apt-get update
+          # Menambahkan compiler lintas arsitektur
           sudo apt-get install -y build-essential libtool autotools-dev automake pkg-config \
           libssl-dev libevent-dev libboost-all-dev libdb++-dev libsqlite3-dev \
-          binutils-gold bsdmainutils python3 g++-multilib
+          binutils-gold bsdmainutils python3 g++-multilib \
+          g++-aarch64-linux-gnu g++-arm-linux-gnueabihf g++-i686-linux-gnu
 
       - name: Build
         run: |
           ./autogen.sh
-          ./configure ${{ matrix.target.flags }} --disable-tests --disable-bench CXXFLAGS="-std=c++14"
+          # Menggunakan --host agar compiler membuat biner yang benar untuk arsitektur target
+          ./configure --host=${{ matrix.target.host }} ${{ matrix.target.flags }} --disable-tests --disable-bench CXXFLAGS="-std=c++14"
           make -j$(nproc)
+
+      - name: Prepare Artifact
+        run: |
+          mkdir -p build_output
+          mv src/termucoind build_output/termucoind-${{ matrix.target.name }}
 
       - name: Upload Artifacts
         uses: actions/upload-artifact@v4
         with:
           name: termucoin-${{ matrix.target.name }}
-          path: src/termucoind
+          path: build_output/termucoind-${{ matrix.target.name }}
