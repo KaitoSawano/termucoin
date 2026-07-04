@@ -38,7 +38,7 @@ BOOST_AUTO_TEST_CASE(get_next_work_pow_limit)
     CBlockIndex pindexLast;
     pindexLast.nHeight = 2015;
     pindexLast.nTime = 1233061996;  // Block #2015
-    pindexLast.nBits = 0x1d00ffff;
+    pindexLast.nBits = 0x1e0fffff;
     BOOST_CHECK_EQUAL(CalculateNextWorkRequired(&pindexLast, nLastRetargetTime, params), 0x1d03fffc);
 }
 
@@ -52,7 +52,7 @@ BOOST_AUTO_TEST_CASE(get_next_work_lower_limit_actual)
     CBlockIndex pindexLast;
     pindexLast.nHeight = 66767;
     pindexLast.nTime = 1279008237 + (239 * 60 / 4 - 1); // Bitcoin Block #66528 + less than a quarter of the target timespan
-    pindexLast.nBits = 0x1c05a3f4;
+    pindexLast.nBits = 0x1e0fffff;
     BOOST_CHECK_EQUAL(CalculateNextWorkRequired(&pindexLast, nLastRetargetTime, params), 0x1c0168fd);
 }
 
