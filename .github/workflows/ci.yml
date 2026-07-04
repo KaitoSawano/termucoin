@@ -230,12 +230,3 @@ jobs:
       - name: Cleanup qa artifacts
         run: |
           rm -rf qa/cache || true
-
-      - name: Upload artifacts
-        uses: actions/upload-artifact@v6
-        with:
-          name: termucoin-${{ github.sha }}-${{ matrix.name }}
-          path: |
-            depends/${{ matrix.host }}/bin/termucoin*
-            dist/Termucoin-Qt.app
-            ${{ matrix.name }}-bench.csv
