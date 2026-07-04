@@ -22,9 +22,9 @@ BOOST_AUTO_TEST_CASE(get_next_work)
 
     int64_t nLastRetargetTime = 1388149872; // Block #30240
     CBlockIndex pindexLast;
-    pindexLast.nHeight = 30479;
+    pindexLast.nHeight = 200;
     pindexLast.nTime = 1388163922; // Block #30479
-    pindexLast.nBits = 0x1c00974f;
+    pindexLast.nBits = 0x1e0fffff;
     BOOST_CHECK_EQUAL(CalculateNextWorkRequired(&pindexLast, nLastRetargetTime, params), 0x1c0093a1);
 }
 
