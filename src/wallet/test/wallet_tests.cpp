@@ -505,9 +505,9 @@ BOOST_AUTO_TEST_CASE(GetMinimumFee_test)
 
     int64_t nMinTxFee = COIN / 100;
 
-    BOOST_CHECK_EQUAL(CWallet::GetMinimumFee(tx, 250, 0, pool), nMinTxFee * 0.25);
-    BOOST_CHECK_EQUAL(CWallet::GetMinimumFee(tx, 1000, 0, pool), nMinTxFee * 1.0);
-    BOOST_CHECK_EQUAL(CWallet::GetMinimumFee(tx, 1999, 0, pool), nMinTxFee * 1.999);
+    BOOST_CHECK_EQUAL(CWallet::GetMinimumFee(tx, 250, 0, pool), (nMinTxFee * 0.25) * 1000);
+    BOOST_CHECK_EQUAL(CWallet::GetMinimumFee(tx, 1000, 0, pool), (nMinTxFee * 1.0) * 1000);
+    BOOST_CHECK_EQUAL(CWallet::GetMinimumFee(tx, 1999, 0, pool), (nMinTxFee * 1.999) * 1000);
 }
 
 BOOST_AUTO_TEST_CASE(GetMinimumFee_dust_test)
